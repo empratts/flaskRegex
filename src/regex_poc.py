@@ -76,7 +76,7 @@ for p in p_names:
 
 print(f"{edge_count} edges added.")
 
-for i in range(2, 9):
+for i in range(2, 5):
     print(f"{i} of {len(p_names)}")
     comb = combinations(p_names, i)
     found = 0
@@ -109,12 +109,14 @@ while len(groups[-1]) > 0:
     order = 0
     for k, v in groups[-1].items():
         for pfx, sfxs in singles.items():
-            if pfx not in k:
+            if pfx[0] not in k:
                 new_item = set(k)
-                new_item.add(pfx)
+                new_item.add(*pfx)
                 new_sfxs:set = v.intersection(sfxs)
                 if len(new_sfxs) > 0:
-                    new_group[tuple(new_item)] = new_sfxs
+                    new_item_list:list = list(new_item)
+                    new_item_list.sort()
+                    new_group[tuple(list(new_item_list))] = new_sfxs
                     order = max(order, len(new_sfxs))
     groups.append(new_group)
     print(f"{len(new_group)} items found with max order {order}")
