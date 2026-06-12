@@ -1,0 +1,3688 @@
+{
+    "baseitem": {
+        "href": "Utility_Flasks",
+        "cn": "UtilityFlask",
+        "name": 33,
+        "link_name": "<a class=\"ItemClasses\" href=\"Utility_Flasks\">Utility Flasks</a>",
+        "attr": []
+    },
+    "config": {
+        "normal": {
+            "icon": "",
+            "title": "Base"
+        },
+        "shaper": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/item/popup/shaper-symbol.webp\" alt=\"shapersymbol\" width=\"32\" />",
+            "title": "The Shaper"
+        },
+        "elder": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/item/popup/elder-symbol.webp\" alt=\"eldersymbol\" width=\"32\" />",
+            "title": "The Elder"
+        },
+        "crusader": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/item/popup/crusader-symbol.webp\" alt=\"crusadersymbol\" width=\"32\" />",
+            "title": "The Crusader"
+        },
+        "redeemer": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/item/popup/redeemer-symbol.webp\" alt=\"redeemersymbol\" width=\"32\" />",
+            "title": "The Redeemer"
+        },
+        "hunter": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/item/popup/hunter-symbol.webp\" alt=\"huntersymbol\" width=\"32\" />",
+            "title": "The Hunter"
+        },
+        "warlord": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/item/popup/warlord-symbol.webp\" alt=\"warlordsymbol\" width=\"32\" />",
+            "title": "The Warlord"
+        },
+        "delve": {
+            "icon": "<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/DelveMineralVein.webp\" alt=\"DelveMineralVein\" width=\"32\" /></span>",
+            "title": "Delve"
+        },
+        "incursion": {
+            "icon": "<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/IncursionCraftingBench.webp\" alt=\"IncursionCraftingBench\" width=\"32\" /></span>",
+            "title": "Incursion"
+        },
+        "desecrated": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/item/popup2/desecrated-symbol.webp\" alt=\"desecratedsymbol\" width=\"32\" />",
+            "title": "Abyssalify"
+        },
+        "veiled": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/item/popup/veiled-symbol.webp\" alt=\"veiledsymbol\" width=\"32\" />",
+            "title": "Veiled"
+        },
+        "master": {
+            "icon": "<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/CraftingUnlockObject.webp\" alt=\"CraftingUnlockObject\" width=\"32\" /></span>",
+            "title": "Crafting Bench"
+        },
+        "essence": {
+            "icon": "<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/Essence.webp\" alt=\"Essence\" width=\"32\" /></span>",
+            "title": "Essence"
+        },
+        "perfect_essence": {
+            "icon": "<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/Essence.webp\" alt=\"Essence\" width=\"32\" /></span>",
+            "title": "Perfect Essence"
+        },
+        "bestiary": {
+            "icon": "<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/BestiaryRareMonster.webp\" alt=\"BestiaryRareMonster\" width=\"32\" /></span>",
+            "title": "Bestiary"
+        },
+        "warbands": {
+            "title": "Warbands"
+        },
+        "sentinel": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Sentinel/ArmourRecombinator.webp\" alt=\"ArmourRecombinator\" width=\"32\" />",
+            "title": "Recombinator"
+        },
+        "infamous": {
+            "title": "Infamous",
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/MercenaryEncounter.webp\" alt=\"MercenaryEncounter\" width=\"32\" />"
+        },
+        "haunted": {
+            "icon": "<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/NecropolisCorpse.webp\" alt=\"NecropolisCorpse\" width=\"32\" /></span>",
+            "title": "Haunted Modifiers"
+        },
+        "socketable": {
+            "icon": "",
+            "title": "<a  />",
+            "class": "enchantMod"
+        },
+        "bonded": {
+            "icon": "",
+            "title": "ShamanOnlyMods",
+            "class": "bondedMod"
+        },
+        "enchant": {
+            "title": "Enchant",
+            "class": "enchantMod"
+        },
+        "corrupted": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/CurrencyVaal.webp\" alt=\"CurrencyVaal\" width=\"32\" />",
+            "title": "Corrupted",
+            "class": ""
+        },
+        "graft_corrupted": {
+            "title": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyGraftCorrupt\" href=\"Unstable_Implant\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Chayula/UnstableImplant.webp\" alt=\"UnstableImplant\" height=\"16\" />Unstable Implant</a>"
+        },
+        "searing": {
+            "icon": "<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/CleansingFireAltar.webp\" alt=\"CleansingFireAltar\" width=\"32\" /></span>",
+            "title": "The Searing Exarch"
+        },
+        "eater": {
+            "icon": "<span class=\"MinimapIcons\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/TangleAltar.webp\" alt=\"TangleAltar\" width=\"32\" /></span>",
+            "title": "The Eater of Worlds"
+        },
+        "synthesis": {
+            "icon": "<img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DArt/minimap/player/SynthesisFragmentEntrance.webp\" alt=\"SynthesisFragmentEntrance\" width=\"32\" />",
+            "title": "Synthesis",
+            "class": "enchantMod"
+        },
+        "synthesis_corrupted": {
+            "title": "Synthesis Corrupted",
+            "class": "enchantMod"
+        },
+        "scourgeup": {
+            "title": "Scourge Beneficial",
+            "class": "scourged"
+        },
+        "scourgedown": {
+            "title": "Scourge Detrimental",
+            "class": "scourged"
+        }
+    },
+    "gen": {
+        "1": "Prefix",
+        "2": "Suffix"
+    },
+    "opt": {
+        "ModDomainsID": 2,
+        "ids": [
+            0,
+            20,
+            46
+        ],
+        "attr": [],
+        "ItemClassesCode": "UtilityFlask",
+        "ItemClassesID": 33,
+        "tags": null
+    },
+    "normal": [
+        {
+            "Name": "Wide",
+            "Level": "2",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskNumCharges"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>+(16<span class=\"ndash\">—</span>19)</span> to Maximum Charges",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/8bef774a985d40f3e13bf31fd2bc76087d36afc7b69bbff41966b838b04029c3"
+        },
+        {
+            "Name": "Plentiful",
+            "Level": "22",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskNumCharges"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>+(20<span class=\"ndash\">—</span>23)</span> to Maximum Charges",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskExtraCharges2__"
+        },
+        {
+            "Name": "Bountiful",
+            "Level": "42",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskNumCharges"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>+(24<span class=\"ndash\">—</span>27)</span> to Maximum Charges",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/ba6c55b4fc24002a8a5f5a095c5ac17952c25eafa46d758373841eaf53e99120"
+        },
+        {
+            "Name": "Abundant",
+            "Level": "62",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskNumCharges"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>+(28<span class=\"ndash\">—</span>31)</span> to Maximum Charges",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/fea05282e6477c5122867c5b92d3c17db31c1e6ba89f9f6d80798e375f9af759"
+        },
+        {
+            "Name": "Ample",
+            "Level": "82",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskNumCharges"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>+(32<span class=\"ndash\">—</span>35)</span> to Maximum Charges",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/95152e5272d52d62803191b547a09e83cacdb25a04f9d16426c6d4c368d12015"
+        },
+        {
+            "Name": "Constant",
+            "Level": "3",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(16<span class=\"ndash\">—</span>20)</span>% increased Charge Recovery",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/aed71ea6e3dce32e56f8533b61de508cddb6b4bee0f4ec64d1ca661b76f46b9a"
+        },
+        {
+            "Name": "Continuous",
+            "Level": "23",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(21<span class=\"ndash\">—</span>25)</span>% increased Charge Recovery",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/93ab3ee55322c3b16373a981960d543819243aa4f14383050ac609d3a99ab43f"
+        },
+        {
+            "Name": "Endless",
+            "Level": "43",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(26<span class=\"ndash\">—</span>30)</span>% increased Charge Recovery",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/fd74a08322083dc7250957e407da80cddf07d1b0fab77390a35b3bfb48793fa8"
+        },
+        {
+            "Name": "Bottomless",
+            "Level": "63",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(31<span class=\"ndash\">—</span>45)</span>% increased Charge Recovery",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/cf703c72dbebb644d4a3543fc51967376b9985713e988a3382c88cfd6f7c898d"
+        },
+        {
+            "Name": "Perpetual",
+            "Level": "83",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(46<span class=\"ndash\">—</span>50)</span>% increased Charge Recovery",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/de8c0dd8f31c40264216a1461074ebe950428248470eb9611693e68e74399dde"
+        },
+        {
+            "Name": "Doled",
+            "Level": "20",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(37<span class=\"ndash\">—</span>42)</span>% increased Charge Recovery<br><span class='mod-value'>25</span>% reduced effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/4a3d3e2f69ed350ac71d2a3d62462f3103220b949b1d7b4901708d7c0a89e5bb"
+        },
+        {
+            "Name": "Provisioned",
+            "Level": "36",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(43<span class=\"ndash\">—</span>48)</span>% increased Charge Recovery<br><span class='mod-value'>25</span>% reduced effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/0e0b6fc7843848d91193061137395abacfa71fee2148bf0be4dd57715ea14dd7"
+        },
+        {
+            "Name": "Measured",
+            "Level": "52",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(49<span class=\"ndash\">—</span>54)</span>% increased Charge Recovery<br><span class='mod-value'>25</span>% reduced effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/d63bc4f3983a452a34bf398afa0bef32c1f78ad0360a802b54304b4e3a6a9c9c"
+        },
+        {
+            "Name": "Allocated",
+            "Level": "68",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(55<span class=\"ndash\">—</span>60)</span>% increased Charge Recovery<br><span class='mod-value'>25</span>% reduced effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/e9a3a488c314309f32feab2154470bbdaf95762196a2d52c95d754e619d865ff"
+        },
+        {
+            "Name": "Rationed",
+            "Level": "84",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(61<span class=\"ndash\">—</span>66)</span>% increased Charge Recovery<br><span class='mod-value'>25</span>% reduced effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/e34405802fcf44c5871e0592adae2a6d2d2d7aeb3c9ce32340a9867ab98e4ca1"
+        },
+        {
+            "Name": "of the Abalone",
+            "Level": "6",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(41<span class=\"ndash\">—</span>45)</span>% increased Armour during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "armour"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "expedition_flask",
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingarmour\" data-tag=\"armour\">Armour</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/3b69985e10d5aa4781000909626867bd121136a1d3a7f0b2e2b4e62af6023f75"
+        },
+        {
+            "Name": "of the Tortoise",
+            "Level": "32",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(46<span class=\"ndash\">—</span>50)</span>% increased Armour during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "armour"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "expedition_flask",
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingarmour\" data-tag=\"armour\">Armour</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/fd7a8994c6087741425d1fa9fa9cf757ec71eaa1ea640cdb76a6cc6a73d41e8c"
+        },
+        {
+            "Name": "of the Pangolin",
+            "Level": "58",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(51<span class=\"ndash\">—</span>55)</span>% increased Armour during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "armour"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "expedition_flask",
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingarmour\" data-tag=\"armour\">Armour</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/f661c5a67dc04117bffbe48014a3f4923a9ba50ba554c56d05a818dccaaa5552"
+        },
+        {
+            "Name": "of the Armadillo",
+            "Level": "84",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(56<span class=\"ndash\">—</span>60)</span>% increased Armour during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "armour"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "expedition_flask",
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingarmour\" data-tag=\"armour\">Armour</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/36e28e922f3bd916b2e6754aa4b21348341cd364294159d07630f5837a82d119"
+        },
+        {
+            "Name": "of the Gazelle",
+            "Level": "6",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(41<span class=\"ndash\">—</span>45)</span>% increased Evasion Rating during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "evasion"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "expedition_flask",
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingevasion\" data-tag=\"evasion\">Evasion</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/69c47dd25a3b64ea78d6b1028a4cf26f837f7e7b09463452a703b4787806a59a"
+        },
+        {
+            "Name": "of the Antelope",
+            "Level": "32",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(46<span class=\"ndash\">—</span>50)</span>% increased Evasion Rating during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "evasion"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "expedition_flask",
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingevasion\" data-tag=\"evasion\">Evasion</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/9d1c23260fccfd2f9f66b59c317ba4936e6d8bacdebbbd4429075dfd40ddf89d"
+        },
+        {
+            "Name": "of the Ibex",
+            "Level": "58",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(51<span class=\"ndash\">—</span>55)</span>% increased Evasion Rating during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "evasion"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "expedition_flask",
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingevasion\" data-tag=\"evasion\">Evasion</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/ce517b9ba796fa2501a3ae669c58705f69a60e55d6e46e5f58aaa5fa365a52fb"
+        },
+        {
+            "Name": "of the Impala",
+            "Level": "84",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(56<span class=\"ndash\">—</span>60)</span>% increased Evasion Rating during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "evasion"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "expedition_flask",
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingevasion\" data-tag=\"evasion\">Evasion</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/82bab576d2437500275d27d2ba8fb0588d3e0987bdffd9b57ffb73aa0711ccb6"
+        },
+        {
+            "Name": "of the Hare",
+            "Level": "5",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(6<span class=\"ndash\">—</span>8)</span>% increased Movement Speed during Effect",
+            "fossil_no": [
+                "flask",
+                "speed"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingspeed\" data-tag=\"speed\">Speed</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/922ec8b1c5e65c9f99cd44e6f9b9e77a28cedf1a2c2335fbd672caa9e0c4ac5b"
+        },
+        {
+            "Name": "of the Lynx",
+            "Level": "65",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(9<span class=\"ndash\">—</span>11)</span>% increased Movement Speed during Effect",
+            "fossil_no": [
+                "flask",
+                "speed"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingspeed\" data-tag=\"speed\">Speed</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/b36ed8150e89f2d14c14e2a627d99ff62a934f52d9397e20786cb5438784e1ed"
+        },
+        {
+            "Name": "of the Cheetah",
+            "Level": "85",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(12<span class=\"ndash\">—</span>14)</span>% increased Movement Speed during Effect",
+            "fossil_no": [
+                "flask",
+                "speed"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingspeed\" data-tag=\"speed\">Speed</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/ae13339a90fda154483895544c967d90c9785cbd5dffe3e43a0b69b873b2d013"
+        },
+        {
+            "Name": "of Stiffness",
+            "Level": "1",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(51<span class=\"ndash\">—</span>56)</span>% increased Block and Stun Recovery during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/a4e67686ba2afa1c4926ca6f8cd5efdba92005a2d694bfc4327695825f09727f"
+        },
+        {
+            "Name": "of Bracing",
+            "Level": "19",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(57<span class=\"ndash\">—</span>62)</span>% increased Block and Stun Recovery during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/7c5a92ec16f803852a5bb9cec92b02414adf6b0f8b5016155c6bcd71befe2643"
+        },
+        {
+            "Name": "of Ballast",
+            "Level": "37",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(63<span class=\"ndash\">—</span>68)</span>% increased Block and Stun Recovery during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/e51ac4610ceb3521108a7361d9528ff5725daf8a5d2a067eb984c45fa14c9eed"
+        },
+        {
+            "Name": "of Counterpoise",
+            "Level": "55",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(69<span class=\"ndash\">—</span>74)</span>% increased Block and Stun Recovery during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/928f6da786ff438014eb8b7c7743776b0339d25c4f6096da243fed214099a955"
+        },
+        {
+            "Name": "of Stabilisation",
+            "Level": "73",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(75<span class=\"ndash\">—</span>80)</span>% increased Block and Stun Recovery during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/2a98b1d1903ac2520fe51953729c0d5a18747ff414105c6126c488322682d261"
+        },
+        {
+            "Name": "of the Crystal",
+            "Level": "1",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(12<span class=\"ndash\">—</span>14)</span>% additional Elemental Resistances during Effect",
+            "fossil_no": [
+                "flask",
+                "elemental",
+                "resistance"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elemental</span>",
+                "<span class=\"badge bg-primary craftingresistance\" data-tag=\"resistance\">Resistance</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/562155a71d49cba6c9dae3c721419114ba3057c6456cb3d61760294b7f580bd7"
+        },
+        {
+            "Name": "of the Kaleidoscope",
+            "Level": "41",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(15<span class=\"ndash\">—</span>17)</span>% additional Elemental Resistances during Effect",
+            "fossil_no": [
+                "flask",
+                "elemental",
+                "resistance"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elemental</span>",
+                "<span class=\"badge bg-primary craftingresistance\" data-tag=\"resistance\">Resistance</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/319b62a96b55ffca3c550b1381a9ba98208f4f111fae4c57e0cabff5d6d406cc"
+        },
+        {
+            "Name": "of the Rainbow",
+            "Level": "81",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(18<span class=\"ndash\">—</span>20)</span>% additional Elemental Resistances during Effect",
+            "fossil_no": [
+                "flask",
+                "elemental",
+                "resistance"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elemental</span>",
+                "<span class=\"badge bg-primary craftingresistance\" data-tag=\"resistance\">Resistance</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/a7ec159c9019520720a7ebb49aeeae15d8302eb7bec0ace64ce30d699f87f3e7"
+        },
+        {
+            "Name": "Medic's",
+            "Level": "8",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(11<span class=\"ndash\">—</span>15)</span>% chance to gain a Flask Charge when you deal a Critical Strike",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/829d5477d880a2c8066f5f67f22b6a17e68787a26e44199c666c6216c1f323ca"
+        },
+        {
+            "Name": "Physician's",
+            "Level": "26",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(16<span class=\"ndash\">—</span>20)</span>% chance to gain a Flask Charge when you deal a Critical Strike",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/4441cf7ce88e086f3bdebf338a96d1fa4bbdc841891fc0052a1a8a4d94834bce"
+        },
+        {
+            "Name": "Doctor's",
+            "Level": "44",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(21<span class=\"ndash\">—</span>25)</span>% chance to gain a Flask Charge when you deal a Critical Strike",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/b5df28cc24c184df2a57cbb04757e02eb4c796427f0e80a753fc29a043194376"
+        },
+        {
+            "Name": "Specialist's",
+            "Level": "62",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(26<span class=\"ndash\">—</span>30)</span>% chance to gain a Flask Charge when you deal a Critical Strike",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/f249c5930fa991501a78cd26680412b9ca4a3e5aaabff8310797a031582cec74"
+        },
+        {
+            "Name": "Surgeon's",
+            "Level": "80",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(31<span class=\"ndash\">—</span>35)</span>% chance to gain a Flask Charge when you deal a Critical Strike",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/66e150950be2c152c0fc2369959ab1843c2df4c342384f48b7ca13b1cc5685ea"
+        },
+        {
+            "Name": "Abecedarian's",
+            "Level": "20",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRecoverySpeed"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(33<span class=\"ndash\">—</span>38)</span>% reduced Duration<br><span class='mod-value'>25</span>% increased effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/5bccaf431d465f4ab0f7f3f3db6321f92e01de496034543a170ceb4acf9498de"
+        },
+        {
+            "Name": "Dabbler's",
+            "Level": "50",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRecoverySpeed"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(28<span class=\"ndash\">—</span>32)</span>% reduced Duration<br><span class='mod-value'>25</span>% increased effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/9fae1e737b95b7fbe87a85da168849c4ee1d2c8929655b2593a3ae716221bcd5"
+        },
+        {
+            "Name": "Alchemist's",
+            "Level": "80",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRecoverySpeed"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(23<span class=\"ndash\">—</span>27)</span>% reduced Duration<br><span class='mod-value'>25</span>% increased effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/f1e2a347efd74764989582d5f705505385d35cc79753bd20337157275b86cc7a"
+        },
+        {
+            "Name": "Apprentice's",
+            "Level": "14",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskChargesUsed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(14<span class=\"ndash\">—</span>16)</span>% reduced Charges per use",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/af0733f31580f546542d7bf87b3f64d14732a2e823a12bfe723c99e02855a482"
+        },
+        {
+            "Name": "Scholar's",
+            "Level": "31",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskChargesUsed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(17<span class=\"ndash\">—</span>19)</span>% reduced Charges per use",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/69a013eb9946c02abb369bd044cd437876a90a3d6b52b72cc9182e07af260fdc"
+        },
+        {
+            "Name": "Practitioner's",
+            "Level": "48",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskChargesUsed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(20<span class=\"ndash\">—</span>22)</span>% reduced Charges per use",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskChargesUsed3__"
+        },
+        {
+            "Name": "Brewer's",
+            "Level": "65",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskChargesUsed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(23<span class=\"ndash\">—</span>25)</span>% reduced Charges per use",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/b64653eaba3516844e2ac10b5b19ad7a4cd743c14a3d5ef24191d5ca4014820a"
+        },
+        {
+            "Name": "Chemist's",
+            "Level": "82",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskChargesUsed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(26<span class=\"ndash\">—</span>28)</span>% reduced Charges per use",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/5ed9a6a3679fbde931e4f553bf64ab374ad740a3e99ae8ce2a3c2bd6e0c48ad9"
+        },
+        {
+            "Name": "Investigator's",
+            "Level": "20",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRecoverySpeed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(16<span class=\"ndash\">—</span>20)</span>% increased Duration",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "critical_utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/8a6bea43e4f3c0b6a9630d32e323af0c8e4dc73d0a75f490f098fc8cf34873e8"
+        },
+        {
+            "Name": "Analyst's",
+            "Level": "36",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRecoverySpeed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(21<span class=\"ndash\">—</span>25)</span>% increased Duration",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "critical_utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/a89bbf9c77af01cdd004a97116e24e50f173feea466e7723324dccc045a0738c"
+        },
+        {
+            "Name": "Examiner's",
+            "Level": "52",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRecoverySpeed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(26<span class=\"ndash\">—</span>30)</span>% increased Duration",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "critical_utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/dc285eb330828fce34a3d61860416597e8bee2a8bf5ba4477b766059f3de623d"
+        },
+        {
+            "Name": "Clinician's",
+            "Level": "68",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRecoverySpeed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(31<span class=\"ndash\">—</span>35)</span>% increased Duration",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "critical_utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/7f5cc6dcf9325313f1c8a032a487876a0b6c56b8edb7337457118a0a85cbf08c"
+        },
+        {
+            "Name": "Experimenter's",
+            "Level": "84",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRecoverySpeed"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(36<span class=\"ndash\">—</span>40)</span>% increased Duration",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "critical_utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/a43891f4b8439772c2727ce25b222157e61e093908ed17840202b6f0ef40536c"
+        },
+        {
+            "Name": "Transgressor's",
+            "Level": "29",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "Gain <span class='mod-value'>1</span> Charges when you are Hit by an Enemy",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/9986c369470b74bd97733badba986af7a0b31b5655e52fd0dae44e92a7123cac"
+        },
+        {
+            "Name": "Masochist's",
+            "Level": "63",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "Gain <span class='mod-value'>2</span> Charges when you are Hit by an Enemy",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/07b39ddf97e7ea32ecedd6a8a3588d4694e913e3b50b693548ea44da5fee2751"
+        },
+        {
+            "Name": "Flagellant's",
+            "Level": "80",
+            "ModGenerationTypeID": "1",
+            "ModFamilyList": [
+                "FlaskRechargeRate"
+            ],
+            "DropChance": 600,
+            "str": "Gain <span class='mod-value'>3</span> Charges when you are Hit by an Enemy",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/04f4e3033759fa34476b3176e8ca98c5298125a0c2ac496d6807b7df6ce2711f"
+        },
+        {
+            "Name": "of Bloodshed",
+            "Level": "10",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.4</span>% of Attack Damage Leeched as Life during Effect",
+            "fossil_no": [
+                "flask",
+                "resource",
+                "life",
+                "attack"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Life</span>",
+                "<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Attack</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/fc672d9260330c52b546b3819036f48d7644286a993c29481edd7e50e6cc6bb1"
+        },
+        {
+            "Name": "of Gore",
+            "Level": "20",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.5</span>% of Attack Damage Leeched as Life during Effect",
+            "fossil_no": [
+                "flask",
+                "resource",
+                "life",
+                "attack"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Life</span>",
+                "<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Attack</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/91c20d1ba3bdb0f19c99b47116c3e2789f6547f7be42e7645e36794cf9ddeaee"
+        },
+        {
+            "Name": "of Carnage",
+            "Level": "40",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.6</span>% of Attack Damage Leeched as Life during Effect",
+            "fossil_no": [
+                "flask",
+                "resource",
+                "life",
+                "attack"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Life</span>",
+                "<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Attack</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/04ccd5e262d3c6281aab3c37227ef5178af405829332813b94c2a40ed2c9ede2"
+        },
+        {
+            "Name": "of Butchery",
+            "Level": "60",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.7</span>% of Attack Damage Leeched as Life during Effect",
+            "fossil_no": [
+                "flask",
+                "resource",
+                "life",
+                "attack"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Life</span>",
+                "<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Attack</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/aa1b0e494ddb240bf089bb312adfcdca2a8aa6512504db425e5d1cc0352b2519"
+        },
+        {
+            "Name": "of Bloodletting",
+            "Level": "80",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.8</span>% of Attack Damage Leeched as Life during Effect",
+            "fossil_no": [
+                "flask",
+                "resource",
+                "life",
+                "attack"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Life</span>",
+                "<span class=\"badge bg-primary craftingattack\" data-tag=\"attack\">Attack</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/9cf46799273ab461d00cdc52a94ccb05b55d6816b332ce3e34d2919af5af6d4e"
+        },
+        {
+            "Name": "of Diverting",
+            "Level": "10",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.4</span>% of Spell Damage Leeched as Energy Shield during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "energy_shield",
+                "caster"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "expedition_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingenergy_shield\" data-tag=\"energy_shield\">Energy Shield</span>",
+                "<span class=\"badge bg-primary craftingcaster\" data-tag=\"caster\">Caster</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/04105d68ff435fe632a67e982b45c55e2acb7918a7348ce26df73daad8e1ab22"
+        },
+        {
+            "Name": "of Depletion",
+            "Level": "20",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.5</span>% of Spell Damage Leeched as Energy Shield during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "energy_shield",
+                "caster"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "expedition_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingenergy_shield\" data-tag=\"energy_shield\">Energy Shield</span>",
+                "<span class=\"badge bg-primary craftingcaster\" data-tag=\"caster\">Caster</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/fa38cc9b08312d89200de2ddfe3cb03f53f3e6f4b92de65588a488da653d98aa"
+        },
+        {
+            "Name": "of Tapping",
+            "Level": "40",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.6</span>% of Spell Damage Leeched as Energy Shield during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "energy_shield",
+                "caster"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "expedition_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingenergy_shield\" data-tag=\"energy_shield\">Energy Shield</span>",
+                "<span class=\"badge bg-primary craftingcaster\" data-tag=\"caster\">Caster</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/cd378527ab2f2a7981befb94f4628e31e5ad298a99b75bd7bcf5c0817c50a108"
+        },
+        {
+            "Name": "of Siphoning",
+            "Level": "60",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.7</span>% of Spell Damage Leeched as Energy Shield during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "energy_shield",
+                "caster"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "expedition_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingenergy_shield\" data-tag=\"energy_shield\">Energy Shield</span>",
+                "<span class=\"badge bg-primary craftingcaster\" data-tag=\"caster\">Caster</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/d2c4c2cb4ed7e7191a7497486717112a7b10529de6482eccc6756e1ba62ba6cc"
+        },
+        {
+            "Name": "of Draining",
+            "Level": "80",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>0.8</span>% of Spell Damage Leeched as Energy Shield during Effect",
+            "fossil_no": [
+                "flask",
+                "defences",
+                "energy_shield",
+                "caster"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "expedition_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdefences\" data-tag=\"defences\">Defences</span>",
+                "<span class=\"badge bg-primary craftingenergy_shield\" data-tag=\"energy_shield\">Energy Shield</span>",
+                "<span class=\"badge bg-primary craftingcaster\" data-tag=\"caster\">Caster</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/a12dbca2a49da93a182edbe291ae1b9de1f817a35cd84af68a032575ee259d93"
+        },
+        {
+            "Name": "of Stinging",
+            "Level": "18",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(26<span class=\"ndash\">—</span>31)</span>% increased Critical Strike Chance during Effect",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/bbc7583bd9d445b44fa5a303b4f2741632e8ee6b68335968c6a5168439ee3523"
+        },
+        {
+            "Name": "of Piercing",
+            "Level": "34",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(32<span class=\"ndash\">—</span>37)</span>% increased Critical Strike Chance during Effect",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/70c9866b7b0dc58dee7e9f478df07aecb0eecdc8be1df8ac6501f97eadae6efb"
+        },
+        {
+            "Name": "of Rupturing",
+            "Level": "50",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(38<span class=\"ndash\">—</span>43)</span>% increased Critical Strike Chance during Effect",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/2c48088deb42e6e801fcd90f40072a29c72a6b9e97d669679aaa72db1e841f71"
+        },
+        {
+            "Name": "of Penetrating",
+            "Level": "66",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(44<span class=\"ndash\">—</span>49)</span>% increased Critical Strike Chance during Effect",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/6fd1dbb1d1fa47ff23a9830b341b4d4ba643242b6781e5ab4a240ed9e431126b"
+        },
+        {
+            "Name": "of Incision",
+            "Level": "82",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(50<span class=\"ndash\">—</span>55)</span>% increased Critical Strike Chance during Effect",
+            "fossil_no": [
+                "flask",
+                "critical"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingcritical\" data-tag=\"critical\">Critical</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/0ea81cc57ed37a945607a958bfc06c1210a3dd44116be54b1b3bb3119750e4f5"
+        },
+        {
+            "Name": "of Foisting",
+            "Level": "12",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(19<span class=\"ndash\">—</span>22)</span>% chance to Freeze, Shock and Ignite during Effect",
+            "fossil_no": [
+                "flask",
+                "elemental",
+                "fire",
+                "cold",
+                "lightning",
+                "ailment"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elemental</span>",
+                "<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Fire</span>",
+                "<span class=\"badge bg-primary craftingcold\" data-tag=\"cold\">Cold</span>",
+                "<span class=\"badge bg-primary craftinglightning\" data-tag=\"lightning\">Lightning</span>",
+                "<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Ailment</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/b3e232965b29cc222c68cae012adcf17a589bd102772c8beb8012acfd9f61439"
+        },
+        {
+            "Name": "of Imposing",
+            "Level": "32",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(23<span class=\"ndash\">—</span>26)</span>% chance to Freeze, Shock and Ignite during Effect",
+            "fossil_no": [
+                "flask",
+                "elemental",
+                "fire",
+                "cold",
+                "lightning",
+                "ailment"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elemental</span>",
+                "<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Fire</span>",
+                "<span class=\"badge bg-primary craftingcold\" data-tag=\"cold\">Cold</span>",
+                "<span class=\"badge bg-primary craftinglightning\" data-tag=\"lightning\">Lightning</span>",
+                "<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Ailment</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/033faa6b8cc8909acbd38a82257269fcc9b7cc187329496acbb261f6d2d647f4"
+        },
+        {
+            "Name": "of Wreaking",
+            "Level": "52",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(27<span class=\"ndash\">—</span>30)</span>% chance to Freeze, Shock and Ignite during Effect",
+            "fossil_no": [
+                "flask",
+                "elemental",
+                "fire",
+                "cold",
+                "lightning",
+                "ailment"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elemental</span>",
+                "<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Fire</span>",
+                "<span class=\"badge bg-primary craftingcold\" data-tag=\"cold\">Cold</span>",
+                "<span class=\"badge bg-primary craftinglightning\" data-tag=\"lightning\">Lightning</span>",
+                "<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Ailment</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/688e6c215d9674022d77100e3b2840f06c2ad10559525dff25fc9934d8e545ef"
+        },
+        {
+            "Name": "of Infliction",
+            "Level": "72",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 750,
+            "str": "<span class='mod-value'>(31<span class=\"ndash\">—</span>34)</span>% chance to Freeze, Shock and Ignite during Effect",
+            "fossil_no": [
+                "flask",
+                "elemental",
+                "fire",
+                "cold",
+                "lightning",
+                "ailment"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingelemental\" data-tag=\"elemental\">Elemental</span>",
+                "<span class=\"badge bg-primary craftingfire\" data-tag=\"fire\">Fire</span>",
+                "<span class=\"badge bg-primary craftingcold\" data-tag=\"cold\">Cold</span>",
+                "<span class=\"badge bg-primary craftinglightning\" data-tag=\"lightning\">Lightning</span>",
+                "<span class=\"badge bg-primary craftingailment\" data-tag=\"ailment\">Ailment</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/8879d129e0ee8f164b1de15cbf432870bde01918fb5cb83e29ec1c3afcbc9102"
+        },
+        {
+            "Name": "of Composure",
+            "Level": "12",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(31<span class=\"ndash\">—</span>35)</span>% Chance to Avoid being Stunned during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/cc2edc87475d7f9d00a444fc5f549b58ec3248d7a684513efa3999f8015c5a58"
+        },
+        {
+            "Name": "of Surefootedness",
+            "Level": "29",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(36<span class=\"ndash\">—</span>40)</span>% Chance to Avoid being Stunned during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/45e5abef0948292683238eeb29ad61c240cdff40741aca21d5a1f11972548df9"
+        },
+        {
+            "Name": "of Persistence",
+            "Level": "46",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(41<span class=\"ndash\">—</span>45)</span>% Chance to Avoid being Stunned during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/60185869ab80acb33ec1eaa596976c2e53d57bad985dfcc440f6273dc00b73b4"
+        },
+        {
+            "Name": "of Relentlessness",
+            "Level": "63",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(46<span class=\"ndash\">—</span>50)</span>% Chance to Avoid being Stunned during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/92610a9c9b70c3392fe54899880b38ac83ddf024f68ffefbff6208d7f8ed26d7"
+        },
+        {
+            "Name": "of Tenaciousness",
+            "Level": "80",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(51<span class=\"ndash\">—</span>55)</span>% Chance to Avoid being Stunned during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/755d185a93baf77ad5d8bbcfbcea0cb1dffe3e35a0c75421f9aa5e69dcc08de2"
+        },
+        {
+            "Name": "of the Rabbit",
+            "Level": "4",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(36<span class=\"ndash\">—</span>41)</span>% reduced Effect of Chill on you during Effect<br><span class='mod-value'>(36<span class=\"ndash\">—</span>41)</span>% reduced Freeze Duration on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/89520e0a11b011afa7ce1c3b3c064da3a85c1ec38f074bb4844544db60b843ec"
+        },
+        {
+            "Name": "of the Cat",
+            "Level": "23",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(42<span class=\"ndash\">—</span>47)</span>% reduced Effect of Chill on you during Effect<br><span class='mod-value'>(42<span class=\"ndash\">—</span>47)</span>% reduced Freeze Duration on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/d1657c5f9ce2eb3688fdddf38ce9499001e5e971bd81e957026fddfb98047695"
+        },
+        {
+            "Name": "of the Fox",
+            "Level": "42",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(48<span class=\"ndash\">—</span>52)</span>% reduced Effect of Chill on you during Effect<br><span class='mod-value'>(48<span class=\"ndash\">—</span>52)</span>% reduced Freeze Duration on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/4bc33f1725126238f4ab0b1dfd01ad0ee4034580c6b02501e602ba324b5591eb"
+        },
+        {
+            "Name": "of the Sable",
+            "Level": "61",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(52<span class=\"ndash\">—</span>59)</span>% reduced Effect of Chill on you during Effect<br><span class='mod-value'>(52<span class=\"ndash\">—</span>59)</span>% reduced Freeze Duration on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/e9e8925a515bf99be9bdd3d2ef8c4096d747b147ccee65295fb5cbb5010beb70"
+        },
+        {
+            "Name": "of the Bear",
+            "Level": "80",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(60<span class=\"ndash\">—</span>65)</span>% reduced Effect of Chill on you during Effect<br><span class='mod-value'>(60<span class=\"ndash\">—</span>65)</span>% reduced Freeze Duration on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/6d53a39f0e08e4b18b8a99e1bb44709096e98023ccb5f318c67a4648800906ff"
+        },
+        {
+            "Name": "of the Plover",
+            "Level": "6",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(36<span class=\"ndash\">—</span>41)</span>% reduced Effect of Shock on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/cf75bffb1193ef92c359fbe1535cfe8ee681a18d96b534858f154be50176f68d"
+        },
+        {
+            "Name": "of the Sandpiper",
+            "Level": "25",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(42<span class=\"ndash\">—</span>47)</span>% reduced Effect of Shock on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/2aaa63fc55c3428f5773de1c5df1119f3a3542ad204af3a977d152e177102949"
+        },
+        {
+            "Name": "of the Cormorant",
+            "Level": "44",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(48<span class=\"ndash\">—</span>52)</span>% reduced Effect of Shock on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/2d813791ab775ddf383ed5ec378ba1dd5b8f79fa9a34f0cf905af9459b31a6f8"
+        },
+        {
+            "Name": "of the Sanderling",
+            "Level": "63",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(52<span class=\"ndash\">—</span>59)</span>% reduced Effect of Shock on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/ca9cd056d44cbcef086bdd01f41af7a137aace9a48145bdb6f336b4cbb4ecedf"
+        },
+        {
+            "Name": "of the Heron",
+            "Level": "82",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(60<span class=\"ndash\">—</span>65)</span>% reduced Effect of Shock on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/7f83bf90a33ce61dc38e214e1305a88d621a134f57bbe7af67ac6a6dd183beba"
+        },
+        {
+            "Name": "of the Petrel",
+            "Level": "8",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(36<span class=\"ndash\">—</span>41)</span>% reduced Effect of Curses on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/6bd5a2abe300cc681f3de2190633fd1365c10551a84fbe4437212fe93658539f"
+        },
+        {
+            "Name": "of the Mockingbird",
+            "Level": "27",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(42<span class=\"ndash\">—</span>47)</span>% reduced Effect of Curses on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/e19ef5b1d576b3c1470c071c377aa72d232edefed7e86b9b78a635d6e4aada19"
+        },
+        {
+            "Name": "of the Curlew",
+            "Level": "46",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(48<span class=\"ndash\">—</span>52)</span>% reduced Effect of Curses on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/3051a51d59a0dd0841417cd6b3df4aee45fb905707a7156706e32c2441ae7f19"
+        },
+        {
+            "Name": "of the Kakapo",
+            "Level": "65",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(52<span class=\"ndash\">—</span>59)</span>% reduced Effect of Curses on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/4d6ab805567ecd9d112ffc979b886b2b6a7279ed24863a9d042a17860bad3444"
+        },
+        {
+            "Name": "of the Owl",
+            "Level": "84",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(60<span class=\"ndash\">—</span>65)</span>% reduced Effect of Curses on you during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/9bacf5e952b13f59047f6843bb6730b1ea2b89eba4ab94df6dbedf7a364c81dd"
+        },
+        {
+            "Name": "of the Orca",
+            "Level": "4",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(31<span class=\"ndash\">—</span>35)</span>% chance to Avoid being Chilled during Effect<br><span class='mod-value'>(31<span class=\"ndash\">—</span>35)</span>% chance to Avoid being Frozen during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/ce1ae20dbdd5d0368207b4872a2cc0d1e4c050cd84db79913bc5af7e9ad3b3c7"
+        },
+        {
+            "Name": "of the Sea Lion",
+            "Level": "23",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(36<span class=\"ndash\">—</span>40)</span>% chance to Avoid being Chilled during Effect<br><span class='mod-value'>(36<span class=\"ndash\">—</span>40)</span>% chance to Avoid being Frozen during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/9b83130f24f3b7b266fb238db48b8bbc961d9c073ae5cc004cbe924a576c77d5"
+        },
+        {
+            "Name": "of the Narwhal",
+            "Level": "42",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(41<span class=\"ndash\">—</span>45)</span>% chance to Avoid being Chilled during Effect<br><span class='mod-value'>(41<span class=\"ndash\">—</span>45)</span>% chance to Avoid being Frozen during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/7f3dd9a6ec4d044e1476f09594a97b660b8ffc426ea78398f9061f50e0986900"
+        },
+        {
+            "Name": "of the Beluga",
+            "Level": "61",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(46<span class=\"ndash\">—</span>50)</span>% chance to Avoid being Chilled during Effect<br><span class='mod-value'>(46<span class=\"ndash\">—</span>50)</span>% chance to Avoid being Frozen during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/23c2b7b7cee278e8a860f9d478e01fd0bc8e0412312d85f740031cc4154adb6e"
+        },
+        {
+            "Name": "of the Seal",
+            "Level": "80",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(51<span class=\"ndash\">—</span>55)</span>% chance to Avoid being Chilled during Effect<br><span class='mod-value'>(51<span class=\"ndash\">—</span>55)</span>% chance to Avoid being Frozen during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/7f2265af7b7d13eda9465fb8ebd3b1c8e5402218133113e09afe2753659fd235"
+        },
+        {
+            "Name": "of the Guppy",
+            "Level": "6",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(31<span class=\"ndash\">—</span>35)</span>% chance to Avoid being Ignited during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/86e2c9d1769d5c7f7d73db7c9c5c14f4e56d67de1b31db8e0c59590602ec218b"
+        },
+        {
+            "Name": "of the Goldfish",
+            "Level": "25",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(36<span class=\"ndash\">—</span>40)</span>% chance to Avoid being Ignited during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/9e0f12acfbb145f5c4fc42e0ca454e38bb0b11e568e206e424dfa6959053c71e"
+        },
+        {
+            "Name": "of the Carp",
+            "Level": "44",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(41<span class=\"ndash\">—</span>45)</span>% chance to Avoid being Ignited during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/93f897eab7128bf8f6a0011c13a9435884c1471990183746da6dc70a84de8dad"
+        },
+        {
+            "Name": "of the Catfish",
+            "Level": "63",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(46<span class=\"ndash\">—</span>50)</span>% chance to Avoid being Ignited during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/f5cbc98176108706660d5b04dba065003e00cadd649fd76c9abbcfb6242f8294"
+        },
+        {
+            "Name": "of the Sunfish",
+            "Level": "82",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(51<span class=\"ndash\">—</span>55)</span>% chance to Avoid being Ignited during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/85c3662e6aebf206c761d05bd75cc115181e8de276c1a96a6e1d7ce3b1e0780b"
+        },
+        {
+            "Name": "of Tree Moss",
+            "Level": "6",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(31<span class=\"ndash\">—</span>35)</span>% chance to Avoid being Shocked during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/f42ffbfb54ed61ae20dedb97d2f8585c721795edeb53f8705882ec4bb355434a"
+        },
+        {
+            "Name": "of Turf Moss",
+            "Level": "25",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(36<span class=\"ndash\">—</span>40)</span>% chance to Avoid being Shocked during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/a2f62f28f1febb753337a5d25c0b4279a86238d4b27dad7c240a1abfe6b275aa"
+        },
+        {
+            "Name": "of Tooth Moss",
+            "Level": "44",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(41<span class=\"ndash\">—</span>45)</span>% chance to Avoid being Shocked during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/0d14f3b440675d512fd4f497de971dcd1b07deb0de43c1393d0cc0dc24819eb5"
+        },
+        {
+            "Name": "of Plume Moss",
+            "Level": "63",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(46<span class=\"ndash\">—</span>50)</span>% chance to Avoid being Shocked during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/b37c56c06e3c12c8b062b80bae9215177a57705a6a309f3fa947e8a1f4b6ed22"
+        },
+        {
+            "Name": "of Bog Moss",
+            "Level": "82",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBuffWhileHealing"
+            ],
+            "DropChance": 600,
+            "str": "<span class='mod-value'>(51<span class=\"ndash\">—</span>55)</span>% chance to Avoid being Shocked during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/747b3c0acaf61bbabfff6f1403d6673790fb9c63e6c6fc394be40449a491a432"
+        },
+        {
+            "Name": "of the Skunk",
+            "Level": "16",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskPoisonImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Poison during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/56e2d5d61d29ee6c4dc49178bc276a0c42c3a09eaf7817e337bb6443488aef74"
+        },
+        {
+            "Name": "of the Hedgehog",
+            "Level": "46",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskPoisonImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(40<span class=\"ndash\">—</span>44)</span>% less Duration<br>Immunity to Poison during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskPoisonImmunityDuringEffect2"
+        },
+        {
+            "Name": "of the Opossum",
+            "Level": "76",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskPoisonImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(35<span class=\"ndash\">—</span>39)</span>% less Duration<br>Immunity to Poison during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/8df3cf9330048734a439557d4a0483eced89ca8c8e4bd9cf7a3588af5ed0f753"
+        },
+        {
+            "Name": "of the Conger",
+            "Level": "6",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskShockImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Shock during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskShockImmunityDuringEffect"
+        },
+        {
+            "Name": "of the Moray",
+            "Level": "40",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskShockImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(40<span class=\"ndash\">—</span>44)</span>% less Duration<br>Immunity to Shock during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskShockImmunityDuringEffect2___"
+        },
+        {
+            "Name": "of the Eel",
+            "Level": "74",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskShockImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(35<span class=\"ndash\">—</span>39)</span>% less Duration<br>Immunity to Shock during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/5332fc5f76939bebc7eb688456b998e0d47ff7c1411b14edca46c541ec426b0c"
+        },
+        {
+            "Name": "of the Deer",
+            "Level": "4",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskFreezeAndChillImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Freeze and Chill during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskFreezeAndChillImmunityDuringEffect"
+        },
+        {
+            "Name": "of the Walrus",
+            "Level": "38",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskFreezeAndChillImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(40<span class=\"ndash\">—</span>44)</span>% less Duration<br>Immunity to Freeze and Chill during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskFreezeAndChillImmunityDuringEffect2"
+        },
+        {
+            "Name": "of the Penguin",
+            "Level": "72",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskFreezeAndChillImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(35<span class=\"ndash\">—</span>39)</span>% less Duration<br>Immunity to Freeze and Chill during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/5cf8fa58b532f520f3fee2aeebfd40ca35e42623f358aa8c6c36716e8a637669"
+        },
+        {
+            "Name": "of the Urchin",
+            "Level": "6",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskIgniteImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Ignite during Effect<br/>Removes Burning on use",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskIgniteImmunityDuringEffect_"
+        },
+        {
+            "Name": "of the Mussel",
+            "Level": "40",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskIgniteImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(40<span class=\"ndash\">—</span>44)</span>% less Duration<br>Immunity to Ignite during Effect<br/>Removes Burning on use",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskIgniteImmunityDuringEffect2"
+        },
+        {
+            "Name": "of the Starfish",
+            "Level": "74",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskIgniteImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(35<span class=\"ndash\">—</span>39)</span>% less Duration<br>Immunity to Ignite during Effect<br/>Removes Burning on use",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskIgniteImmunityDuringEffect3"
+        },
+        {
+            "Name": "of the Lizard",
+            "Level": "8",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBleedingAndCorruptedBloodImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Bleeding and Corrupted Blood during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/f30e3afbd7e955c295cb4371678d6e56bb8554ff9d92bbd1b05e7cdbed871f96"
+        },
+        {
+            "Name": "of the Skink",
+            "Level": "42",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBleedingAndCorruptedBloodImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(40<span class=\"ndash\">—</span>44)</span>% less Duration<br>Immunity to Bleeding and Corrupted Blood during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskBleedingAndCorruptedBloodImmunityDuringEffect2_"
+        },
+        {
+            "Name": "of the Iguana",
+            "Level": "76",
+            "ModGenerationTypeID": "2",
+            "ModFamilyList": [
+                "FlaskBleedingAndCorruptedBloodImmunityDuringEffect"
+            ],
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(35<span class=\"ndash\">—</span>39)</span>% less Duration<br>Immunity to Bleeding and Corrupted Blood during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/fe2260e910e0d299a2b8947344480cec703085c488a6f2dc1f1268f5b963efbf"
+        }
+    ],
+    "corrupted": [],
+    "haunted": [],
+    "master": [
+        {
+            "ModGenerationTypeID": "2",
+            "Level": "60",
+            "ModFamilyList": [
+                "LocalFlaskLifeRegenerationPerMinuteDuringFlaskEffect"
+            ],
+            "type": "master",
+            "str": "Regenerate <span class='mod-value'>3</span>% of Life per second during Effect",
+            "fossil_no": [
+                "flask",
+                "resource",
+                "unveiled_mod",
+                "life"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Life</span>"
+            ],
+            "Name": "of Craft",
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/fd661e9a1d2ca97435b74369a7a26bb143bad523bc003d898377ab1079c18e03"
+        },
+        {
+            "ModGenerationTypeID": "2",
+            "Level": "60",
+            "ModFamilyList": [
+                "LocalFlaskAvoidStunChanceAndMovementSpeedDuringFlaskEffect"
+            ],
+            "type": "master",
+            "str": "<span class='mod-value'>50</span>% Chance to Avoid being Stunned during Effect",
+            "fossil_no": [
+                "flask",
+                "unveiled_mod"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "Name": "of Craft",
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/c2370bf63fbe8f9efff832629d59f309625803891daeb95120488867b4f64bb6"
+        },
+        {
+            "ModGenerationTypeID": "2",
+            "Level": "60",
+            "ModFamilyList": [
+                "LocalFlaskItemFoundRarityDuringFlaskEffect"
+            ],
+            "type": "master",
+            "str": "<span class='mod-value'>(20<span class=\"ndash\">—</span>30)</span>% increased Rarity of Items found during Effect",
+            "fossil_no": [
+                "flask",
+                "unveiled_mod",
+                "drop"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdrop\" data-tag=\"drop\">Drop</span>"
+            ],
+            "Name": "of Craft",
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/9f5ed45209d9ae35e4fa033d0d3b7905f268c46a852187945463355b58ed1144"
+        },
+        {
+            "ModGenerationTypeID": "2",
+            "Level": "60",
+            "ModFamilyList": [
+                "FlaskReflectReductionDuringFlaskEffect"
+            ],
+            "type": "master",
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>55)</span>% of Damage from your Hits cannot be Reflected during Effect",
+            "fossil_no": [
+                "flask",
+                "unveiled_mod"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "Name": "of Craft",
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FJunMaster2LocalFlaskReducedReflectDuringEffect"
+        },
+        {
+            "ModGenerationTypeID": "2",
+            "Level": "60",
+            "ModFamilyList": [
+                "LocalFlaskLifeLeechOnDamageTakenPermyriadDuringFlaskEffect"
+            ],
+            "type": "master",
+            "str": "<span class='mod-value'>15</span>% of Damage Taken from Hits is Leeched as Life during Effect",
+            "fossil_no": [
+                "flask",
+                "resource",
+                "unveiled_mod",
+                "life"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Life</span>"
+            ],
+            "Name": "of Craft",
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/47b48c2a0c4b829994d03df6ef2a65862d2a2a95aab4d3f3faadb96dcc1a7ccb"
+        }
+    ],
+    "essence": [],
+    "delve": [],
+    "incursion": [],
+    "veiled": {
+        "182": {
+            "ModFamilyList": [
+                "LocalFlaskLifeRegenerationPerMinuteDuringFlaskEffect"
+            ],
+            "Level": "60",
+            "Name": "of the Order",
+            "ModGenerationTypeID": "1",
+            "DropChance": 1000,
+            "str": "Regenerate <span class='mod-value'>3</span>% of Life per second during Effect",
+            "fossil_no": [
+                "flask",
+                "resource",
+                "unveiled_mod",
+                "life"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Life</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/dcefc4b7c039ee7fde8a1061116a457a310295916f7350614148757e2a7a7bb0"
+        },
+        "184": {
+            "ModFamilyList": [
+                "LocalFlaskAvoidStunChanceAndMovementSpeedDuringFlaskEffect"
+            ],
+            "Level": "60",
+            "Name": "of the Order",
+            "ModGenerationTypeID": "1",
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>50</span>% Chance to Avoid being Stunned during Effect",
+            "fossil_no": [
+                "flask",
+                "unveiled_mod"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/e92ccc324a12df7e58e3530ffb6fde1de955647475e6bca650a138651acae370"
+        },
+        "186": {
+            "ModFamilyList": [
+                "LocalFlaskItemFoundRarityDuringFlaskEffect"
+            ],
+            "Level": "60",
+            "Name": "of the Order",
+            "ModGenerationTypeID": "1",
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(20<span class=\"ndash\">—</span>30)</span>% increased Rarity of Items found during Effect",
+            "fossil_no": [
+                "flask",
+                "unveiled_mod",
+                "drop"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftingdrop\" data-tag=\"drop\">Drop</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/7af0c8dc016a4ac61f49d0ea31d4cd665d52f93755548e4c2309a4366e1f07b3"
+        },
+        "188": {
+            "ModFamilyList": [
+                "LocalFlaskLifeLeechOnDamageTakenPermyriadDuringFlaskEffect"
+            ],
+            "Level": "60",
+            "Name": "of the Order",
+            "ModGenerationTypeID": "1",
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>15</span>% of Damage Taken from Hits is Leeched as Life during Effect",
+            "fossil_no": [
+                "flask",
+                "resource",
+                "unveiled_mod",
+                "life"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [
+                "<span class=\"badge bg-primary craftinglife\" data-tag=\"life\">Life</span>"
+            ],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FJunMasterVeiledLocalFlaskLifeLeechOnDamageTakenPermyriadDuringFlaskEffect"
+        },
+        "217": {
+            "ModFamilyList": [
+                "FlaskReflectReductionDuringFlaskEffect"
+            ],
+            "Level": "60",
+            "Name": "of the Order",
+            "ModGenerationTypeID": "1",
+            "DropChance": 1000,
+            "str": "<span class='mod-value'>(60<span class=\"ndash\">—</span>80)</span>% of Damage from your Hits cannot be Reflected during Effect",
+            "fossil_no": [
+                "flask",
+                "unveiled_mod"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FJunMasterVeiledLocalFlaskReducedReflectDuringEffect"
+        }
+    },
+    "bestiary": [
+        {
+            "ModFamilyList": [
+                "FlaskBleedingAndCorruptedBloodImmunityDuringEffect"
+            ],
+            "Level": "8",
+            "Name": "of the Lizard",
+            "ModGenerationTypeID": "2",
+            "DropChance": 0,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Bleeding and Corrupted Blood during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/f30e3afbd7e955c295cb4371678d6e56bb8554ff9d92bbd1b05e7cdbed871f96"
+        },
+        {
+            "ModFamilyList": [
+                "FlaskFreezeAndChillImmunityDuringEffect"
+            ],
+            "Level": "4",
+            "Name": "of the Deer",
+            "ModGenerationTypeID": "2",
+            "DropChance": 0,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Freeze and Chill during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskFreezeAndChillImmunityDuringEffect"
+        },
+        {
+            "ModFamilyList": [
+                "FlaskIgniteImmunityDuringEffect"
+            ],
+            "Level": "6",
+            "Name": "of the Urchin",
+            "ModGenerationTypeID": "2",
+            "DropChance": 0,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Ignite during Effect<br/>Removes Burning on use",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskIgniteImmunityDuringEffect_"
+        },
+        {
+            "ModFamilyList": [
+                "FlaskPoisonImmunityDuringEffect"
+            ],
+            "Level": "16",
+            "Name": "of the Skunk",
+            "ModGenerationTypeID": "2",
+            "DropChance": 0,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Poison during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/56e2d5d61d29ee6c4dc49178bc276a0c42c3a09eaf7817e337bb6443488aef74"
+        },
+        {
+            "ModFamilyList": [
+                "FlaskShockImmunityDuringEffect"
+            ],
+            "Level": "6",
+            "Name": "of the Conger",
+            "ModGenerationTypeID": "2",
+            "DropChance": 0,
+            "str": "<span class='mod-value'>(45<span class=\"ndash\">—</span>49)</span>% less Duration<br>Immunity to Shock during Effect",
+            "fossil_no": [
+                "flask"
+            ],
+            "adds_no": [],
+            "spawn_no": [
+                "utility_flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskShockImmunityDuringEffect"
+        }
+    ],
+    "warbands": [],
+    "sentinel": [],
+    "infamous": [],
+    "synthesis": [],
+    "synthesis_corrupted": [],
+    "searing": [],
+    "eater": [],
+    "enchant": [
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEnkindlingOrb\" href=\"Enkindling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskPlate.webp\" alt=\"FlaskPlate\" height=\"16\" />Enkindling Orb</a>",
+            "ModGenerationTypeID": "21",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "<span class='mod-value'>(60<span class=\"ndash\">—</span>70)</span>% increased effect<br>Gains no Charges during Effect",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/790895eda3c805608379a0840577efd2024c031ae46dd67d60a669d3721fd3f1"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEnkindlingOrb\" href=\"Enkindling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskPlate.webp\" alt=\"FlaskPlate\" height=\"16\" />Enkindling Orb</a>",
+            "ModGenerationTypeID": "21",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "<span class='mod-value'>(80<span class=\"ndash\">—</span>100)</span>% increased Duration<br>Gains no Charges during Effect",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/81bd3119350adedd183b0a0980b96fa39def3aa7ddf82905b2bca2043744437b"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEnkindlingOrb\" href=\"Enkindling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskPlate.webp\" alt=\"FlaskPlate\" height=\"16\" />Enkindling Orb</a>",
+            "ModGenerationTypeID": "21",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "<span class='mod-value'>(60<span class=\"ndash\">—</span>80)</span>% increased Charge Recovery<br>Gains no Charges during Effect",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/0fea9dbb8e4c5fa8c2bf9df0713a8dfd44378945417484f7663b554e1cebbd5e"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEnkindlingOrb\" href=\"Enkindling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskPlate.webp\" alt=\"FlaskPlate\" height=\"16\" />Enkindling Orb</a>",
+            "ModGenerationTypeID": "21",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "<span class='mod-value'>(25<span class=\"ndash\">—</span>35)</span>% reduced Charges per use<br>Gains no Charges during Effect",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/4d9917e354a8b37003d831a5b0b67f45741d966fbbba914abdafa7e71fbaecad"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyEnkindlingOrb\" href=\"Enkindling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskPlate.webp\" alt=\"FlaskPlate\" height=\"16\" />Enkindling Orb</a>",
+            "ModGenerationTypeID": "21",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "<span class='mod-value'>+(40<span class=\"ndash\">—</span>60)</span> to Maximum Charges<br>Gains no Charges during Effect",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/7e6b19ab663be1f76cc2f24f318fbe2d2757a5cf792b5e2f35ace7414c7f1cfa"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when an adjacent Flask is used",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/c46db0ecc17fbf11368dcf4f431aa6ee3a0bcd5760f7624693a4d0e374718fe7"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Reused at the end of this Flask's effect",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/01bbf91ed76c8a347c72d5b6a2695c2b21a6ab447f2b7138f6bc33764a72ac32"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when Charges reach full",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/9f1ad1179cb0aad7c0d8197964b24a8801de7b96a55fd8ab69af9146ef0fba05"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you Use a Guard Skill",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/0f41c2ca982563a5aeac4e9ab975b2c25db842b65b61c46a600a33f40d66aeb6"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you Use a Travel Skill",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/d84fe63b0479f7914e3f5005dc99e8602733ad4a01b3f61afb270df708d22b07"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you lose a Guard Skill Buff",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskEnchantmentInjectorOnGuardSkillExpired"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you Hit a Rare or Unique Enemy, if not already in effect",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/72aac8f4b8906b6a06cb0a6fea55fdd273217ba4da844f760d419dc64d22fc8f"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you become Frozen",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/70d66744fa6a7c0879ece178d09bff8489e7b8835ccb3939d6dc42165f70c5b0"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you become Chilled",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/dd03bda51eaddfdc99b47acd4c78d807755157d2793bdd4ee58802f7fd4fc953"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you become Shocked",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/439551ccbae36abd7edcd2778dcbedbaf24f0aeea332fd90066b90d75e671f83"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you become Ignited",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/2c6d8f14b3048ba8af4ed673e7fa532a03ec780a83cc266599a9fcb515eedbfd"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you start Bleeding",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/4970fb13656e7bff24d9a2d0f8a7ac63436a01c2dcd0146a6037e977e1f8ba5a"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you become Poisoned",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskEnchantmentInjectorOnAffectedByPoison_"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you Block",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/7804e79349dde5fbfbaae6af699b18988b8cd3785eb7256ab1b7025445a9f5b1"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you take a Savage Hit",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "?s=Data%5CMods%2FFlaskEnchantmentInjectorOnTakingSavageHit_"
+        },
+        {
+            "Name": "<a class=\"item_currency StackableCurrency\" data-hover=\"?s=Data%5CBaseItemTypes%2FMetadata%2FItems%2FCurrency%2FCurrencyInstillingOrb\" href=\"Instilling_Orb\"><img loading=\"lazy\" src=\"https://cdn.poedb.tw/image/Art/2DItems/Currency/Expedition/FlaskInjector.webp\" alt=\"FlaskInjector\" height=\"16\" />Instilling Orb</a>",
+            "ModGenerationTypeID": "22",
+            "ModFamilyList": [
+                "FlaskEnchantment"
+            ],
+            "str": "Used when you use a Life Flask",
+            "fossil_no": [],
+            "adds_no": [],
+            "spawn_no": [
+                "flask",
+                "default"
+            ],
+            "mod_no": [],
+            "mod_fossil_item": [],
+            "hover": "https://cdn.poedb.tw/cache1/us/Poe_Data_Mods_hover/63a1ff9156829b9d44bc9e0556d7fd11638814545de7986d4405be58763a4889"
+        }
+    ],
+    "elder": [],
+    "shaper": [],
+    "crusader": [],
+    "redeemer": [],
+    "hunter": [],
+    "warlord": [],
+    "scourgeup": [],
+    "scourgedown": [],
+    "desecrated": [],
+    "graft_corrupted": [],
+    "perfect_essence": []
+}
