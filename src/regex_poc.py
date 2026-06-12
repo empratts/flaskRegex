@@ -48,75 +48,37 @@ def findSuffixNicnames(aff:list[dict], names:list[str]):
 findPrefixNicnames(prefix.values(), p_names)
 findSuffixNicnames(suffix.values(), s_names)
 
+random.seed(1)
+
 base = "Jade Flask"
 
+G = networkx.Graph()
 flasks = []
+wanted:list[tuple[str, str]] = []
 
 for p in prefix:
     for s in suffix:
         full_name = f"{p} {base} {s}"
         flasks.append(full_name)
+        if random.random() < 0.2:
+            wanted.append((p, s))
+            G.add_node((p, s))
 
 print(f"{len(flasks)} unique flask conbinations")
 
 
-G = networkx.Graph()
-G.add_nodes_from(p_names)
-G.add_nodes_from(s_names)
-
-random.seed(1)
 
 edge_count = 0
-for p in p_names:
-    for s in s_names:
-        if random.randint(0,99) < 20:
-            G.add_edge(p, s)
+
+for w1 in wanted:
+    for w2 in wanted:
+        if (w1[0] == w2[0] or w1[1] == w2[1]) and w1 != w2:
+            G.add_edge(w1, w2)
             edge_count += 1
-            # print(f"{p} Flask {s}")
 
 print(f"{edge_count} edges added.")
 
-for i in range(2, 5):
-    print(f"{i} of {len(p_names)}")
-    comb = combinations(p_names, i)
-    found = 0
-    order = 0
-    for c in comb:
-        common:set = None
-        for pfx in c:
-            if common is None:
-                common = set(G.neighbors(pfx))
-            else:
-                common.intersection_update(set(G.neighbors(pfx)))
-            if common == set([]):
-                break
-        else:
-            # print(f"{c} all share the suffixes {common}.")
-            found += 1
-            order = max(order, len(common))
-            # break
-    if found == 0:
-        print(f"No group of size {i} found.")
-        break
-    else:
-        print(f"{found} groups of size {i} with max order {order}.")
+max_set, found_cliques = networkx.approximation.clique_removal(G)
 
-groups:list[dict[tuple,set]] = [{(p,) : set(G.neighbors(p)) for p in p_names}]
-singles = groups[0]
-
-while len(groups[-1]) > 0:
-    new_group = {}
-    order = 0
-    for k, v in groups[-1].items():
-        for pfx, sfxs in singles.items():
-            if pfx[0] not in k:
-                new_item = set(k)
-                new_item.add(*pfx)
-                new_sfxs:set = v.intersection(sfxs)
-                if len(new_sfxs) > 0:
-                    new_item_list:list = list(new_item)
-                    new_item_list.sort()
-                    new_group[tuple(list(new_item_list))] = new_sfxs
-                    order = max(order, len(new_sfxs))
-    groups.append(new_group)
-    print(f"{len(new_group)} items found with max order {order}")
+print(f"Maximum Independent Set: {max_set}")
+print(f"Found Cliques: {found_cliques}")
