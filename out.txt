@@ -1,0 +1,64 @@
+3168 unique flask conbinations
+Wide Flask of Carnage
+Wide Flask of Imposing
+Plentiful Flask of Imposing
+Plentiful Flask of the Heron
+Plentiful Flask of the Hedgehog
+Bountiful Flask of the Cheetah
+Abundant Flask of Stiffness
+Ample Flask of Composure
+Ample Flask of Relentlessness
+Ample Flask of the Hedgehog
+Constant Flask of the Orca
+Continuous Flask of Rupturing
+Continuous Flask of the Narwhal
+Bottomless Flask of the Abalone
+Bottomless Flask of Relentlessness
+Bottomless Flask of the Beluga
+Bottomless Flask of the Penguin
+Perpetual Flask of the Rainbow
+Perpetual Flask of the Heron
+Provisioned Flask of the Mockingbird
+Provisioned Flask of the Curlew
+Provisioned Flask of Tree Moss
+Provisioned Flask of the Urchin
+Allocated Flask of Tooth Moss
+Rationed Flask of the Penguin
+Medic's Flask of the Cheetah
+Medic's Flask of the Crystal
+Medic's Flask of the Cormorant
+Medic's Flask of the Catfish
+Physician's Flask of Persistence
+Doctor's Flask of the Kaleidoscope
+Specialist's Flask of Tapping
+Specialist's Flask of the Penguin
+Surgeon's Flask of the Lizard
+Surgeon's Flask of the Iguana
+Abecedarian's Flask of Siphoning
+Dabbler's Flask of Relentlessness
+Dabbler's Flask of Tooth Moss
+Alchemist's Flask of Foisting
+Alchemist's Flask of the Starfish
+Scholar's Flask of Counterpoise
+Practitioner's Flask of the Plover
+Practitioner's Flask of Tree Moss
+Brewer's Flask of the Lizard
+Brewer's Flask of the Skink
+Chemist's Flask of the Antelope
+Chemist's Flask of the Lizard
+Investigator's Flask of Gore
+Investigator's Flask of Draining
+Analyst's Flask of the Armadillo
+Analyst's Flask of Piercing
+Analyst's Flask of the Sea Lion
+Analyst's Flask of Tree Moss
+Analyst's Flask of the Opossum
+Experimenter's Flask of Stiffness
+Transgressor's Flask of Piercing
+Masochist's Flask of the Gazelle
+Masochist's Flask of Tenaciousness
+Masochist's Flask of the Skink
+2 of 36
+('Abundant', "Experimenter's") all share the suffixes {'of Stiffness'} {'of Stiffness'}.
+3 of 36
+No group of size 3 found.

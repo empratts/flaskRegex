@@ -2,6 +2,7 @@ import json
 import networkx
 import re
 import os
+import random
 from itertools import combinations
 
 FILE_PATH, _ = os.path.split(os.path.realpath(__file__))
@@ -63,41 +64,57 @@ G = networkx.Graph()
 G.add_nodes_from(p_names)
 G.add_nodes_from(s_names)
 
-# add edges between all prefixes
-# p_edges = [ (a, b) for a in p_names for b in p_names if a != b]
-# G.add_edges_from(p_edges)
+random.seed(1)
 
-# s_edges = [ (a, b) for a in s_names for b in s_names if a != b]
-# G.add_edges_from(s_edges)
+edge_count = 0
+for p in p_names:
+    for s in s_names:
+        if random.randint(0,99) < 20:
+            G.add_edge(p, s)
+            edge_count += 1
+            # print(f"{p} Flask {s}")
 
-G.add_edge("Transgressor's", "of the Impala")
-G.add_edge("Transgressor's", "of the Ibex")
-G.add_edge("Transgressor's", "of the Rainbow")
-G.add_edge("Transgressor's", "of the Kaleidoscope")
+print(f"{edge_count} edges added.")
 
-G.add_edge("Masochist's", "of the Impala")
-G.add_edge("Masochist's", "of the Ibex")
-G.add_edge("Masochist's", "of the Rainbow")
-G.add_edge("Masochist's", "of the Kaleidoscope")
-
-G.add_edge("Flagellant's", "of the Impala")
-G.add_edge("Flagellant's", "of the Ibex")
-G.add_edge("Flagellant's", "of the Rainbow")
-G.add_edge("Flagellant's", "of the Kaleidoscope")
-
-for i in range(2, len(p_names)):
+for i in range(2, 9):
     print(f"{i} of {len(p_names)}")
     comb = combinations(p_names, i)
+    found = 0
+    order = 0
     for c in comb:
-        for p1, p2 in zip(c, c):
-            p1_n = set(G.neighbors(p1))
-            p2_n = set(G.neighbors(p2))
-            if p1_n == set() or p1_n != p2_n:
+        common:set = None
+        for pfx in c:
+            if common is None:
+                common = set(G.neighbors(pfx))
+            else:
+                common.intersection_update(set(G.neighbors(pfx)))
+            if common == set([]):
                 break
         else:
-            print(f"{c} all share the suffixes {p1_n}.")
-            break
-    else:
+            # print(f"{c} all share the suffixes {common}.")
+            found += 1
+            order = max(order, len(common))
+            # break
+    if found == 0:
         print(f"No group of size {i} found.")
         break
+    else:
+        print(f"{found} groups of size {i} with max order {order}.")
 
+groups:list[dict[tuple,set]] = [{(p,) : set(G.neighbors(p)) for p in p_names}]
+singles = groups[0]
+
+while len(groups[-1]) > 0:
+    new_group = {}
+    order = 0
+    for k, v in groups[-1].items():
+        for pfx, sfxs in singles.items():
+            if pfx not in k:
+                new_item = set(k)
+                new_item.add(pfx)
+                new_sfxs:set = v.intersection(sfxs)
+                if len(new_sfxs) > 0:
+                    new_group[tuple(new_item)] = new_sfxs
+                    order = max(order, len(new_sfxs))
+    groups.append(new_group)
+    print(f"{len(new_group)} items found with max order {order}")
