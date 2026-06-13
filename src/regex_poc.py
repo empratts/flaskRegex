@@ -54,19 +54,48 @@ base = "Jade Flask"
 
 G = networkx.Graph()
 flasks = []
-wanted:list[tuple[str, str]] = []
 
 for p in prefix:
     for s in suffix:
         full_name = f"{p} {base} {s}"
         flasks.append(full_name)
-        if random.random() < 0.2:
-            wanted.append((p, s))
-            G.add_node((p, s))
-
+        
 print(f"{len(flasks)} unique flask conbinations")
 
+G.add_node(("Transgressor's", "of the Antelope"))
+G.add_node(("Masochist's", "of the Antelope"))
+G.add_node(("Flagellant's", "of the Antelope"))
 
+G.add_node(("Transgressor's", "of the Ibex"))
+G.add_node(("Masochist's", "of the Ibex"))
+G.add_node(("Flagellant's", "of the Ibex"))
+
+G.add_node(("Transgressor's", "of the Impala"))
+G.add_node(("Masochist's", "of the Impala"))
+G.add_node(("Flagellant's", "of the Impala"))
+G.add_node(("Clinician's", "of the Impala"))
+G.add_node(("Experimenter's", "of the Impala"))
+
+G.add_node(("Transgressor's", "of the Kaleidoscope"))
+G.add_node(("Masochist's", "of the Kaleidoscope"))
+G.add_node(("Flagellant's", "of the Kaleidoscope"))
+G.add_node(("Clinician's", "of the Kaleidoscope"))
+G.add_node(("Experimenter's", "of the Kaleidoscope"))
+
+G.add_node(("Transgressor's", "of the Rainbow"))
+G.add_node(("Masochist's", "of the Rainbow"))
+G.add_node(("Flagellant's", "of the Rainbow"))
+G.add_node(("Clinician's", "of the Rainbow"))
+G.add_node(("Experimenter's", "of the Rainbow"))
+
+G.add_node(("Transgressor's", "of the Owl"))
+G.add_node(("Masochist's", "of the Owl"))
+G.add_node(("Flagellant's", "of the Owl"))
+G.add_node(("Clinician's", "of the Owl"))
+G.add_node(("Experimenter's", "of the Owl"))
+
+
+wanted:list[tuple[str, str]] = G.nodes
 
 edge_count = 0
 
