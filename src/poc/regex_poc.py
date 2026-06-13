@@ -7,7 +7,7 @@ from itertools import combinations
 
 FILE_PATH, _ = os.path.split(os.path.realpath(__file__))
 
-with open(f'{FILE_PATH}/../data/flask_mods.json', "r", encoding='utf-8') as f:
+with open(f'{FILE_PATH}/../../data/flask_mods.json', "r", encoding='utf-8') as f:
     affix = json.load(f)
 
 prefix = {a["Name"] : a for a in affix if a["Prefix"] == True}
@@ -62,10 +62,10 @@ for p in prefix:
         
 print(f"{len(flasks)} unique flask conbinations")
 
-G.add_node(("Transgressor's", "of the Antelope"))
+# G.add_node(("Transgressor's", "of the Antelope"))
 G.add_node(("Masochist's", "of the Antelope"))
 G.add_node(("Flagellant's", "of the Antelope"))
-G.add_node(("Experimenter's", "of the Antelope"))
+# G.add_node(("Experimenter's", "of the Antelope"))
 
 G.add_node(("Transgressor's", "of the Ibex"))
 G.add_node(("Masochist's", "of the Ibex"))
@@ -117,9 +117,3 @@ print(f"Maximum Independent Set: {max_set}")
 print(f"Found Cliques:")
 for c in found_cliques:
     print(f"{len(c)}: {c}\n")
-
-max_clique = networkx.approximation.max_clique(G)
-print(f"{len(max_clique)}: {max_clique}")
-
-for w in wanted:
-    print(f"{len([a for a in G.neighbors(w)])}: {w}")
