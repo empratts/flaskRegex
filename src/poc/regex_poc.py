@@ -65,6 +65,7 @@ print(f"{len(flasks)} unique flask conbinations")
 G.add_node(("Transgressor's", "of the Antelope"))
 G.add_node(("Masochist's", "of the Antelope"))
 G.add_node(("Flagellant's", "of the Antelope"))
+G.add_node(("Experimenter's", "of the Antelope"))
 
 G.add_node(("Transgressor's", "of the Ibex"))
 G.add_node(("Masochist's", "of the Ibex"))
@@ -101,13 +102,24 @@ edge_count = 0
 
 for w1 in wanted:
     for w2 in wanted:
-        if (w1[0] == w2[0] or w1[1] == w2[1]) and w1 != w2:
+        if w1 != w2 and not G.has_edge(w1, w2) and (w1[0], w2[1]) in wanted and (w2[0], w1[1]) in wanted:
             G.add_edge(w1, w2)
             edge_count += 1
+
+
+
 
 print(f"{edge_count} edges added.")
 
 max_set, found_cliques = networkx.approximation.clique_removal(G)
 
 print(f"Maximum Independent Set: {max_set}")
-print(f"Found Cliques: {found_cliques}")
+print(f"Found Cliques:")
+for c in found_cliques:
+    print(f"{len(c)}: {c}\n")
+
+max_clique = networkx.approximation.max_clique(G)
+print(f"{len(max_clique)}: {max_clique}")
+
+for w in wanted:
+    print(f"{len([a for a in G.neighbors(w)])}: {w}")
