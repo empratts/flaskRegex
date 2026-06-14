@@ -22,9 +22,9 @@ def setupDatabase():
 
     if len(initialized.fetchall()) == 0:
             
-        db_cur.execute("CREATE TABLE IF NOT EXISTS prefix (id INTEGER PRIMARY KEY, value varchar(255), short varchar(255), UNIQUE(value))")
+        db_cur.execute("CREATE TABLE IF NOT EXISTS prefix (id INTEGER PRIMARY KEY, value varchar(255), short varchar(255), modgroup INTEGER, level INTEGER, UNIQUE(value))")
         db_cur.execute("CREATE TABLE IF NOT EXISTS base (id INTEGER PRIMARY KEY, value varchar(255), UNIQUE(value))")
-        db_cur.execute("CREATE TABLE IF NOT EXISTS suffix (id INTEGER PRIMARY KEY, value varchar(255), short varchar(255), UNIQUE(value))")
+        db_cur.execute("CREATE TABLE IF NOT EXISTS suffix (id INTEGER PRIMARY KEY, value varchar(255), short varchar(255), modgroup INTEGER, level INTEGER, UNIQUE(value))")
 
         db_cur.execute("""CREATE TABLE IF NOT EXISTS wanted(
                           id INTEGER PRIMARY KEY,
@@ -33,13 +33,19 @@ def setupDatabase():
                           suffix_id INTEGER NOT NULL,
                           FOREIGN KEY (prefix_id) REFERENCES prefix(id),
                           FOREIGN KEY (base_id) REFERENCES base(id),
-                          FOREIGN KEY (suffix_id) REFERENCES suffix(id))""")
+                          FOREIGN KEY (suffix_id) REFERENCES suffix(id),
+                          CONSTRAINT prefix_base_suffix UNIQUE (prefix_id, base_id, suffix_id))""")
         
         with open(f'{FILE_PATH}/../data/flask_mods.json', "r", encoding='utf-8') as f:
             affix = json.load(f)
 
         p_name = [p["Name"].lower() for p in affix if p["Prefix"] == True]
-        s_name = [p["Name"].lower() for p in affix if p["Prefix"] == False]
+        p_group = [p["Group"] for p in affix if p["Prefix"] == True]
+        p_level = [p["Level"] for p in affix if p["Prefix"] == True]
+
+        s_name = [s["Name"].lower() for s in affix if s["Prefix"] == False]
+        s_group = [s["Group"] for s in affix if s["Prefix"] == False]
+        s_level = [s["Level"] for s in affix if s["Prefix"] == False]
 
         p_short = []
         
@@ -75,14 +81,14 @@ def setupDatabase():
             print("Failed calculating short names.")
             sys.exit(2)
 
-        prefix = [p for p in zip(p_name, p_short)]
-        suffix = [s for s in zip(s_name, s_short)]
+        prefix = [p for p in zip(p_name, p_short, p_group, p_level)]
+        suffix = [s for s in zip(s_name, s_short, s_group, s_level)]
 
         for p in prefix:
-            db_cur.execute('INSERT INTO prefix (value, short) VALUES (?, ?) ON CONFLICT DO NOTHING', p)
+            db_cur.execute('INSERT INTO prefix (value, short, modgroup, level) VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING', p)
         
         for s in suffix:
-            db_cur.execute('INSERT INTO suffix (value, short) VALUES (?, ?) ON CONFLICT DO NOTHING', s)
+            db_cur.execute('INSERT INTO suffix (value, short, modgroup, level) VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING', s)
 
         db_cur.execute("""INSERT INTO settings (name, value) VALUES("initialized", "Valid") ON CONFLICT DO NOTHING""")
         db_conn.commit()
@@ -96,11 +102,10 @@ def main():
 
     signal.signal(signal.SIGINT, handler=handler)
 
+    # Start the app here
     app = command.TrackerCommands()
-
     app.cmdloop()
 
-    # Start the app here
 
 if __name__ == "__main__":
     main()

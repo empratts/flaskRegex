@@ -14,6 +14,7 @@ affixes: list[dict] = data["normal"]
 
 
 results = []
+affix_types = []
 
 for a in affixes:
     item = {}
@@ -50,12 +51,13 @@ for a in affixes:
                 results.append(item)
             else:
                 print(f"No Match on {item["Name"]}")
+    
+    if item["String"] not in affix_types:
+        affix_types.append(item["String"])
+    item["Group"] = affix_types.index(item["String"])
 
 print(f"{len(results)} of {len(affixes)} Found.")
 
-affix_types = set()
-for r in results:
-    affix_types.add(r["String"])
 
 print(f"{len(affix_types)} unique affix types found.")
 
