@@ -385,6 +385,43 @@ class TrackerCommands(Cmd):
                 self.poutput("No wanted flasks found for the given base")
         
 
+    def do_export(self, args):
+        db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
+        db_cur = db_conn.cursor()
+
+        result = db_cur.execute("""SELECT prefix.value, base.value, suffix.value FROM wanted
+                                   INNER JOIN prefix ON wanted.prefix_id = prefix.id
+                                   INNER JOIN base ON wanted.base_id = base.id
+                                   INNER JOIN suffix ON wanted.suffix_id = suffix.id""")
+        
+        w = result.fetchall()
+
+        wanted:list[dict[str,str]] = [{"prefix": item[0], "base": item[1], "suffix": item[2] } for item in w]
+
+        with open(f'{FILE_PATH}/../data/export.json', "w", encoding='utf-8') as f:
+            json.dump(wanted, f)
+    
+    
+    def do_import(self, args):
+        db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
+        db_cur = db_conn.cursor()
+
+        with open(f'{FILE_PATH}/../data/export.json', "r", encoding='utf-8') as f:
+            items = json.load(f)
+
+        for i in items:
+            db_cur.execute('INSERT INTO base (value) VALUES (?) ON CONFLICT DO NOTHING', (i["base"].lower(),))
+
+            prefix_id, prefix_grp, prefix_lvl = getPrefixInfoFromDB(i["prefix"], db_cur)
+            base_id = getBaseIDFromDB(i["base"], db_cur)
+            suffix_id, suffix_grp, suffix_lvl = getSuffixInfoFromDB(i["suffix"], db_cur)
+
+            if base_id and prefix_id and suffix_id:
+                db_cur.execute("""INSERT INTO wanted (prefix_id, base_id, suffix_id) VALUES (?,?,?)
+                                  ON CONFLICT DO NOTHING""", (prefix_id, base_id, suffix_id))
+        
+        db_conn.commit()
+
 
 def getBaseIDFromDB(value:str, db_cur:sqlite3.Cursor) -> int:
     result = db_cur.execute("SELECT id FROM base WHERE value = ?", (value,))
