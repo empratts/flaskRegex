@@ -22,9 +22,9 @@ def setupDatabase():
 
     if len(initialized.fetchall()) == 0:
             
-        db_cur.execute("CREATE TABLE IF NOT EXISTS prefix (id INTEGER PRIMARY KEY, value varchar(255), short varchar(255), modgroup INTEGER, level INTEGER, UNIQUE(value))")
+        db_cur.execute("CREATE TABLE IF NOT EXISTS prefix (id INTEGER PRIMARY KEY, value varchar(255), modgroup INTEGER, level INTEGER, UNIQUE(value))")
         db_cur.execute("CREATE TABLE IF NOT EXISTS base (id INTEGER PRIMARY KEY, value varchar(255), UNIQUE(value))")
-        db_cur.execute("CREATE TABLE IF NOT EXISTS suffix (id INTEGER PRIMARY KEY, value varchar(255), short varchar(255), modgroup INTEGER, level INTEGER, UNIQUE(value))")
+        db_cur.execute("CREATE TABLE IF NOT EXISTS suffix (id INTEGER PRIMARY KEY, value varchar(255), modgroup INTEGER, level INTEGER, UNIQUE(value))")
 
         db_cur.execute("""CREATE TABLE IF NOT EXISTS wanted(
                           id INTEGER PRIMARY KEY,
@@ -47,48 +47,14 @@ def setupDatabase():
         s_group = [s["Group"] for s in affix if s["Prefix"] == False]
         s_level = [s["Level"] for s in affix if s["Prefix"] == False]
 
-        p_short = []
-        
-        for pn in p_name:
-            for i in range(1, len(pn)):
-                short = pn[:i]
-                for full in p_name:
-                    if full.startswith(short) and pn != full:
-                        break
-                else:
-                    p_short.append(short)
-                    break
-            else:
-                print(f"ERROR: Failed to find short name for {pn}.")
-                p_short.append("")
-        
-        s_short = []
-
-        for sn in s_name:
-            for i in range(1, len(sn) + 1):
-                short = sn[-i:]
-                for full in s_name:
-                    if full.endswith(short) and sn != full:
-                        break
-                else:
-                    s_short.append(short)
-                    break
-            else:
-                print(f"ERROR: Failed to find short name for {sn}.")
-                s_short.append("")
-
-        if len(p_name) != len(p_short) or len(s_name) != len(s_short):
-            print("Failed calculating short names.")
-            sys.exit(2)
-
-        prefix = [p for p in zip(p_name, p_short, p_group, p_level)]
-        suffix = [s for s in zip(s_name, s_short, s_group, s_level)]
+        prefix = [p for p in zip(p_name, p_group, p_level)]
+        suffix = [s for s in zip(s_name, s_group, s_level)]
 
         for p in prefix:
-            db_cur.execute('INSERT INTO prefix (value, short, modgroup, level) VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING', p)
+            db_cur.execute('INSERT INTO prefix (value, modgroup, level) VALUES (?, ?, ?) ON CONFLICT DO NOTHING', p)
         
         for s in suffix:
-            db_cur.execute('INSERT INTO suffix (value, short, modgroup, level) VALUES (?, ?, ?, ?) ON CONFLICT DO NOTHING', s)
+            db_cur.execute('INSERT INTO suffix (value, modgroup, level) VALUES (?, ?, ?) ON CONFLICT DO NOTHING', s)
 
         db_cur.execute("""INSERT INTO settings (name, value) VALUES("initialized", "Valid") ON CONFLICT DO NOTHING""")
         db_conn.commit()

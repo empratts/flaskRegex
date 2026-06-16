@@ -4,3 +4,4 @@ data/command_history.dat
 *__pycache__
 data/out.txt
 data/export.json
+.vscode

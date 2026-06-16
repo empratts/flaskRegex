@@ -1,4 +1,6 @@
 from cmd2 import Cmd, Cmd2ArgumentParser, with_argparser, Choices
+from collections.abc import Iterable
+from itertools import combinations
 import re
 import json
 import sqlite3
@@ -321,7 +323,7 @@ class TrackerCommands(Cmd):
 
         base_id = getBaseIDFromDB(args.base, db_cur)
 
-        result = db_cur.execute("""SELECT prefix.short, suffix.short FROM wanted
+        result = db_cur.execute("""SELECT prefix.value, suffix.value FROM wanted
                                    INNER JOIN prefix ON wanted.prefix_id = prefix.id
                                    INNER JOIN suffix ON wanted.suffix_id = suffix.id
                                    WHERE base_id = ?""", (base_id,))
@@ -330,6 +332,26 @@ class TrackerCommands(Cmd):
             items = result.fetchall()
 
             if items:
+                # Compute short names for the wanted items
+
+                affixes = [f"^{p}" for p in self.prefix] + [f"{s}$" for s in self.suffix]
+
+                base_short_name = getBaseShortName(args.base + " flask", affixes,)
+
+                prefix_short_names = {}
+                suffix_short_names = {}
+
+                for i in items:
+                    p = i[0]
+                    s = i[1]
+
+                    if p not in prefix_short_names:
+                        prefix_short_names[p] = getShortName( "^" + p, affixes, args.base)
+
+                    if s not in suffix_short_names:
+                        suffix_short_names[s] = getShortName( s + "$", affixes, args.base)
+
+
                 G = networkx.Graph()
 
                 for i in items:
@@ -349,13 +371,18 @@ class TrackerCommands(Cmd):
                     sfx = set()
 
                     for flask in c:
-                        pfx.add(flask[0])
-                        sfx.add(flask[1])
+                        pfx.add(prefix_short_names[flask[0]])
+                        sfx.add(suffix_short_names[flask[1]])
+
+                    pfx.add(base_short_name)
+                    sfx.add("sk$")
+
+                    p_group = generateGroup(pfx)
+                    s_group = generateGroup(sfx)
                     
-                    regex_strings.append(f"^({args.base}|{'|'.join(pfx)}).*(flask|{'|'.join(sfx)})$")
+                    regex_strings.append(f"({p_group}).*({s_group})")
 
                 final_regex = "|".join(regex_strings)
-                self.poutput(f"{len(final_regex)} characters")
 
                 # Test the regex to check for false positives and false negatives
                 all_flasks = [f"{p} {args.base} flask {s}" for p in self.prefix for s in self.suffix]
@@ -372,12 +399,15 @@ class TrackerCommands(Cmd):
 
                 for f in all_flasks:
                     if f in wanted_flasks:
-                        if not re.match(final_regex,f):
+                        if not re.search(final_regex,f):
                             self.poutput(f"ERROR: Regex failed to match wanted flask {f}")
                     else:
-                        if re.match(final_regex,f):
+                        if re.search(final_regex,f):
                             self.poutput(f"ERROR: Regex gives false positive on unwanted flask {f}")
 
+
+                self.poutput(f"{len(final_regex)} characters")
+                final_regex = '"' + final_regex + '"'
                 self.poutput(final_regex)
                 pyperclip.copy(final_regex)
 
@@ -401,7 +431,7 @@ class TrackerCommands(Cmd):
         with open(f'{FILE_PATH}/../data/export.json', "w", encoding='utf-8') as f:
             json.dump(wanted, f)
     
-    
+
     def do_import(self, args):
         db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
         db_cur = db_conn.cursor()
@@ -431,14 +461,99 @@ def getBaseIDFromDB(value:str, db_cur:sqlite3.Cursor) -> int:
             return r[0]
     return None
 
+
 def getPrefixInfoFromDB(value:str, db_cur:sqlite3.Cursor) -> int:
     result = db_cur.execute("SELECT id, modgroup, level FROM prefix WHERE value = ?", (value,))
     if result:
         return result.fetchone()
     return None
 
+
 def getSuffixInfoFromDB(value:str, db_cur:sqlite3.Cursor) -> int:
     result = db_cur.execute("SELECT id, modgroup, level FROM suffix WHERE value = ?", (value,))
     if result:
          return result.fetchone()       
     return None
+
+
+def getShortName(long_name:str, affixes:list[str], base:str) -> str:
+    
+    for size in range(1, len(long_name) + 1):
+        for start in range(len(long_name) + 1 - size):
+            sn = long_name[start:start + size]
+
+            if sn in base:
+                continue
+
+            for a in affixes:
+                if a != long_name and sn in a:
+                    break
+            else:
+                # print(f"{sn}: {long_name}")
+                return sn
+
+def getBaseShortName(long_name:str, affixes:list[str]) -> str:
+    long_name = "^" + long_name
+    afx = "%".join(affixes)
+    for size in range(1, len(long_name) + 1):
+        sn = long_name[:size]
+        if sn not in afx:
+            return sn
+    return None
+
+def generateGroup(words: Iterable[str]) -> str:
+    options = ["|".join(words)]
+
+    options.append(foldPrefix(words))
+    options.append(foldSuffix(words))
+
+    # print(options)
+
+    return min(options, key=len)
+
+def foldPrefix(words: Iterable[str]) -> str:
+    folds:dict[str, list[str]] = {}
+
+    for word in words:
+        if word[0] in folds:
+            folds[word[0]].append(word[1:])
+        else:
+            folds[word[0]] = [word[1:]]
+    
+    short_words:list[str] = []
+
+    for pfx, sfxs in folds.items():
+        if len(sfxs) > 2:
+            folded = f"{pfx}({'|'.join(sfxs)})"
+            short_words.append(folded)
+        elif len(sfxs) == 2:
+            short_words.append(pfx+sfxs[1])
+            short_words.append(pfx+sfxs[0])
+        else:
+            short_words.append(pfx+sfxs[0])
+    
+    return "|".join(short_words)
+
+def foldSuffix(words: Iterable[str]) -> str:
+    folds:dict[str, list[str]] = {}
+
+    for word in words:
+        if word[-1] in folds:
+            folds[word[-1]].append(word[:-1])
+        else:
+            folds[word[-1]] = [word[:-1]]
+    
+    short_words:list[str] = []
+
+    for sfx, pfxs in folds.items():
+        if len(pfxs) > 2:
+            folded = f"({'|'.join(pfxs)}){sfx}"
+            short_words.append(folded)
+        elif len(pfxs) == 2:
+            short_words.append(pfxs[1]+sfx)
+            short_words.append(pfxs[0]+sfx)
+        else:
+            short_words.append(pfxs[0]+sfx)
+    
+    return "|".join(short_words)
+
