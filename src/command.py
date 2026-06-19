@@ -16,24 +16,55 @@ class TrackerCommands(Cmd):
         history_file = f'{FILE_PATH}/../data/command_history.dat'
         super().__init__(persistent_history_file=history_file, persistent_history_length=1000)
 
+        self.wanted_flasks_for_base: set[tuple[str,str]] = set()
+        self.found_cliques: list[set[str]] = []
+        self.wanted_affixes: set[str] = set()
+
         db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
         db_cur = db_conn.cursor()
         self.prompt = ">"
         self.debug = True
 
-        result = db_cur.execute("SELECT value FROM prefix")
+        with open(f'{FILE_PATH}/../data/combos.json', "r", encoding='utf-8') as f:
+            self.combos = json.load(f)
 
-        if result:
-            self.prefix = [a[0] for a in result.fetchall()]
+        wanted_flasks = db_cur.execute("""SELECT prefix.value, base.value, suffix.value FROM wanted
+                                   INNER JOIN prefix ON wanted.prefix_id = prefix.id
+                                   INNER JOIN base ON wanted.base_id = base.id
+                                   INNER JOIN suffix ON wanted.suffix_id = suffix.id""")
+
+        if wanted_flasks:
+            self.wanted_flasks:set[tuple[str,str,str]] = set(wanted_flasks.fetchall())
         else:
-            self.prefix = ["DATABASE_ERROR"]
+            self.wanted_flasks:set[tuple[str,str,str]] = set()
+            self.poutput("ERROR: Failed getting wanted flasks from database!")
         
-        result = db_cur.execute("SELECT value FROM suffix")
+        wanted_bases = db_cur.execute("SELECT value FROM base")
 
-        if result:
-            self.suffix = [a[0] for a in result.fetchall()]
+        if wanted_bases:
+            self.wanted_bases:set[str] = {a[0].lower() for a in wanted_bases.fetchall()}
         else:
-            self.suffix = ["DATABASE_ERROR"]
+            self.wanted_bases:set[str] = {"DATABASE_ERROR"}
+        
+
+        prefix = db_cur.execute("SELECT value FROM prefix")
+
+        if prefix:
+            self.prefix:set[str] = {a[0] for a in prefix.fetchall()}
+        else:
+            self.prefix:set[str] = {"DATABASE_ERROR"}
+        
+        suffix = db_cur.execute("SELECT value FROM suffix")
+
+        if suffix:
+            self.suffix:set[str] = {a[0] for a in suffix.fetchall()}
+        else:
+            self.suffix:set[str] = {"DATABASE_ERROR"}
+
+        with open(f'{FILE_PATH}/../data/flask_bases.json', "r", encoding='utf-8') as f:
+            bases:list[str] = json.load(f)
+
+        self.bases:set[str] = {b.lower().replace(" flask", "") for b in bases}
 
     
     def providePrefixes(self):
@@ -44,18 +75,13 @@ class TrackerCommands(Cmd):
         return Choices.from_values(self.suffix)
     
 
-    def provideBases(self):
-        db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
-        db_cur = db_conn.cursor()
-
-        result = db_cur.execute("SELECT value FROM base")
-
-        if result:
-            bases = [a[0] for a in result.fetchall()]
-        else:
-            bases = ["DATABASE_ERROR"]
-
-        return Choices.from_values(bases)
+    def provideUnwantedBases(self):
+        unwanted_bases = self.bases.difference(self.wanted_bases)
+        return Choices.from_values(unwanted_bases)
+    
+    
+    def provideWantedBases(self):
+        return Choices.from_values(self.wanted_bases)
     
 
     def provideWantedPrefixes(self, arg_tokens, **kwargs):
@@ -63,79 +89,35 @@ class TrackerCommands(Cmd):
         base = arg_tokens.get('base')
         suffix = arg_tokens.get('suffix')
 
-        db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
-        db_cur = db_conn.cursor()
-
         if base:
-            base_id = getBaseIDFromDB(base[0], db_cur)
-
             if suffix:
-                suffix_id, _, _ = getSuffixInfoFromDB(suffix[0], db_cur)
-                result = db_cur.execute("""SELECT prefix.value FROM wanted
-                                        INNER JOIN prefix ON wanted.prefix_id = prefix.id
-                                        WHERE base_id = ? AND suffix_id = ?""", (base_id, suffix_id))
+                result:set[str] = {w[0] for w in self.wanted_flasks if w[1] == base[0] and w[2] == suffix[0]}
             else:
-                result = db_cur.execute("""SELECT prefix.value FROM wanted
-                                        INNER JOIN prefix ON wanted.prefix_id = prefix.id
-                                        WHERE base_id = ?""", (base_id,))
+                result:set[str] = {w[0] for w in self.wanted_flasks if w[1] == base[0]}
         else:
-            return Choices.from_values(self.prefix)
+            result:set[str] = {w[0] for w in self.wanted_flasks}
 
-        if result:
-            prefix = [a[0] for a in result.fetchall()]
-        else:
-            prefix = ["DATABASE_ERROR"]
-
-        return Choices.from_values(prefix)
+        return Choices.from_values(result)
     
 
     def provideWantedSuffixes(self, arg_tokens, **kwargs):
         base = arg_tokens.get('base')
         prefix = arg_tokens.get('prefix')
 
-        db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
-        db_cur = db_conn.cursor()
-
         if base:
-            base_id = getBaseIDFromDB(base[0], db_cur)
 
             if prefix:
-                prefix_id, _, _ = getPrefixInfoFromDB(prefix[0], db_cur)
-                result = db_cur.execute("""SELECT suffix.value FROM wanted
-                                        INNER JOIN suffix ON wanted.suffix_id = suffix.id
-                                        WHERE base_id = ? AND prefix_id = ?""", (base_id, prefix_id))
+                result:set[str] = {w[2] for w in self.wanted_flasks if w[1] == base[0] and w[0] == prefix[0]}
             else:
-                result = db_cur.execute("""SELECT suffix.value FROM wanted
-                                        INNER JOIN suffix ON wanted.suffix_id = suffix.id
-                                        WHERE base_id = ?""", (base_id,))
+                result:set[str] = {w[2] for w in self.wanted_flasks if w[1] == base[0]}
         else:
-            return Choices.from_values(self.suffix)
+            result:set[str] = {w[2] for w in self.wanted_flasks}
 
-        if result:
-            suffix = [a[0] for a in result.fetchall()]
-        else:
-            suffix = ["DATABASE_ERROR"]
-
-        return Choices.from_values(suffix)
-
-
-    def provideWantedBases(self):
-        db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
-        db_cur = db_conn.cursor()
-
-        result = db_cur.execute("""SELECT base.value FROM wanted
-                                   INNER JOIN base ON wanted.base_id = base.id""")
-
-        if result:
-            bases = [a[0] for a in result.fetchall()]
-        else:
-            bases = ["DATABASE_ERROR"]
-
-        return Choices.from_values(bases)
+        return Choices.from_values(result)
 
 
     add_parser = Cmd2ArgumentParser(description="Add flasks to the list of wanted crafting results")
-    add_parser.add_argument('base', help="Base of the item to add", choices_provider=provideBases)
+    add_parser.add_argument('base', help="Base of the item to add", choices_provider=provideWantedBases)
     add_parser.add_argument('-p', '--prefix', required=True, help="Prefix of the item to add", choices_provider=providePrefixes)
     add_parser.add_argument('-s', '--suffix', required=True, help="Suffix of the item to add", choices_provider=provideSuffixes)
     add_parser.add_argument('-t', '--tier', action='store_true', help="Prevents auto-adding of higher tier mods")
@@ -150,6 +132,7 @@ class TrackerCommands(Cmd):
 
         if args.tier:
             if base_id and prefix_id and suffix_id:
+                self.wanted_flasks.add((args.prefix, args.base, args.suffix))
                 db_cur.execute("""INSERT INTO wanted (prefix_id, base_id, suffix_id) VALUES (?,?,?)
                                   ON CONFLICT DO NOTHING""", (prefix_id, base_id, suffix_id))
                 db_conn.commit()
@@ -158,21 +141,22 @@ class TrackerCommands(Cmd):
         else:
             if base_id and prefix_id and suffix_id:
                 # Get the ids of all mods equal to or better than the mods specified in the arguments
-                result = db_cur.execute("""SELECT id FROM prefix WHERE modgroup = ? AND level >= ?""", (prefix_grp, prefix_lvl))
-                prefix_id = [p[0] for p in result.fetchall()]
+                result = db_cur.execute("""SELECT id, value FROM prefix WHERE modgroup = ? AND level >= ?""", (prefix_grp, prefix_lvl))
+                prefixes = [p for p in result.fetchall()]
 
-                result = db_cur.execute("""SELECT id FROM suffix WHERE modgroup = ? AND level >= ?""", (suffix_grp, suffix_lvl))
-                suffix_id = [s[0] for s in result.fetchall()]
+                result = db_cur.execute("""SELECT id, value FROM suffix WHERE modgroup = ? AND level >= ?""", (suffix_grp, suffix_lvl))
+                suffixes = [s for s in result.fetchall()]
 
-                for p in prefix_id:
-                    for s in suffix_id:
+                for p_id, p_value in prefixes:
+                    for s_id, s_value in suffixes:
+                        self.wanted_flasks.add((p_value, args.base, s_value))
                         db_cur.execute("""INSERT INTO wanted (prefix_id, base_id, suffix_id) VALUES (?,?,?)
-                                        ON CONFLICT DO NOTHING""", (p, base_id, s))
+                                        ON CONFLICT DO NOTHING""", (p_id, base_id, s_id))
                 db_conn.commit()
     
 
     fill_parser = Cmd2ArgumentParser(description="Add all flasks to the list of wanted crafting results")
-    fill_parser.add_argument('base', help="Base of the items to add", choices_provider=provideBases)
+    fill_parser.add_argument('base', help="Base of the items to add", choices_provider=provideWantedBases)
     @with_argparser(fill_parser)
     def do_fill(self, args):
         db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
@@ -180,16 +164,17 @@ class TrackerCommands(Cmd):
 
         base_id = getBaseIDFromDB(args.base, db_cur)
 
-        result = db_cur.execute("""SELECT id FROM prefix""")
-        prefix_id = [p[0] for p in result.fetchall()]
+        result = db_cur.execute("""SELECT id, value FROM prefix""")
+        prefixes = [p for p in result.fetchall()]
 
-        result = db_cur.execute("""SELECT id FROM suffix""")
-        suffix_id = [s[0] for s in result.fetchall()]
+        result = db_cur.execute("""SELECT id, value FROM suffix""")
+        suffixes = [s for s in result.fetchall()]
 
-        for p in prefix_id:
-            for s in suffix_id:
+        for p_id, p_value in prefixes:
+            for s_id, s_value in suffixes:
+                self.wanted_flasks.add((p_value, args.base, s_value))
                 db_cur.execute("""INSERT INTO wanted (prefix_id, base_id, suffix_id) VALUES (?,?,?)
-                                ON CONFLICT DO NOTHING""", (p, base_id, s))
+                                ON CONFLICT DO NOTHING""", (p_id, base_id, s_id))
         db_conn.commit()
 
 
@@ -209,6 +194,7 @@ class TrackerCommands(Cmd):
 
         if args.tier:
             if base_id and prefix_id and suffix_id:
+                self.wanted_flasks.remove((args.prefix, args.base, args.suffix))
                 db_cur.execute("""DELETE FROM wanted WHERE
                                 prefix_id = ? AND
                                 base_id = ? AND
@@ -219,214 +205,167 @@ class TrackerCommands(Cmd):
         else:
             if base_id and prefix_id and suffix_id:
                 # Get the ids of all mods equal to or worse than the mods specified in the arguments
-                result = db_cur.execute("""SELECT id FROM prefix WHERE modgroup = ? AND level <= ?""", (prefix_grp, prefix_lvl))
-                prefix_id = [p[0] for p in result.fetchall()]
+                result = db_cur.execute("""SELECT id, value FROM prefix WHERE modgroup = ? AND level <= ?""", (prefix_grp, prefix_lvl))
+                prefixes = [p for p in result.fetchall()]
 
-                result = db_cur.execute("""SELECT id FROM suffix WHERE modgroup = ? AND level <= ?""", (suffix_grp, suffix_lvl))
-                suffix_id = [s[0] for s in result.fetchall()]
+                result = db_cur.execute("""SELECT id, value FROM suffix WHERE modgroup = ? AND level <= ?""", (suffix_grp, suffix_lvl))
+                suffixes = [s for s in result.fetchall()]
 
-                for p in prefix_id:
-                    for s in suffix_id:
+                for p_id, p_value in prefixes:
+                    for s_id, s_value in suffixes:
+                        self.wanted_flasks.discard((p_value, args.base, s_value))
                         db_cur.execute("""DELETE FROM wanted WHERE 
                                         prefix_id = ? AND
                                         base_id = ? AND
-                                        suffix_id = ?""", (p, base_id, s))
+                                        suffix_id = ?""", (p_id, base_id, s_id))
                 db_conn.commit()
 
     fill_parser = Cmd2ArgumentParser(description="Empty the list of wanted crafting results")
-    fill_parser.add_argument('base', help="Base of the items to clear", choices_provider=provideBases)
+    fill_parser.add_argument('base', help="Base of the items to clear", choices_provider=provideWantedBases)
     @with_argparser(fill_parser)
     def do_empty(self, args):
         db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
         db_cur = db_conn.cursor()
 
-        base_id = getBaseIDFromDB(args.base, db_cur)
-        db_cur.execute("""DELETE FROM wanted WHERE base_id = ?""", (base_id,))
+        if args.base:
+            # sync in memory
+            self.wanted_flasks = {w for w in self.wanted_flasks if w[1] != args.base}
+            # sync in database
+            base_id = getBaseIDFromDB(args.base, db_cur)
+            db_cur.execute("""DELETE FROM wanted WHERE base_id = ?""", (base_id,))
+        else:
+            # sync in memory
+            self.wanted_flasks = set()
+            # sync in database
+            db_cur.execute("""DELETE FROM wanted""")
+
         db_conn.commit()
 
 
     base_parser = Cmd2ArgumentParser()
-    base_parser.add_argument('-a', '--add', help="Base to add", type=str)
-    base_parser.add_argument('-d', '--delete', help="Base to delete", choices_provider=provideBases)
-    base_parser.add_argument('-l', '--list', help="List bases", action='store_true')
+    base_parser.add_argument('-a', '--add', help="Base to add", choices_provider=provideUnwantedBases)
+    base_parser.add_argument('-d', '--delete', help="Base to delete", choices_provider=provideWantedBases)
+    base_parser.add_argument('-l', '--list', help="List wanted bases", action='store_true')
     @with_argparser(base_parser)
     def do_base(self, args):
         db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
         db_cur = db_conn.cursor()
 
         if args.add:
+            self.wanted_bases.add(args.add)
             db_cur.execute('INSERT INTO base (value) VALUES (?) ON CONFLICT DO NOTHING', (args.add.lower(),))
             db_conn.commit()
+            self.bases
         if args.delete:
+            self.wanted_bases.remove(args.delete)
             db_cur.execute('DELETE FROM base WHERE value = ?', (args.delete.lower(),))
             db_conn.commit()
         if args.list or not (args.add or args.delete):
-            result = db_cur.execute("SELECT value FROM base")
-
-            if result:
-                base = [a[0].lower() for a in result.fetchall()]
-            else:
-                base = ["DATABASE_ERROR"]
 
             self.poutput("Bases:")
             self.poutput("------")
-            for b in base:
+            for b in self.wanted_bases:
                 self.poutput(b)
             self.poutput("")
 
 
     wanted_parser = Cmd2ArgumentParser()
-    wanted_parser.add_argument('-b', '--base', help="Base filter", type=str)
-    wanted_parser.add_argument('-p', '--prefix', help="Prefix filter", type=str)
-    wanted_parser.add_argument('-s', '--suffix', help="Suffix filter", type=str)
+    wanted_parser.add_argument('-b', '--base', help="Base filter", choices_provider=provideWantedBases)
+    wanted_parser.add_argument('-p', '--prefix', help="Prefix filter", choices_provider=provideWantedPrefixes)
+    wanted_parser.add_argument('-s', '--suffix', help="Suffix filter", choices_provider=provideWantedSuffixes)
     wanted_parser.add_argument('-o', '--sort', help="Sort order of the output", choices=["base", "prefix", "suffix"])
     @with_argparser(wanted_parser)
     def do_wanted(self, args):
-        db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
-        db_cur = db_conn.cursor()
 
-        result = db_cur.execute("""SELECT prefix.value, base.value, suffix.value FROM wanted
-                                   INNER JOIN prefix ON wanted.prefix_id = prefix.id
-                                   INNER JOIN base ON wanted.base_id = base.id
-                                   INNER JOIN suffix ON wanted.suffix_id = suffix.id""")
+        items = [w for w in self.wanted_flasks]
         
-        if result:
-            items = result.fetchall()
+        if args.sort:
+            if args.sort == "prefix":
+                items.sort()
+            if args.sort == "base":
+                items.sort(key=lambda x: x[1])
+            if args.sort == "suffix":
+                items.sort(key=lambda x: x[2])
 
-            if args.sort:
-                if args.sort == "prefix":
-                    items.sort()
-                if args.sort == "base":
-                    items.sort(key=lambda x: x[1])
-                if args.sort == "suffix":
-                    items.sort(key=lambda x: x[2])
+        if args.prefix:
+            items = [i for i in items if i[0] == args.prefix]
+        if args.base:
+            items = [i for i in items if i[1] == args.base]
+        if args.suffix:
+            items = [i for i in items if i[2] == args.suffix]
 
-            if args.prefix:
-                items = [i for i in items if i[0] == args.prefix]
-            if args.base:
-                items = [i for i in items if i[1] == args.base]
-            if args.suffix:
-                items = [i for i in items if i[2] == args.suffix]
-
-            self.poutput(f"{len(items)} wanted items:")
-            self.poutput("----------------")
-            for i in items:
-                self.poutput(f"{i[0]} {i[1]} flask {i[2]}")
+        self.poutput(f"{len(items)} wanted items:")
+        self.poutput("----------------")
+        for i in items:
+            self.poutput(f"{i[0]} {i[1]} flask {i[2]}")
     
 
     regex_parser = Cmd2ArgumentParser()
     regex_parser.add_argument('base', help="Base of the item to generate regex for", choices_provider=provideWantedBases)
     @with_argparser(regex_parser)
     def do_regex(self, args):
-        db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
-        db_cur = db_conn.cursor()
 
-        base_id = getBaseIDFromDB(args.base, db_cur)
+        self.genWatnedFlasksForBase(args.base)
 
-        result = db_cur.execute("""SELECT prefix.value, suffix.value FROM wanted
-                                   INNER JOIN prefix ON wanted.prefix_id = prefix.id
-                                   INNER JOIN suffix ON wanted.suffix_id = suffix.id
-                                   WHERE base_id = ?""", (base_id,))
-        
-        if result:
-            items = result.fetchall()
+        if self.wanted_flasks_for_base:
 
-            if items:
-                # Compute short names for the wanted items
+            self.computeCliques()
 
-                affixes = [f"^{p}" for p in self.prefix] + [f"{s}$" for s in self.suffix]
+            regex_strings = []
+            
+            # # Compute short names for the wanted items
 
-                base_short_name = getBaseShortName(args.base + " flask", affixes,)
+            # affixes = [f"^{p}" for p in self.prefix] + [f"{s}$" for s in self.suffix]
 
-                prefix_short_names = {}
-                suffix_short_names = {}
+            # base_short_name = getBaseShortName(args.base + " flask", affixes,)
 
-                for i in items:
-                    p = i[0]
-                    s = i[1]
+            # prefix_short_names = {}
+            # suffix_short_names = {}
 
-                    if p not in prefix_short_names:
-                        prefix_short_names[p] = getShortName( "^" + p, affixes, args.base)
+            # for i in wanted_flasks_for_base:
+            #     p = i[0]
+            #     s = i[1]
 
-                    if s not in suffix_short_names:
-                        suffix_short_names[s] = getShortName( s + "$", affixes, args.base)
+            #     if p not in prefix_short_names:
+            #         prefix_short_names[p] = getShortName( "^" + p, affixes, args.base)
 
+            #     if s not in suffix_short_names:
+            #         suffix_short_names[s] = getShortName( s + "$", affixes, args.base)
 
-                G = networkx.Graph()
+            for clique in self.found_cliques:
 
-                for i in items:
-                    G.add_node((i[0], i[1]))
+                reg = self.genRegexForClique(clique, args.base)
                 
-                for i1 in items:
-                    for i2 in items:
-                        if i1 != i2 and not G.has_edge(i1, i2) and (i1[0], i2[1]) in items and (i2[0], i1[1]) in items:
-                            G.add_edge(i1, i2)
-                
-                _, found_cliques = networkx.approximation.clique_removal(G)
+                regex_strings.append(reg)
 
-                regex_strings = []
+            final_regex = "|".join(regex_strings)
 
-                for c in found_cliques:
-                    pfx = set()
-                    sfx = set()
+            # Test the regex to check for false positives and false negatives
+            all_flasks = [f"{p} {args.base} flask {s}" for p in self.prefix for s in self.suffix]
+            
+            wanted_flask_strings = {f"{w[0]} {args.base} flask {w[1]}" for w in self.wanted_flasks_for_base}
 
-                    for flask in c:
-                        pfx.add(prefix_short_names[flask[0]])
-                        sfx.add(suffix_short_names[flask[1]])
-
-                    pfx.add(base_short_name)
-                    sfx.add("sk$")
-
-                    p_group = generateGroup(pfx)
-                    s_group = generateGroup(sfx)
-                    
-                    regex_strings.append(f"({p_group}).*({s_group})")
-
-                final_regex = "|".join(regex_strings)
-
-                # Test the regex to check for false positives and false negatives
-                all_flasks = [f"{p} {args.base} flask {s}" for p in self.prefix for s in self.suffix]
-                
-                result = db_cur.execute("""SELECT prefix.value, base.value, suffix.value FROM wanted
-                                           INNER JOIN prefix ON wanted.prefix_id = prefix.id
-                                           INNER JOIN base ON wanted.base_id = base.id
-                                           INNER JOIN suffix ON wanted.suffix_id = suffix.id""")
-                
-                if result:
-                    items = result.fetchall()
-
-                wanted_flasks = [f"{i[0]} {i[1]} flask {i[2]}" for i in items if i[1] == args.base]
-
-                for f in all_flasks:
-                    if f in wanted_flasks:
-                        if not re.search(final_regex,f):
-                            self.poutput(f"ERROR: Regex failed to match wanted flask {f}")
-                    else:
-                        if re.search(final_regex,f):
-                            self.poutput(f"ERROR: Regex gives false positive on unwanted flask {f}")
+            for f in all_flasks:
+                if f in wanted_flask_strings:
+                    if not re.search(final_regex,f):
+                        self.poutput(f"ERROR: Regex failed to match wanted flask: {f}")
+                else:
+                    if re.search(final_regex,f):
+                        self.poutput(f"ERROR: Regex gives false positive on unwanted flask: {f}")
 
 
-                self.poutput(f"{len(final_regex)} characters")
-                final_regex = '"' + final_regex + '"'
-                self.poutput(final_regex)
-                pyperclip.copy(final_regex)
+            self.poutput(f"{len(final_regex)} characters")
+            final_regex = '"' + final_regex + '"'
+            self.poutput(final_regex)
+            pyperclip.copy(final_regex)
 
-            else:
-                self.poutput("No wanted flasks found for the given base")
+        else:
+            self.poutput("No wanted flasks found for the given base")
         
 
     def do_export(self, args):
-        db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
-        db_cur = db_conn.cursor()
 
-        result = db_cur.execute("""SELECT prefix.value, base.value, suffix.value FROM wanted
-                                   INNER JOIN prefix ON wanted.prefix_id = prefix.id
-                                   INNER JOIN base ON wanted.base_id = base.id
-                                   INNER JOIN suffix ON wanted.suffix_id = suffix.id""")
-        
-        w = result.fetchall()
-
-        wanted:list[dict[str,str]] = [{"prefix": item[0], "base": item[1], "suffix": item[2] } for item in w]
+        wanted:list[dict[str,str]] = [{"prefix": item[0], "base": item[1], "suffix": item[2] } for item in self.wanted_flasks]
 
         with open(f'{FILE_PATH}/../data/export.json', "w", encoding='utf-8') as f:
             json.dump(wanted, f)
@@ -441,17 +380,83 @@ class TrackerCommands(Cmd):
 
         for i in items:
             db_cur.execute('INSERT INTO base (value) VALUES (?) ON CONFLICT DO NOTHING', (i["base"].lower(),))
+            self.wanted_bases.add(i["base".lower()])
 
             prefix_id, prefix_grp, prefix_lvl = getPrefixInfoFromDB(i["prefix"], db_cur)
             base_id = getBaseIDFromDB(i["base"], db_cur)
             suffix_id, suffix_grp, suffix_lvl = getSuffixInfoFromDB(i["suffix"], db_cur)
 
             if base_id and prefix_id and suffix_id:
+                self.wanted_flasks.add((i["prefix"], i["base"], i["suffix"]))
                 db_cur.execute("""INSERT INTO wanted (prefix_id, base_id, suffix_id) VALUES (?,?,?)
                                   ON CONFLICT DO NOTHING""", (prefix_id, base_id, suffix_id))
         
         db_conn.commit()
 
+
+    def genWatnedFlasksForBase(self, base:str):
+        self.wanted_flasks_for_base = {(w[0], w[2]) for w in self.wanted_flasks if w[1] == base}
+
+    
+    def computeCliques(self):
+
+        G = networkx.Graph()
+
+        for i in self.wanted_flasks_for_base:
+            G.add_node((i[0], i[1]))
+        
+        for i1 in self.wanted_flasks_for_base:
+            for i2 in self.wanted_flasks_for_base:
+                if i1 != i2 and not G.has_edge(i1, i2) and (i1[0], i2[1]) in self.wanted_flasks_for_base and (i2[0], i1[1]) in self.wanted_flasks_for_base:
+                    G.add_edge(i1, i2)
+        
+        _, self.found_cliques = networkx.approximation.clique_removal(G)
+
+
+    def genRegexForClique(self, clique:set[str], base: str) -> str:
+        pfx = set()
+        sfx = set()
+
+        for flask in clique:
+            pfx.add("^" + flask[0])
+            sfx.add(flask[1] + "$")
+
+        self.wanted_affixes = pfx.union(sfx)
+
+        affixes = [f"^{p}" for p in self.prefix] + [f"{s}$" for s in self.suffix]
+
+        base_short_name = getBaseShortName(base, affixes)
+
+        p_group = self.optimizeGroup(pfx, base, base_short_name, affixes)
+        s_group = self.optimizeGroup(sfx, base, "sk$", affixes)
+
+        return f"({p_group}).*({s_group})"
+
+
+    def optimizeGroup(self, group:set[str], base: str, base_regex:str, affix_list:list[str]) -> str:
+        options = set()
+
+        for combo, criteria in self.combos.items():
+            if base in criteria["bases"] and all(affix in self.wanted_affixes for affix in criteria["affix"]):
+                # combo is valid, check if it eliminates any of the affixes left in the groups
+                if any(affix in group for affix in criteria["affix"]):
+                    subgroup = {affix for affix in group if affix not in criteria["affix"]}
+                    if subgroup:
+                        options.add(f"{combo}|{self.optimizeGroup(subgroup, base, base_regex, affix_list)}")
+                    else:
+                        options.add(combo)
+        
+        short_names = [getShortName(f, affix_list, base) for f in group] + [base_regex]
+
+        options.add("|".join(short_names))
+        options.add(foldPrefix(short_names))
+        options.add(foldSuffix(short_names))
+
+        return min(options, key=len)
+
+
+    def genShortNames(self):
+        pass
 
 def getBaseIDFromDB(value:str, db_cur:sqlite3.Cursor) -> int:
     result = db_cur.execute("SELECT id FROM base WHERE value = ?", (value,))
@@ -510,6 +515,7 @@ def generateGroup(words: Iterable[str]) -> str:
     # print(options)
 
     return min(options, key=len)
+
 
 def foldPrefix(words: Iterable[str]) -> str:
     folds:dict[str, list[str]] = {}

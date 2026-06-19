@@ -1061,8 +1061,8 @@
     },
     "ba": {
         "affix": [
-            "e abalone$",
-            "f ballast$"
+            "of the abalone$",
+            "of ballast$"
         ],
         "bases": [
             "diamond",
@@ -1086,8 +1086,8 @@
     },
     "a.a.o": {
         "affix": [
-            "e abalone$",
-            "e kakapo$"
+            "of the abalone$",
+            "of the kakapo$"
         ],
         "bases": [
             "diamond",
@@ -1112,8 +1112,8 @@
     },
     " ..al": {
         "affix": [
-            "e abalone$",
-            "e seal$"
+            "of the abalone$",
+            "of the seal$"
         ],
         "bases": [
             "diamond",
@@ -1138,8 +1138,8 @@
     },
     "ise": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$"
+            "of the tortoise$",
+            "of counterpoise$"
         ],
         "bases": [
             "diamond",
@@ -1164,8 +1164,8 @@
     },
     "rt": {
         "affix": [
-            "e tortoise$",
-            "f diverting$"
+            "of the tortoise$",
+            "of diverting$"
         ],
         "bases": [
             "diamond",
@@ -1189,8 +1189,8 @@
     },
     "or.o": {
         "affix": [
-            "e tortoise$",
-            "e cormorant$"
+            "of the tortoise$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -1215,8 +1215,8 @@
     },
     "t.is": {
         "affix": [
-            "e tortoise$",
-            "e catfish$"
+            "of the tortoise$",
+            "of the catfish$"
         ],
         "bases": [
             "diamond",
@@ -1241,8 +1241,8 @@
     },
     " t.r": {
         "affix": [
-            "e tortoise$",
-            "f turf moss$"
+            "of the tortoise$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -1267,8 +1267,8 @@
     },
     " to": {
         "affix": [
-            "e tortoise$",
-            "f tooth moss$"
+            "of the tortoise$",
+            "of tooth moss$"
         ],
         "bases": [
             "diamond",
@@ -1293,8 +1293,8 @@
     },
     "n..l": {
         "affix": [
-            "e pangolin$",
-            "e antelope$"
+            "of the pangolin$",
+            "of the antelope$"
         ],
         "bases": [
             "diamond",
@@ -1318,8 +1318,8 @@
     },
     "pa": {
         "affix": [
-            "e pangolin$",
-            "e impala$"
+            "of the pangolin$",
+            "of the impala$"
         ],
         "bases": [
             "diamond",
@@ -1343,8 +1343,8 @@
     },
     "n...i": {
         "affix": [
-            "e pangolin$",
-            "f incision$"
+            "of the pangolin$",
+            "of incision$"
         ],
         "bases": [
             "diamond",
@@ -1369,8 +1369,8 @@
     },
     "...lin": {
         "affix": [
-            "e pangolin$",
-            "e sanderling$"
+            "of the pangolin$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -1395,8 +1395,8 @@
     },
     " p....l": {
         "affix": [
-            "e pangolin$",
-            "e petrel$"
+            "of the pangolin$",
+            "of the petrel$"
         ],
         "bases": [
             "diamond",
@@ -1421,8 +1421,8 @@
     },
     "gol": {
         "affix": [
-            "e pangolin$",
-            "e goldfish$"
+            "of the pangolin$",
+            "of the goldfish$"
         ],
         "bases": [
             "diamond",
@@ -1444,10 +1444,10 @@
             "jade"
         ]
     },
-    "e p.n": {
+    "of the p.n": {
         "affix": [
-            "e pangolin$",
-            "e penguin$"
+            "of the pangolin$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -1472,8 +1472,8 @@
     },
     "a...lo": {
         "affix": [
-            "e armadillo$",
-            "e antelope$"
+            "of the armadillo$",
+            "of the antelope$"
         ],
         "bases": [
             "diamond",
@@ -1498,8 +1498,8 @@
     },
     "il": {
         "affix": [
-            "e armadillo$",
-            "f stabilisation$"
+            "of the armadillo$",
+            "of stabilisation$"
         ],
         "bases": [
             "diamond",
@@ -1522,8 +1522,8 @@
     },
     "r.a.i": {
         "affix": [
-            "e armadillo$",
-            "f wreaking$"
+            "of the armadillo$",
+            "of wreaking$"
         ],
         "bases": [
             "diamond",
@@ -1548,8 +1548,8 @@
     },
     " ..m": {
         "affix": [
-            "e armadillo$",
-            "f composure$"
+            "of the armadillo$",
+            "of composure$"
         ],
         "bases": [
             "diamond",
@@ -1574,8 +1574,8 @@
     },
     "rm": {
         "affix": [
-            "e armadillo$",
-            "e cormorant$"
+            "of the armadillo$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -1598,10 +1598,10 @@
             "jade"
         ]
     },
-    "e .r.a": {
+    "of the .r.a": {
         "affix": [
-            "e armadillo$",
-            "e orca$"
+            "of the armadillo$",
+            "of the orca$"
         ],
         "bases": [
             "diamond",
@@ -1626,8 +1626,8 @@
     },
     "m....l": {
         "affix": [
-            "e armadillo$",
-            "e mussel$"
+            "of the armadillo$",
+            "of the mussel$"
         ],
         "bases": [
             "diamond",
@@ -1652,8 +1652,8 @@
     },
     "z": {
         "affix": [
-            "e gazelle$",
-            "e lizard$"
+            "of the gazelle$",
+            "of the lizard$"
         ],
         "bases": [
             "diamond",
@@ -1676,8 +1676,8 @@
     },
     "t.l": {
         "affix": [
-            "e antelope$",
-            "e crystal$"
+            "of the antelope$",
+            "of the crystal$"
         ],
         "bases": [
             "diamond",
@@ -1702,8 +1702,8 @@
     },
     "ope": {
         "affix": [
-            "e antelope$",
-            "e kaleidoscope$"
+            "of the antelope$",
+            "of the kaleidoscope$"
         ],
         "bases": [
             "diamond",
@@ -1728,8 +1728,8 @@
     },
     "e..nt": {
         "affix": [
-            "e antelope$",
-            "f relentlessness$"
+            "of the antelope$",
+            "of relentlessness$"
         ],
         "bases": [
             "diamond",
@@ -1754,8 +1754,8 @@
     },
     "n...o": {
         "affix": [
-            "e antelope$",
-            "f tenaciousness$"
+            "of the antelope$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -1780,8 +1780,8 @@
     },
     "an.e": {
         "affix": [
-            "e antelope$",
-            "e sanderling$"
+            "of the antelope$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -1806,8 +1806,8 @@
     },
     "e.op": {
         "affix": [
-            "e antelope$",
-            "e opossum$"
+            "of the antelope$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -1832,8 +1832,8 @@
     },
     " im": {
         "affix": [
-            "e impala$",
-            "f imposing$"
+            "of the impala$",
+            "of imposing$"
         ],
         "bases": [
             "diamond",
@@ -1858,8 +1858,8 @@
     },
     " i..a": {
         "affix": [
-            "e impala$",
-            "e iguana$"
+            "of the impala$",
+            "of the iguana$"
         ],
         "bases": [
             "diamond",
@@ -1884,8 +1884,8 @@
     },
     " h.r": {
         "affix": [
-            "e hare$",
-            "e heron$"
+            "of the hare$",
+            "of the heron$"
         ],
         "bases": [
             "diamond",
@@ -1910,8 +1910,8 @@
     },
     "ha": {
         "affix": [
-            "e hare$",
-            "e narwhal$"
+            "of the hare$",
+            "of the narwhal$"
         ],
         "bases": [
             "diamond",
@@ -1936,8 +1936,8 @@
     },
     "t.h": {
         "affix": [
-            "e cheetah$",
-            "f butchery$"
+            "of the cheetah$",
+            "of butchery$"
         ],
         "bases": [
             "diamond",
@@ -1962,8 +1962,8 @@
     },
     " sti": {
         "affix": [
-            "f stiffness$",
-            "f stinging$"
+            "of stiffness$",
+            "of stinging$"
         ],
         "bases": [
             "diamond",
@@ -1988,15 +1988,15 @@
     },
     "f..s": {
         "affix": [
-            "f stiffness$",
-            "f foisting$"
+            "of stiffness$",
+            "of foisting$"
         ],
         "bases": []
     },
     "i.f": {
         "affix": [
-            "f stiffness$",
-            "f infliction$"
+            "of stiffness$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -2021,8 +2021,8 @@
     },
     "s..f": {
         "affix": [
-            "f stiffness$",
-            "e sunfish$"
+            "of stiffness$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -2046,8 +2046,8 @@
     },
     "f...s": {
         "affix": [
-            "f stiffness$",
-            "f turf moss$"
+            "of stiffness$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -2072,8 +2072,8 @@
     },
     "st..f": {
         "affix": [
-            "f stiffness$",
-            "e starfish$"
+            "of stiffness$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -2098,8 +2098,8 @@
     },
     " ..a.i": {
         "affix": [
-            "f bracing$",
-            "f stabilisation$"
+            "of bracing$",
+            "of stabilisation$"
         ],
         "bases": [
             "diamond",
@@ -2124,8 +2124,8 @@
     },
     "b..c": {
         "affix": [
-            "f bracing$",
-            "f butchery$"
+            "of bracing$",
+            "of butchery$"
         ],
         "bases": [
             "diamond",
@@ -2150,8 +2150,8 @@
     },
     " .ra": {
         "affix": [
-            "f bracing$",
-            "f draining$"
+            "of bracing$",
+            "of draining$"
         ],
         "bases": [
             "diamond",
@@ -2176,8 +2176,8 @@
     },
     "cin": {
         "affix": [
-            "f bracing$",
-            "f piercing$"
+            "of bracing$",
+            "of piercing$"
         ],
         "bases": [
             "diamond",
@@ -2202,8 +2202,8 @@
     },
     "ra.in": {
         "affix": [
-            "f bracing$",
-            "f penetrating$"
+            "of bracing$",
+            "of penetrating$"
         ],
         "bases": [
             "diamond",
@@ -2228,8 +2228,8 @@
     },
     "aci": {
         "affix": [
-            "f bracing$",
-            "f tenaciousness$"
+            "of bracing$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -2254,8 +2254,8 @@
     },
     "b.a": {
         "affix": [
-            "f bracing$",
-            "e bear$"
+            "of bracing$",
+            "of the bear$"
         ],
         "bases": [
             "diamond",
@@ -2278,10 +2278,10 @@
             "jade"
         ]
     },
-    "f ..l": {
+    "of ..l": {
         "affix": [
-            "f ballast$",
-            "f relentlessness$"
+            "of ballast$",
+            "of relentlessness$"
         ],
         "bases": [
             "diamond",
@@ -2306,8 +2306,8 @@
     },
     " .a.l": {
         "affix": [
-            "f ballast$",
-            "e sable$"
+            "of ballast$",
+            "of the sable$"
         ],
         "bases": [
             "diamond",
@@ -2332,8 +2332,8 @@
     },
     " b.l": {
         "affix": [
-            "f ballast$",
-            "e beluga$"
+            "of ballast$",
+            "of the beluga$"
         ],
         "bases": [
             "diamond",
@@ -2358,8 +2358,8 @@
     },
     "al..s": {
         "affix": [
-            "f ballast$",
-            "e walrus$"
+            "of ballast$",
+            "of the walrus$"
         ],
         "bases": [
             "diamond",
@@ -2384,8 +2384,8 @@
     },
     " c..n": {
         "affix": [
-            "f counterpoise$",
-            "f carnage$"
+            "of counterpoise$",
+            "of carnage$"
         ],
         "bases": [
             "diamond",
@@ -2410,8 +2410,8 @@
     },
     "p.i": {
         "affix": [
-            "f counterpoise$",
-            "f tapping$"
+            "of counterpoise$",
+            "of tapping$"
         ],
         "bases": [
             "diamond",
@@ -2435,8 +2435,8 @@
     },
     "u.t.r": {
         "affix": [
-            "f counterpoise$",
-            "f rupturing$"
+            "of counterpoise$",
+            "of rupturing$"
         ],
         "bases": [
             "diamond",
@@ -2461,8 +2461,8 @@
     },
     " .o..t": {
         "affix": [
-            "f counterpoise$",
-            "f foisting$"
+            "of counterpoise$",
+            "of foisting$"
         ],
         "bases": [
             "diamond",
@@ -2485,10 +2485,10 @@
             "jade"
         ]
     },
-    "f co": {
+    "of co": {
         "affix": [
-            "f counterpoise$",
-            "f composure$"
+            "of counterpoise$",
+            "of composure$"
         ],
         "bases": [
             "diamond",
@@ -2513,8 +2513,8 @@
     },
     "ou..e": {
         "affix": [
-            "f counterpoise$",
-            "f tenaciousness$"
+            "of counterpoise$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -2539,8 +2539,8 @@
     },
     "n...p": {
         "affix": [
-            "f counterpoise$",
-            "e sandpiper$"
+            "of counterpoise$",
+            "of the sandpiper$"
         ],
         "bases": [
             "diamond",
@@ -2563,10 +2563,10 @@
             "jade"
         ]
     },
-    "f ..u": {
+    "of ..u": {
         "affix": [
-            "f counterpoise$",
-            "f plume moss$"
+            "of counterpoise$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -2591,8 +2591,8 @@
     },
     " ..un": {
         "affix": [
-            "f counterpoise$",
-            "e skunk$"
+            "of counterpoise$",
+            "of the skunk$"
         ],
         "bases": [
             "diamond",
@@ -2617,8 +2617,8 @@
     },
     "po.s": {
         "affix": [
-            "f counterpoise$",
-            "e opossum$"
+            "of counterpoise$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -2643,8 +2643,8 @@
     },
     "s...o": {
         "affix": [
-            "f stabilisation$",
-            "f siphoning$"
+            "of stabilisation$",
+            "of siphoning$"
         ],
         "bases": [
             "diamond",
@@ -2669,8 +2669,8 @@
     },
     "...ati": {
         "affix": [
-            "f stabilisation$",
-            "f penetrating$"
+            "of stabilisation$",
+            "of penetrating$"
         ],
         "bases": [
             "diamond",
@@ -2695,8 +2695,8 @@
     },
     "a.i..s": {
         "affix": [
-            "f stabilisation$",
-            "f tenaciousness$"
+            "of stabilisation$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -2721,8 +2721,8 @@
     },
     " ...b": {
         "affix": [
-            "f stabilisation$",
-            "e rabbit$"
+            "of stabilisation$",
+            "of the rabbit$"
         ],
         "bases": [
             "diamond",
@@ -2747,8 +2747,8 @@
     },
     "a...i": {
         "affix": [
-            "f stabilisation$",
-            "e sandpiper$"
+            "of stabilisation$",
+            "of the sandpiper$"
         ],
         "bases": [
             "diamond",
@@ -2771,8 +2771,8 @@
     },
     " s...i": {
         "affix": [
-            "f stabilisation$",
-            "e sunfish$"
+            "of stabilisation$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -2797,8 +2797,8 @@
     },
     " sta": {
         "affix": [
-            "f stabilisation$",
-            "e starfish$"
+            "of stabilisation$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -2823,8 +2823,8 @@
     },
     "li.a": {
         "affix": [
-            "f stabilisation$",
-            "e lizard$"
+            "of stabilisation$",
+            "of the lizard$"
         ],
         "bases": [
             "diamond",
@@ -2849,8 +2849,8 @@
     },
     "ry": {
         "affix": [
-            "e crystal$",
-            "f butchery$"
+            "of the crystal$",
+            "of butchery$"
         ],
         "bases": [
             "diamond",
@@ -2875,8 +2875,8 @@
     },
     "r...a": {
         "affix": [
-            "e crystal$",
-            "e cormorant$"
+            "of the crystal$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -2898,8 +2898,8 @@
     },
     "s.al": {
         "affix": [
-            "e crystal$",
-            "e seal$"
+            "of the crystal$",
+            "of the seal$"
         ],
         "bases": [
             "diamond",
@@ -2924,8 +2924,8 @@
     },
     " k": {
         "affix": [
-            "e kaleidoscope$",
-            "e kakapo$"
+            "of the kaleidoscope$",
+            "of the kakapo$"
         ],
         "bases": [
             "diamond",
@@ -2950,8 +2950,8 @@
     },
     "o.c": {
         "affix": [
-            "e kaleidoscope$",
-            "e orca$"
+            "of the kaleidoscope$",
+            "of the orca$"
         ],
         "bases": [
             "diamond",
@@ -2976,8 +2976,8 @@
     },
     "ai": {
         "affix": [
-            "e rainbow$",
-            "f draining$"
+            "of the rainbow$",
+            "of draining$"
         ],
         "bases": [
             "diamond",
@@ -3000,10 +3000,10 @@
             "jade"
         ]
     },
-    "e r": {
+    "of the r": {
         "affix": [
-            "e rainbow$",
-            "e rabbit$"
+            "of the rainbow$",
+            "of the rabbit$"
         ],
         "bases": [
             "diamond",
@@ -3028,8 +3028,8 @@
     },
     "ow": {
         "affix": [
-            "e rainbow$",
-            "e owl$"
+            "of the rainbow$",
+            "of the owl$"
         ],
         "bases": [
             "diamond",
@@ -3054,8 +3054,8 @@
     },
     "n..w": {
         "affix": [
-            "e rainbow$",
-            "e narwhal$"
+            "of the rainbow$",
+            "of the narwhal$"
         ],
         "bases": [
             "diamond",
@@ -3078,10 +3078,10 @@
             "jade"
         ]
     },
-    "e ..i": {
+    "of the ..i": {
         "affix": [
-            "e rainbow$",
-            "e skink$"
+            "of the rainbow$",
+            "of the skink$"
         ],
         "bases": [
             "diamond",
@@ -3106,8 +3106,8 @@
     },
     "od": {
         "affix": [
-            "f bloodshed$",
-            "f bloodletting$"
+            "of bloodshed$",
+            "of bloodletting$"
         ],
         "bases": [
             "diamond",
@@ -3132,8 +3132,8 @@
     },
     "o.s.e": {
         "affix": [
-            "f bloodshed$",
-            "f tenaciousness$"
+            "of bloodshed$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -3158,8 +3158,8 @@
     },
     "o..h": {
         "affix": [
-            "f bloodshed$",
-            "f tooth moss$"
+            "of bloodshed$",
+            "of tooth moss$"
         ],
         "bases": [
             "diamond",
@@ -3184,8 +3184,8 @@
     },
     "hed": {
         "affix": [
-            "f bloodshed$",
-            "e hedgehog$"
+            "of bloodshed$",
+            "of the hedgehog$"
         ],
         "bases": [
             "diamond",
@@ -3210,8 +3210,8 @@
     },
     " go": {
         "affix": [
-            "f gore$",
-            "e goldfish$"
+            "of gore$",
+            "of the goldfish$"
         ],
         "bases": [
             "diamond",
@@ -3236,8 +3236,8 @@
     },
     "g.r": {
         "affix": [
-            "f gore$",
-            "e conger$"
+            "of gore$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -3262,8 +3262,8 @@
     },
     "r..g": {
         "affix": [
-            "f carnage$",
-            "f rupturing$"
+            "of carnage$",
+            "of rupturing$"
         ],
         "bases": [
             "diamond",
@@ -3288,8 +3288,8 @@
     },
     "car": {
         "affix": [
-            "f carnage$",
-            "e carp$"
+            "of carnage$",
+            "of the carp$"
         ],
         "bases": [
             "diamond",
@@ -3314,8 +3314,8 @@
     },
     "..b.t": {
         "affix": [
-            "f butchery$",
-            "e rabbit$"
+            "of butchery$",
+            "of the rabbit$"
         ],
         "bases": [
             "diamond",
@@ -3340,8 +3340,8 @@
     },
     "her": {
         "affix": [
-            "f butchery$",
-            "e heron$"
+            "of butchery$",
+            "of the heron$"
         ],
         "bases": [
             "diamond",
@@ -3366,8 +3366,8 @@
     },
     "u.c": {
         "affix": [
-            "f butchery$",
-            "e urchin$"
+            "of butchery$",
+            "of the urchin$"
         ],
         "bases": [
             "diamond",
@@ -3391,8 +3391,8 @@
     },
     "e.tin": {
         "affix": [
-            "f bloodletting$",
-            "f diverting$"
+            "of bloodletting$",
+            "of diverting$"
         ],
         "bases": [
             "diamond",
@@ -3417,8 +3417,8 @@
     },
     "let": {
         "affix": [
-            "f bloodletting$",
-            "f depletion$"
+            "of bloodletting$",
+            "of depletion$"
         ],
         "bases": [
             "diamond",
@@ -3443,8 +3443,8 @@
     },
     "o...t": {
         "affix": [
-            "f bloodletting$",
-            "e cormorant$"
+            "of bloodletting$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -3469,8 +3469,8 @@
     },
     "ver": {
         "affix": [
-            "f diverting$",
-            "e plover$"
+            "of diverting$",
+            "of the plover$"
         ],
         "bases": [
             "diamond",
@@ -3493,8 +3493,8 @@
     },
     "de.l": {
         "affix": [
-            "f depletion$",
-            "e sanderling$"
+            "of depletion$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -3519,8 +3519,8 @@
     },
     "e..on": {
         "affix": [
-            "f depletion$",
-            "e conger$"
+            "of depletion$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -3545,8 +3545,8 @@
     },
     "a..in": {
         "affix": [
-            "f tapping$",
-            "f draining$"
+            "of tapping$",
+            "of draining$"
         ],
         "bases": [
             "diamond",
@@ -3571,8 +3571,8 @@
     },
     "...pi": {
         "affix": [
-            "f tapping$",
-            "e sandpiper$"
+            "of tapping$",
+            "of the sandpiper$"
         ],
         "bases": [
             "diamond",
@@ -3597,8 +3597,8 @@
     },
     "ta..i": {
         "affix": [
-            "f tapping$",
-            "e starfish$"
+            "of tapping$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -3623,8 +3623,8 @@
     },
     "nin": {
         "affix": [
-            "f siphoning$",
-            "f draining$"
+            "of siphoning$",
+            "of draining$"
         ],
         "bases": [
             "diamond",
@@ -3649,8 +3649,8 @@
     },
     "o.ing": {
         "affix": [
-            "f siphoning$",
-            "f imposing$"
+            "of siphoning$",
+            "of imposing$"
         ],
         "bases": [
             "diamond",
@@ -3675,8 +3675,8 @@
     },
     "ip": {
         "affix": [
-            "f siphoning$",
-            "e sandpiper$"
+            "of siphoning$",
+            "of the sandpiper$"
         ],
         "bases": [
             "diamond",
@@ -3701,8 +3701,8 @@
     },
     "h...n": {
         "affix": [
-            "f siphoning$",
-            "e heron$"
+            "of siphoning$",
+            "of the heron$"
         ],
         "bases": [
             "diamond",
@@ -3727,8 +3727,8 @@
     },
     "h.n": {
         "affix": [
-            "f siphoning$",
-            "e urchin$"
+            "of siphoning$",
+            "of the urchin$"
         ],
         "bases": [
             "diamond",
@@ -3753,8 +3753,8 @@
     },
     " ...i": {
         "affix": [
-            "f draining$",
-            "f incision$"
+            "of draining$",
+            "of incision$"
         ],
         "bases": [
             "diamond",
@@ -3779,8 +3779,8 @@
     },
     "in.i": {
         "affix": [
-            "f stinging$",
-            "f incision$"
+            "of stinging$",
+            "of incision$"
         ],
         "bases": [
             "diamond",
@@ -3805,8 +3805,8 @@
     },
     "stin": {
         "affix": [
-            "f stinging$",
-            "f foisting$"
+            "of stinging$",
+            "of foisting$"
         ],
         "bases": [
             "diamond",
@@ -3831,8 +3831,8 @@
     },
     " s.in": {
         "affix": [
-            "f stinging$",
-            "e skink$"
+            "of stinging$",
+            "of the skink$"
         ],
         "bases": [
             "diamond",
@@ -3857,8 +3857,8 @@
     },
     ".e.c": {
         "affix": [
-            "f piercing$",
-            "f persistence$"
+            "of piercing$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -3883,8 +3883,8 @@
     },
     " p..r": {
         "affix": [
-            "f piercing$",
-            "e petrel$"
+            "of piercing$",
+            "of the petrel$"
         ],
         "bases": [
             "diamond",
@@ -3909,8 +3909,8 @@
     },
     "e.c.n": {
         "affix": [
-            "f piercing$",
-            "e conger$"
+            "of piercing$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -3933,10 +3933,10 @@
             "jade"
         ]
     },
-    "f r": {
+    "of r": {
         "affix": [
-            "f rupturing$",
-            "f relentlessness$"
+            "of rupturing$",
+            "of relentlessness$"
         ],
         "bases": [
             "diamond",
@@ -3961,8 +3961,8 @@
     },
     "up": {
         "affix": [
-            "f rupturing$",
-            "e guppy$"
+            "of rupturing$",
+            "of the guppy$"
         ],
         "bases": [
             "diamond",
@@ -3987,8 +3987,8 @@
     },
     "tur": {
         "affix": [
-            "f rupturing$",
-            "f turf moss$"
+            "of rupturing$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -4013,8 +4013,8 @@
     },
     "p.u": {
         "affix": [
-            "f rupturing$",
-            "f plume moss$"
+            "of rupturing$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -4036,10 +4036,10 @@
             "jade"
         ]
     },
-    "f pe": {
+    "of pe": {
         "affix": [
-            "f penetrating$",
-            "f persistence$"
+            "of penetrating$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -4064,8 +4064,8 @@
     },
     " .e.e": {
         "affix": [
-            "f penetrating$",
-            "f relentlessness$"
+            "of penetrating$",
+            "of relentlessness$"
         ],
         "bases": [
             "diamond",
@@ -4088,10 +4088,10 @@
             "jade"
         ]
     },
-    "f .en": {
+    "of .en": {
         "affix": [
-            "f penetrating$",
-            "f tenaciousness$"
+            "of penetrating$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -4116,8 +4116,8 @@
     },
     "p....r": {
         "affix": [
-            "f penetrating$",
-            "e plover$"
+            "of penetrating$",
+            "of the plover$"
         ],
         "bases": [
             "diamond",
@@ -4142,8 +4142,8 @@
     },
     "etr": {
         "affix": [
-            "f penetrating$",
-            "e petrel$"
+            "of penetrating$",
+            "of the petrel$"
         ],
         "bases": [
             "diamond",
@@ -4168,8 +4168,8 @@
     },
     "pen": {
         "affix": [
-            "f penetrating$",
-            "e penguin$"
+            "of penetrating$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -4194,8 +4194,8 @@
     },
     "e..t": {
         "affix": [
-            "f penetrating$",
-            "e starfish$"
+            "of penetrating$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -4220,8 +4220,8 @@
     },
     " i...s": {
         "affix": [
-            "f incision$",
-            "f imposing$"
+            "of incision$",
+            "of imposing$"
         ],
         "bases": [
             "diamond",
@@ -4246,8 +4246,8 @@
     },
     " in": {
         "affix": [
-            "f incision$",
-            "f infliction$"
+            "of incision$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -4272,8 +4272,8 @@
     },
     "nc": {
         "affix": [
-            "f incision$",
-            "f persistence$"
+            "of incision$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -4298,8 +4298,8 @@
     },
     "ci...n": {
         "affix": [
-            "f incision$",
-            "f tenaciousness$"
+            "of incision$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -4324,8 +4324,8 @@
     },
     "n.is": {
         "affix": [
-            "f incision$",
-            "e sunfish$"
+            "of incision$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -4350,8 +4350,8 @@
     },
     ".f.i": {
         "affix": [
-            "f foisting$",
-            "f infliction$"
+            "of foisting$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -4376,8 +4376,8 @@
     },
     "fo...": {
         "affix": [
-            "f foisting$",
-            "f surefootedness$"
+            "of foisting$",
+            "of surefootedness$"
         ],
         "bases": [
             "diamond",
@@ -4402,8 +4402,8 @@
     },
     "ist.n": {
         "affix": [
-            "f foisting$",
-            "f persistence$"
+            "of foisting$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -4426,10 +4426,10 @@
             "jade"
         ]
     },
-    "f .o.s": {
+    "of .o.s": {
         "affix": [
-            "f foisting$",
-            "f turf moss$"
+            "of foisting$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -4454,8 +4454,8 @@
     },
     "mpo": {
         "affix": [
-            "f imposing$",
-            "f composure$"
+            "of imposing$",
+            "of composure$"
         ],
         "bases": [
             "diamond",
@@ -4480,8 +4480,8 @@
     },
     "m...i": {
         "affix": [
-            "f imposing$",
-            "e mockingbird$"
+            "of imposing$",
+            "of the mockingbird$"
         ],
         "bases": [
             "diamond",
@@ -4506,8 +4506,8 @@
     },
     "king": {
         "affix": [
-            "f wreaking$",
-            "e mockingbird$"
+            "of wreaking$",
+            "of the mockingbird$"
         ],
         "bases": [
             "diamond",
@@ -4532,8 +4532,8 @@
     },
     "ak": {
         "affix": [
-            "f wreaking$",
-            "e kakapo$"
+            "of wreaking$",
+            "of the kakapo$"
         ],
         "bases": [
             "diamond",
@@ -4558,8 +4558,8 @@
     },
     " .re": {
         "affix": [
-            "f wreaking$",
-            "f tree moss$"
+            "of wreaking$",
+            "of tree moss$"
         ],
         "bases": [
             "diamond",
@@ -4584,8 +4584,8 @@
     },
     " w": {
         "affix": [
-            "f wreaking$",
-            "e walrus$"
+            "of wreaking$",
+            "of the walrus$"
         ],
         "bases": [
             "diamond",
@@ -4610,8 +4610,8 @@
     },
     "nf": {
         "affix": [
-            "f infliction$",
-            "e sunfish$"
+            "of infliction$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -4636,8 +4636,8 @@
     },
     "p...r": {
         "affix": [
-            "f composure$",
-            "e sandpiper$"
+            "of composure$",
+            "of the sandpiper$"
         ],
         "bases": [
             "diamond",
@@ -4661,8 +4661,8 @@
     },
     "co..o": {
         "affix": [
-            "f composure$",
-            "e cormorant$"
+            "of composure$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -4687,8 +4687,8 @@
     },
     "c..p": {
         "affix": [
-            "f composure$",
-            "e carp$"
+            "of composure$",
+            "of the carp$"
         ],
         "bases": [
             "diamond",
@@ -4713,8 +4713,8 @@
     },
     " su": {
         "affix": [
-            "f surefootedness$",
-            "e sunfish$"
+            "of surefootedness$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -4737,10 +4737,10 @@
             "jade"
         ]
     },
-    "f .ur": {
+    "of .ur": {
         "affix": [
-            "f surefootedness$",
-            "f turf moss$"
+            "of surefootedness$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -4765,8 +4765,8 @@
     },
     "oot": {
         "affix": [
-            "f surefootedness$",
-            "f tooth moss$"
+            "of surefootedness$",
+            "of tooth moss$"
         ],
         "bases": [
             "diamond",
@@ -4791,8 +4791,8 @@
     },
     "u.e..": {
         "affix": [
-            "f surefootedness$",
-            "f plume moss$"
+            "of surefootedness$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -4817,8 +4817,8 @@
     },
     "ed.e": {
         "affix": [
-            "f surefootedness$",
-            "e hedgehog$"
+            "of surefootedness$",
+            "of the hedgehog$"
         ],
         "bases": [
             "diamond",
@@ -4843,8 +4843,8 @@
     },
     "ten": {
         "affix": [
-            "f persistence$",
-            "f tenaciousness$"
+            "of persistence$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -4869,8 +4869,8 @@
     },
     " .er": {
         "affix": [
-            "f persistence$",
-            "e heron$"
+            "of persistence$",
+            "of the heron$"
         ],
         "bases": [
             "diamond",
@@ -4895,8 +4895,8 @@
     },
     "r.is": {
         "affix": [
-            "f persistence$",
-            "e starfish$"
+            "of persistence$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -4921,8 +4921,8 @@
     },
     "sn": {
         "affix": [
-            "f relentlessness$",
-            "f tenaciousness$"
+            "of relentlessness$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -4947,8 +4947,8 @@
     },
     ".e..n": {
         "affix": [
-            "f relentlessness$",
-            "e heron$"
+            "of relentlessness$",
+            "of the heron$"
         ],
         "bases": [
             "diamond",
@@ -4973,8 +4973,8 @@
     },
     "rel": {
         "affix": [
-            "f relentlessness$",
-            "e petrel$"
+            "of relentlessness$",
+            "of the petrel$"
         ],
         "bases": [
             "diamond",
@@ -4999,8 +4999,8 @@
     },
     "u...s": {
         "affix": [
-            "f tenaciousness$",
-            "e sunfish$"
+            "of tenaciousness$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -5024,8 +5024,8 @@
     },
     "en..i": {
         "affix": [
-            "f tenaciousness$",
-            "e penguin$"
+            "of tenaciousness$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -5050,8 +5050,8 @@
     },
     "us.e": {
         "affix": [
-            "f tenaciousness$",
-            "e mussel$"
+            "of tenaciousness$",
+            "of the mussel$"
         ],
         "bases": [
             "diamond",
@@ -5076,8 +5076,8 @@
     },
     "i.u.n": {
         "affix": [
-            "f tenaciousness$",
-            "e iguana$"
+            "of tenaciousness$",
+            "of the iguana$"
         ],
         "bases": [
             "diamond",
@@ -5102,8 +5102,8 @@
     },
     " .ab": {
         "affix": [
-            "e rabbit$",
-            "e sable$"
+            "of the rabbit$",
+            "of the sable$"
         ],
         "bases": [
             "diamond",
@@ -5128,8 +5128,8 @@
     },
     " cat": {
         "affix": [
-            "e cat$",
-            "e catfish$"
+            "of the cat$",
+            "of the catfish$"
         ],
         "bases": [
             "diamond",
@@ -5154,8 +5154,8 @@
     },
     "sa..e": {
         "affix": [
-            "e sable$",
-            "e sanderling$"
+            "of the sable$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -5180,8 +5180,8 @@
     },
     " s..l": {
         "affix": [
-            "e sable$",
-            "e seal$"
+            "of the sable$",
+            "of the seal$"
         ],
         "bases": [
             "diamond",
@@ -5204,10 +5204,10 @@
             "jade"
         ]
     },
-    "e b": {
+    "of the b": {
         "affix": [
-            "e bear$",
-            "e beluga$"
+            "of the bear$",
+            "of the beluga$"
         ],
         "bases": [
             "diamond",
@@ -5232,8 +5232,8 @@
     },
     " ..ar": {
         "affix": [
-            "e bear$",
-            "e starfish$"
+            "of the bear$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -5256,10 +5256,10 @@
             "jade"
         ]
     },
-    "e p...e": {
+    "of the p...e": {
         "affix": [
-            "e plover$",
-            "e petrel$"
+            "of the plover$",
+            "of the petrel$"
         ],
         "bases": [
             "diamond",
@@ -5284,8 +5284,8 @@
     },
     " pl": {
         "affix": [
-            "e plover$",
-            "f plume moss$"
+            "of the plover$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -5308,10 +5308,10 @@
             "jade"
         ]
     },
-    "e ..o": {
+    "of the ..o": {
         "affix": [
-            "e plover$",
-            "e opossum$"
+            "of the plover$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -5336,8 +5336,8 @@
     },
     "l...r": {
         "affix": [
-            "e plover$",
-            "e lizard$"
+            "of the plover$",
+            "of the lizard$"
         ],
         "bases": [
             "diamond",
@@ -5361,8 +5361,8 @@
     },
     "san": {
         "affix": [
-            "e sandpiper$",
-            "e sanderling$"
+            "of the sandpiper$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -5387,8 +5387,8 @@
     },
     "a..p": {
         "affix": [
-            "e sandpiper$",
-            "e kakapo$"
+            "of the sandpiper$",
+            "of the kakapo$"
         ],
         "bases": [
             "diamond",
@@ -5413,8 +5413,8 @@
     },
     "d.i": {
         "affix": [
-            "e sandpiper$",
-            "e goldfish$"
+            "of the sandpiper$",
+            "of the goldfish$"
         ],
         "bases": [
             "diamond",
@@ -5439,8 +5439,8 @@
     },
     " ...m": {
         "affix": [
-            "e cormorant$",
-            "f plume moss$"
+            "of the cormorant$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -5463,10 +5463,10 @@
             "jade"
         ]
     },
-    "e co": {
+    "of the co": {
         "affix": [
-            "e cormorant$",
-            "e conger$"
+            "of the cormorant$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -5491,8 +5491,8 @@
     },
     "mor": {
         "affix": [
-            "e cormorant$",
-            "e moray$"
+            "of the cormorant$",
+            "of the moray$"
         ],
         "bases": [
             "diamond",
@@ -5517,8 +5517,8 @@
     },
     "rl": {
         "affix": [
-            "e sanderling$",
-            "e curlew$"
+            "of the sanderling$",
+            "of the curlew$"
         ],
         "bases": [
             "diamond",
@@ -5543,8 +5543,8 @@
     },
     " ..n.e": {
         "affix": [
-            "e sanderling$",
-            "e conger$"
+            "of the sanderling$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -5569,8 +5569,8 @@
     },
     "e.li": {
         "affix": [
-            "e sanderling$",
-            "e lizard$"
+            "of the sanderling$",
+            "of the lizard$"
         ],
         "bases": [
             "diamond",
@@ -5595,8 +5595,8 @@
     },
     " he": {
         "affix": [
-            "e heron$",
-            "e hedgehog$"
+            "of the heron$",
+            "of the hedgehog$"
         ],
         "bases": [
             "diamond",
@@ -5621,8 +5621,8 @@
     },
     "tre": {
         "affix": [
-            "e petrel$",
-            "f tree moss$"
+            "of the petrel$",
+            "of tree moss$"
         ],
         "bases": [
             "diamond",
@@ -5647,8 +5647,8 @@
     },
     "g.i": {
         "affix": [
-            "e mockingbird$",
-            "e penguin$"
+            "of the mockingbird$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -5673,8 +5673,8 @@
     },
     "rd": {
         "affix": [
-            "e mockingbird$",
-            "e lizard$"
+            "of the mockingbird$",
+            "of the lizard$"
         ],
         "bases": [
             "diamond",
@@ -5699,8 +5699,8 @@
     },
     "c...e": {
         "affix": [
-            "e curlew$",
-            "e conger$"
+            "of the curlew$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -5725,8 +5725,8 @@
     },
     " .rc": {
         "affix": [
-            "e orca$",
-            "e urchin$"
+            "of the orca$",
+            "of the urchin$"
         ],
         "bases": [
             "diamond",
@@ -5751,8 +5751,8 @@
     },
     " se": {
         "affix": [
-            "e sea lion$",
-            "e seal$"
+            "of the sea lion$",
+            "of the seal$"
         ],
         "bases": [
             "diamond",
@@ -5777,8 +5777,8 @@
     },
     "e. ": {
         "affix": [
-            "e sea lion$",
-            "f tree moss$"
+            "of the sea lion$",
+            "of tree moss$"
         ],
         "bases": [
             "diamond",
@@ -5801,8 +5801,8 @@
     },
     " li": {
         "affix": [
-            "e sea lion$",
-            "e lizard$"
+            "of the sea lion$",
+            "of the lizard$"
         ],
         "bases": [
             "diamond",
@@ -5827,8 +5827,8 @@
     },
     "n...h": {
         "affix": [
-            "e narwhal$",
-            "e sunfish$"
+            "of the narwhal$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -5853,8 +5853,8 @@
     },
     "r.h": {
         "affix": [
-            "e narwhal$",
-            "e urchin$"
+            "of the narwhal$",
+            "of the urchin$"
         ],
         "bases": [
             "diamond",
@@ -5879,8 +5879,8 @@
     },
     "lu": {
         "affix": [
-            "e beluga$",
-            "f plume moss$"
+            "of the beluga$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -5905,8 +5905,8 @@
     },
     "e.gu": {
         "affix": [
-            "e guppy$",
-            "e penguin$"
+            "of the guppy$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -5931,8 +5931,8 @@
     },
     "t...h": {
         "affix": [
-            "e catfish$",
-            "f tooth moss$"
+            "of the catfish$",
+            "of tooth moss$"
         ],
         "bases": [
             "diamond",
@@ -5957,8 +5957,8 @@
     },
     "a.f": {
         "affix": [
-            "e catfish$",
-            "e starfish$"
+            "of the catfish$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -5983,8 +5983,8 @@
     },
     "u.f": {
         "affix": [
-            "e sunfish$",
-            "f turf moss$"
+            "of the sunfish$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -6009,8 +6009,8 @@
     },
     "t... ": {
         "affix": [
-            "f tree moss$",
-            "f turf moss$"
+            "of tree moss$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -6035,8 +6035,8 @@
     },
     ".e ": {
         "affix": [
-            "f tree moss$",
-            "f plume moss$"
+            "of tree moss$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -6056,8 +6056,8 @@
     },
     "u.. ": {
         "affix": [
-            "f turf moss$",
-            "f plume moss$"
+            "of turf moss$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -6080,8 +6080,8 @@
     },
     "rf": {
         "affix": [
-            "f turf moss$",
-            "e starfish$"
+            "of turf moss$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -6106,8 +6106,8 @@
     },
     "um": {
         "affix": [
-            "f plume moss$",
-            "e opossum$"
+            "of plume moss$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -6131,8 +6131,8 @@
     },
     "s.u": {
         "affix": [
-            "e skunk$",
-            "e opossum$"
+            "of the skunk$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -6156,15 +6156,15 @@
     },
     "sk": {
         "affix": [
-            "e skunk$",
-            "e skink$"
+            "of the skunk$",
+            "of the skink$"
         ],
         "bases": []
     },
-    "e ..u": {
+    "of the ..u": {
         "affix": [
-            "e skunk$",
-            "e iguana$"
+            "of the skunk$",
+            "of the iguana$"
         ],
         "bases": [
             "diamond",
@@ -6189,8 +6189,8 @@
     },
     "p...u": {
         "affix": [
-            "e opossum$",
-            "e penguin$"
+            "of the opossum$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -6215,8 +6215,8 @@
     },
     "gu.n": {
         "affix": [
-            "e penguin$",
-            "e iguana$"
+            "of the penguin$",
+            "of the iguana$"
         ],
         "bases": [
             "diamond",
@@ -6885,9 +6885,9 @@
     },
     " a": {
         "affix": [
-            "e abalone$",
-            "e armadillo$",
-            "e antelope$"
+            "of the abalone$",
+            "of the armadillo$",
+            "of the antelope$"
         ],
         "bases": [
             "diamond",
@@ -6912,9 +6912,9 @@
     },
     "lo.e": {
         "affix": [
-            "e abalone$",
-            "e antelope$",
-            "e plover$"
+            "of the abalone$",
+            "of the antelope$",
+            "of the plover$"
         ],
         "bases": [
             "diamond",
@@ -6939,9 +6939,9 @@
     },
     "a...o..": {
         "affix": [
-            "e abalone$",
-            "e rainbow$",
-            "e sea lion$"
+            "of the abalone$",
+            "of the rainbow$",
+            "of the sea lion$"
         ],
         "bases": [
             "diamond",
@@ -6966,9 +6966,9 @@
     },
     "b..o": {
         "affix": [
-            "e abalone$",
-            "f bloodshed$",
-            "f bloodletting$"
+            "of the abalone$",
+            "of bloodshed$",
+            "of bloodletting$"
         ],
         "bases": [
             "diamond",
@@ -6993,9 +6993,9 @@
     },
     "t....is": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$",
-            "f stabilisation$"
+            "of the tortoise$",
+            "of counterpoise$",
+            "of stabilisation$"
         ],
         "bases": [
             "diamond",
@@ -7020,9 +7020,9 @@
     },
     "....r..i": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$",
-            "f penetrating$"
+            "of the tortoise$",
+            "of counterpoise$",
+            "of penetrating$"
         ],
         "bases": [
             "diamond",
@@ -7047,9 +7047,9 @@
     },
     "oi": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$",
-            "f foisting$"
+            "of the tortoise$",
+            "of counterpoise$",
+            "of foisting$"
         ],
         "bases": [
             "diamond",
@@ -7074,9 +7074,9 @@
     },
     "r....e": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$",
-            "f persistence$"
+            "of the tortoise$",
+            "of counterpoise$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -7100,9 +7100,9 @@
     },
     "r.o": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$",
-            "e cormorant$"
+            "of the tortoise$",
+            "of counterpoise$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -7127,9 +7127,9 @@
     },
     "t...o.s.": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$",
-            "f tooth moss$"
+            "of the tortoise$",
+            "of counterpoise$",
+            "of tooth moss$"
         ],
         "bases": [
             "diamond",
@@ -7154,9 +7154,9 @@
     },
     "t.i": {
         "affix": [
-            "e tortoise$",
-            "f bloodletting$",
-            "e catfish$"
+            "of the tortoise$",
+            "of bloodletting$",
+            "of the catfish$"
         ],
         "bases": [
             "diamond",
@@ -7181,9 +7181,9 @@
     },
     " .o...i": {
         "affix": [
-            "e tortoise$",
-            "f foisting$",
-            "e goldfish$"
+            "of the tortoise$",
+            "of foisting$",
+            "of the goldfish$"
         ],
         "bases": [
             "diamond",
@@ -7208,9 +7208,9 @@
     },
     " .o..o": {
         "affix": [
-            "e tortoise$",
-            "f composure$",
-            "e cormorant$"
+            "of the tortoise$",
+            "of composure$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -7235,9 +7235,9 @@
     },
     "...o.t": {
         "affix": [
-            "e tortoise$",
-            "f surefootedness$",
-            "f tooth moss$"
+            "of the tortoise$",
+            "of surefootedness$",
+            "of tooth moss$"
         ],
         "bases": [
             "diamond",
@@ -7262,9 +7262,9 @@
     },
     "t..s": {
         "affix": [
-            "e tortoise$",
-            "f relentlessness$",
-            "e catfish$"
+            "of the tortoise$",
+            "of relentlessness$",
+            "of the catfish$"
         ],
         "bases": [
             "diamond",
@@ -7286,11 +7286,11 @@
             "jade"
         ]
     },
-    "e .or": {
+    "of the .or": {
         "affix": [
-            "e tortoise$",
-            "e cormorant$",
-            "e moray$"
+            "of the tortoise$",
+            "of the cormorant$",
+            "of the moray$"
         ],
         "bases": [
             "diamond",
@@ -7315,9 +7315,9 @@
     },
     " .{5}is": {
         "affix": [
-            "e tortoise$",
-            "e goldfish$",
-            "e starfish$"
+            "of the tortoise$",
+            "of the goldfish$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -7342,9 +7342,9 @@
     },
     "...a..o": {
         "affix": [
-            "e pangolin$",
-            "f stabilisation$",
-            "f tenaciousness$"
+            "of the pangolin$",
+            "of stabilisation$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -7369,9 +7369,9 @@
     },
     "go": {
         "affix": [
-            "e pangolin$",
-            "f gore$",
-            "e goldfish$"
+            "of the pangolin$",
+            "of gore$",
+            "of the goldfish$"
         ],
         "bases": [
             "diamond",
@@ -7395,9 +7395,9 @@
     },
     "p.ng": {
         "affix": [
-            "e pangolin$",
-            "f tapping$",
-            "e penguin$"
+            "of the pangolin$",
+            "of tapping$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -7422,9 +7422,9 @@
     },
     "o.in": {
         "affix": [
-            "e pangolin$",
-            "f siphoning$",
-            "f imposing$"
+            "of the pangolin$",
+            "of siphoning$",
+            "of imposing$"
         ],
         "bases": [
             "diamond",
@@ -7449,9 +7449,9 @@
     },
     " p.n": {
         "affix": [
-            "e pangolin$",
-            "f penetrating$",
-            "e penguin$"
+            "of the pangolin$",
+            "of penetrating$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -7476,9 +7476,9 @@
     },
     " .an": {
         "affix": [
-            "e pangolin$",
-            "e sandpiper$",
-            "e sanderling$"
+            "of the pangolin$",
+            "of the sandpiper$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -7503,9 +7503,9 @@
     },
     " ..ng": {
         "affix": [
-            "e pangolin$",
-            "e conger$",
-            "e penguin$"
+            "of the pangolin$",
+            "of the conger$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -7530,9 +7530,9 @@
     },
     "a....o": {
         "affix": [
-            "e armadillo$",
-            "e antelope$",
-            "e kaleidoscope$"
+            "of the armadillo$",
+            "of the antelope$",
+            "of the kaleidoscope$"
         ],
         "bases": [
             "diamond",
@@ -7557,9 +7557,9 @@
     },
     "..d...o": {
         "affix": [
-            "e armadillo$",
-            "e kaleidoscope$",
-            "e hedgehog$"
+            "of the armadillo$",
+            "of the kaleidoscope$",
+            "of the hedgehog$"
         ],
         "bases": [
             "diamond",
@@ -7584,9 +7584,9 @@
     },
     " ....d": {
         "affix": [
-            "e armadillo$",
-            "f bloodshed$",
-            "f bloodletting$"
+            "of the armadillo$",
+            "of bloodshed$",
+            "of bloodletting$"
         ],
         "bases": [
             "diamond",
@@ -7611,9 +7611,9 @@
     },
     "d..l": {
         "affix": [
-            "e armadillo$",
-            "f depletion$",
-            "e sanderling$"
+            "of the armadillo$",
+            "of depletion$",
+            "of the sanderling$"
         ],
         "bases": [
             "basalt",
@@ -7636,9 +7636,9 @@
     },
     " .r...i": {
         "affix": [
-            "e armadillo$",
-            "f draining$",
-            "f wreaking$"
+            "of the armadillo$",
+            "of draining$",
+            "of wreaking$"
         ],
         "bases": [
             "diamond",
@@ -7663,9 +7663,9 @@
     },
     " ...a.i": {
         "affix": [
-            "e armadillo$",
-            "f wreaking$",
-            "f tenaciousness$"
+            "of the armadillo$",
+            "of wreaking$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -7690,9 +7690,9 @@
     },
     " .r.a": {
         "affix": [
-            "e armadillo$",
-            "f wreaking$",
-            "e orca$"
+            "of the armadillo$",
+            "of wreaking$",
+            "of the orca$"
         ],
         "bases": [
             "diamond",
@@ -7717,9 +7717,9 @@
     },
     ".{5}pe": {
         "affix": [
-            "e antelope$",
-            "e kaleidoscope$",
-            "e sandpiper$"
+            "of the antelope$",
+            "of the kaleidoscope$",
+            "of the sandpiper$"
         ],
         "bases": [
             "diamond",
@@ -7744,9 +7744,9 @@
     },
     "op": {
         "affix": [
-            "e antelope$",
-            "e kaleidoscope$",
-            "e opossum$"
+            "of the antelope$",
+            "of the kaleidoscope$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -7768,11 +7768,11 @@
             "jade"
         ]
     },
-    "e .{5}o": {
+    "of the .{5}o": {
         "affix": [
-            "e antelope$",
-            "e rainbow$",
-            "e kakapo$"
+            "of the antelope$",
+            "of the rainbow$",
+            "of the kakapo$"
         ],
         "bases": [
             "diamond",
@@ -7797,9 +7797,9 @@
     },
     "a..e": {
         "affix": [
-            "e antelope$",
-            "e sable$",
-            "e sanderling$"
+            "of the antelope$",
+            "of the sable$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -7824,9 +7824,9 @@
     },
     "h.r": {
         "affix": [
-            "e hare$",
-            "f butchery$",
-            "e heron$"
+            "of the hare$",
+            "of butchery$",
+            "of the heron$"
         ],
         "bases": [
             "diamond",
@@ -7847,11 +7847,11 @@
             "jade"
         ]
     },
-    "e .ar": {
+    "of the .ar": {
         "affix": [
-            "e hare$",
-            "e narwhal$",
-            "e carp$"
+            "of the hare$",
+            "of the narwhal$",
+            "of the carp$"
         ],
         "bases": [
             "diamond",
@@ -7876,9 +7876,9 @@
     },
     " c...t": {
         "affix": [
-            "e cheetah$",
-            "f counterpoise$",
-            "e crystal$"
+            "of the cheetah$",
+            "of counterpoise$",
+            "of the crystal$"
         ],
         "bases": [
             "diamond",
@@ -7901,11 +7901,11 @@
             "jade"
         ]
     },
-    "f st": {
+    "of st": {
         "affix": [
-            "f stiffness$",
-            "f stabilisation$",
-            "f stinging$"
+            "of stiffness$",
+            "of stabilisation$",
+            "of stinging$"
         ],
         "bases": [
             "diamond",
@@ -7928,11 +7928,11 @@
             "jade"
         ]
     },
-    "f ..i": {
+    "of ..i": {
         "affix": [
-            "f stiffness$",
-            "f stinging$",
-            "f foisting$"
+            "of stiffness$",
+            "of stinging$",
+            "of foisting$"
         ],
         "bases": [
             "diamond",
@@ -7957,9 +7957,9 @@
     },
     " s.i": {
         "affix": [
-            "f stiffness$",
-            "f stinging$",
-            "e skink$"
+            "of stiffness$",
+            "of stinging$",
+            "of the skink$"
         ],
         "bases": [
             "diamond",
@@ -7984,9 +7984,9 @@
     },
     "s...f": {
         "affix": [
-            "f stiffness$",
-            "f surefootedness$",
-            "e starfish$"
+            "of stiffness$",
+            "of surefootedness$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -8011,9 +8011,9 @@
     },
     "t..f": {
         "affix": [
-            "f stiffness$",
-            "f turf moss$",
-            "e starfish$"
+            "of stiffness$",
+            "of turf moss$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -8032,11 +8032,11 @@
             "jade"
         ]
     },
-    "f ..a": {
+    "of ..a": {
         "affix": [
-            "f bracing$",
-            "f stabilisation$",
-            "f draining$"
+            "of bracing$",
+            "of stabilisation$",
+            "of draining$"
         ],
         "bases": [
             "diamond",
@@ -8061,9 +8061,9 @@
     },
     " ....ing": {
         "affix": [
-            "f bracing$",
-            "f tapping$",
-            "e mockingbird$"
+            "of bracing$",
+            "of tapping$",
+            "of the mockingbird$"
         ],
         "bases": [
             "diamond",
@@ -8088,9 +8088,9 @@
     },
     "...ra....": {
         "affix": [
-            "f bracing$",
-            "f draining$",
-            "f penetrating$"
+            "of bracing$",
+            "of draining$",
+            "of penetrating$"
         ],
         "bases": [
             "diamond",
@@ -8115,9 +8115,9 @@
     },
     "c.ng": {
         "affix": [
-            "f bracing$",
-            "f piercing$",
-            "e conger$"
+            "of bracing$",
+            "of piercing$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -8142,9 +8142,9 @@
     },
     "a.ing": {
         "affix": [
-            "f bracing$",
-            "f penetrating$",
-            "f wreaking$"
+            "of bracing$",
+            "of penetrating$",
+            "of wreaking$"
         ],
         "bases": [
             "diamond",
@@ -8169,9 +8169,9 @@
     },
     "r..in": {
         "affix": [
-            "f bracing$",
-            "f penetrating$",
-            "e urchin$"
+            "of bracing$",
+            "of penetrating$",
+            "of the urchin$"
         ],
         "bases": [
             "diamond",
@@ -8196,9 +8196,9 @@
     },
     " .al": {
         "affix": [
-            "f ballast$",
-            "e kaleidoscope$",
-            "e walrus$"
+            "of ballast$",
+            "of the kaleidoscope$",
+            "of the walrus$"
         ],
         "bases": [
             "diamond",
@@ -8221,11 +8221,11 @@
             "jade"
         ]
     },
-    "f ...l": {
+    "of ...l": {
         "affix": [
-            "f ballast$",
-            "f depletion$",
-            "f infliction$"
+            "of ballast$",
+            "of depletion$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -8250,9 +8250,9 @@
     },
     "..a.l": {
         "affix": [
-            "f ballast$",
-            "e sable$",
-            "e sea lion$"
+            "of ballast$",
+            "of the sable$",
+            "of the sea lion$"
         ],
         "bases": [
             "diamond",
@@ -8275,11 +8275,11 @@
             "jade"
         ]
     },
-    "f c": {
+    "of c": {
         "affix": [
-            "f counterpoise$",
-            "f carnage$",
-            "f composure$"
+            "of counterpoise$",
+            "of carnage$",
+            "of composure$"
         ],
         "bases": [
             "diamond",
@@ -8304,9 +8304,9 @@
     },
     "f.{6}e": {
         "affix": [
-            "f counterpoise$",
-            "f butchery$",
-            "f surefootedness$"
+            "of counterpoise$",
+            "of butchery$",
+            "of surefootedness$"
         ],
         "bases": [
             "diamond",
@@ -8331,9 +8331,9 @@
     },
     "o...e...": {
         "affix": [
-            "f counterpoise$",
-            "f bloodletting$",
-            "f tenaciousness$"
+            "of counterpoise$",
+            "of bloodletting$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -8358,9 +8358,9 @@
     },
     "...t.r...": {
         "affix": [
-            "f counterpoise$",
-            "f rupturing$",
-            "e starfish$"
+            "of counterpoise$",
+            "of rupturing$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -8383,11 +8383,11 @@
             "jade"
         ]
     },
-    "f ....t": {
+    "of ....t": {
         "affix": [
-            "f counterpoise$",
-            "f penetrating$",
-            "f foisting$"
+            "of counterpoise$",
+            "of penetrating$",
+            "of foisting$"
         ],
         "bases": [
             "diamond",
@@ -8412,9 +8412,9 @@
     },
     "n.{5}i": {
         "affix": [
-            "f counterpoise$",
-            "f penetrating$",
-            "f infliction$"
+            "of counterpoise$",
+            "of penetrating$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -8439,9 +8439,9 @@
     },
     "....po..": {
         "affix": [
-            "f counterpoise$",
-            "f imposing$",
-            "f composure$"
+            "of counterpoise$",
+            "of imposing$",
+            "of composure$"
         ],
         "bases": [
             "diamond",
@@ -8466,9 +8466,9 @@
     },
     " co.{6}": {
         "affix": [
-            "f counterpoise$",
-            "f composure$",
-            "e cormorant$"
+            "of counterpoise$",
+            "of composure$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -8493,9 +8493,9 @@
     },
     ".{5}po": {
         "affix": [
-            "f counterpoise$",
-            "f composure$",
-            "e kakapo$"
+            "of counterpoise$",
+            "of composure$",
+            "of the kakapo$"
         ],
         "bases": [
             "diamond",
@@ -8520,9 +8520,9 @@
     },
     "te.{6}": {
         "affix": [
-            "f counterpoise$",
-            "f surefootedness$",
-            "f tenaciousness$"
+            "of counterpoise$",
+            "of surefootedness$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -8545,9 +8545,9 @@
     },
     "..p..s": {
         "affix": [
-            "f counterpoise$",
-            "f persistence$",
-            "e opossum$"
+            "of counterpoise$",
+            "of persistence$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -8572,9 +8572,9 @@
     },
     "e.p...e": {
         "affix": [
-            "f counterpoise$",
-            "e plover$",
-            "e petrel$"
+            "of counterpoise$",
+            "of the plover$",
+            "of the petrel$"
         ],
         "bases": [
             "diamond",
@@ -8599,9 +8599,9 @@
     },
     "e..o.s": {
         "affix": [
-            "f counterpoise$",
-            "f tree moss$",
-            "f plume moss$"
+            "of counterpoise$",
+            "of tree moss$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -8626,9 +8626,9 @@
     },
     "i..s.": {
         "affix": [
-            "f stabilisation$",
-            "e kaleidoscope$",
-            "f tenaciousness$"
+            "of stabilisation$",
+            "of the kaleidoscope$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -8652,9 +8652,9 @@
     },
     "ta...": {
         "affix": [
-            "f stabilisation$",
-            "f tapping$",
-            "e starfish$"
+            "of stabilisation$",
+            "of tapping$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -8679,9 +8679,9 @@
     },
     "sa.{5}": {
         "affix": [
-            "f stabilisation$",
-            "e sandpiper$",
-            "e sanderling$"
+            "of stabilisation$",
+            "of the sandpiper$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -8704,9 +8704,9 @@
     },
     "s.a...": {
         "affix": [
-            "f stabilisation$",
-            "e sea lion$",
-            "e starfish$"
+            "of stabilisation$",
+            "of the sea lion$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -8731,9 +8731,9 @@
     },
     "l..d": {
         "affix": [
-            "e kaleidoscope$",
-            "f bloodshed$",
-            "f bloodletting$"
+            "of the kaleidoscope$",
+            "of bloodshed$",
+            "of bloodletting$"
         ],
         "bases": [
             "diamond",
@@ -8758,9 +8758,9 @@
     },
     "o....e": {
         "affix": [
-            "e kaleidoscope$",
-            "f bloodshed$",
-            "f surefootedness$"
+            "of the kaleidoscope$",
+            "of bloodshed$",
+            "of surefootedness$"
         ],
         "bases": [
             "diamond",
@@ -8785,9 +8785,9 @@
     },
     "e.k": {
         "affix": [
-            "e kaleidoscope$",
-            "f wreaking$",
-            "e kakapo$"
+            "of the kaleidoscope$",
+            "of wreaking$",
+            "of the kakapo$"
         ],
         "bases": [
             "diamond",
@@ -8812,9 +8812,9 @@
     },
     " ...e..o": {
         "affix": [
-            "e kaleidoscope$",
-            "f surefootedness$",
-            "f tree moss$"
+            "of the kaleidoscope$",
+            "of surefootedness$",
+            "of tree moss$"
         ],
         "bases": [
             "diamond",
@@ -8837,11 +8837,11 @@
             "jade"
         ]
     },
-    "e .a..i": {
+    "of the .a..i": {
         "affix": [
-            "e kaleidoscope$",
-            "e rabbit$",
-            "e catfish$"
+            "of the kaleidoscope$",
+            "of the rabbit$",
+            "of the catfish$"
         ],
         "bases": [
             "diamond",
@@ -8866,9 +8866,9 @@
     },
     "k.{5}": {
         "affix": [
-            "e kaleidoscope$",
-            "e mockingbird$",
-            "e kakapo$"
+            "of the kaleidoscope$",
+            "of the mockingbird$",
+            "of the kakapo$"
         ],
         "bases": [
             "diamond",
@@ -8892,9 +8892,9 @@
     },
     "e..os": {
         "affix": [
-            "e kaleidoscope$",
-            "f tree moss$",
-            "f plume moss$"
+            "of the kaleidoscope$",
+            "of tree moss$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -8919,9 +8919,9 @@
     },
     "a.n": {
         "affix": [
-            "e rainbow$",
-            "f carnage$",
-            "f draining$"
+            "of the rainbow$",
+            "of carnage$",
+            "of draining$"
         ],
         "bases": [
             "diamond",
@@ -8946,9 +8946,9 @@
     },
     "r.i....": {
         "affix": [
-            "e rainbow$",
-            "f draining$",
-            "f persistence$"
+            "of the rainbow$",
+            "of draining$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -8973,9 +8973,9 @@
     },
     "e.ra": {
         "affix": [
-            "e rainbow$",
-            "f penetrating$",
-            "e rabbit$"
+            "of the rainbow$",
+            "of penetrating$",
+            "of the rabbit$"
         ],
         "bases": [
             "diamond",
@@ -9000,9 +9000,9 @@
     },
     ".{5}w": {
         "affix": [
-            "e rainbow$",
-            "e curlew$",
-            "e narwhal$"
+            "of the rainbow$",
+            "of the curlew$",
+            "of the narwhal$"
         ],
         "bases": [
             "diamond",
@@ -9027,9 +9027,9 @@
     },
     "...a...o": {
         "affix": [
-            "e rainbow$",
-            "e kakapo$",
-            "e sea lion$"
+            "of the rainbow$",
+            "of the kakapo$",
+            "of the sea lion$"
         ],
         "bases": [
             "diamond",
@@ -9054,9 +9054,9 @@
     },
     "....oo": {
         "affix": [
-            "f bloodshed$",
-            "f bloodletting$",
-            "f surefootedness$"
+            "of bloodshed$",
+            "of bloodletting$",
+            "of surefootedness$"
         ],
         "bases": [
             "diamond",
@@ -9081,9 +9081,9 @@
     },
     " .lo": {
         "affix": [
-            "f bloodshed$",
-            "f bloodletting$",
-            "e plover$"
+            "of bloodshed$",
+            "of bloodletting$",
+            "of the plover$"
         ],
         "bases": [
             "diamond",
@@ -9108,9 +9108,9 @@
     },
     "o.d": {
         "affix": [
-            "f bloodshed$",
-            "f bloodletting$",
-            "e goldfish$"
+            "of bloodshed$",
+            "of bloodletting$",
+            "of the goldfish$"
         ],
         "bases": [
             "basalt",
@@ -9131,11 +9131,11 @@
             "jade"
         ]
     },
-    "f .l": {
+    "of .l": {
         "affix": [
-            "f bloodshed$",
-            "f bloodletting$",
-            "f plume moss$"
+            "of bloodshed$",
+            "of bloodletting$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -9160,9 +9160,9 @@
     },
     "s..d": {
         "affix": [
-            "f bloodshed$",
-            "e sandpiper$",
-            "e sanderling$"
+            "of bloodshed$",
+            "of the sandpiper$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -9187,9 +9187,9 @@
     },
     " .{5}sh": {
         "affix": [
-            "f bloodshed$",
-            "e catfish$",
-            "e sunfish$"
+            "of bloodshed$",
+            "of the catfish$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -9214,9 +9214,9 @@
     },
     "...na": {
         "affix": [
-            "f carnage$",
-            "f tenaciousness$",
-            "e iguana$"
+            "of carnage$",
+            "of tenaciousness$",
+            "of the iguana$"
         ],
         "bases": [
             "diamond",
@@ -9241,9 +9241,9 @@
     },
     "c.r...": {
         "affix": [
-            "f carnage$",
-            "e cormorant$",
-            "e curlew$"
+            "of carnage$",
+            "of the cormorant$",
+            "of the curlew$"
         ],
         "bases": [
             "diamond",
@@ -9267,9 +9267,9 @@
     },
     " .{7}t": {
         "affix": [
-            "f bloodletting$",
-            "f penetrating$",
-            "f surefootedness$"
+            "of bloodletting$",
+            "of penetrating$",
+            "of surefootedness$"
         ],
         "bases": [
             "diamond",
@@ -9294,9 +9294,9 @@
     },
     "oo.{7}": {
         "affix": [
-            "f bloodletting$",
-            "f surefootedness$",
-            "f tooth moss$"
+            "of bloodletting$",
+            "of surefootedness$",
+            "of tooth moss$"
         ],
         "bases": [
             "diamond",
@@ -9321,9 +9321,9 @@
     },
     "d.e...": {
         "affix": [
-            "f bloodletting$",
-            "f surefootedness$",
-            "e hedgehog$"
+            "of bloodletting$",
+            "of surefootedness$",
+            "of the hedgehog$"
         ],
         "bases": [
             "diamond",
@@ -9346,11 +9346,11 @@
             "jade"
         ]
     },
-    "f d": {
+    "of d": {
         "affix": [
-            "f diverting$",
-            "f depletion$",
-            "f draining$"
+            "of diverting$",
+            "of depletion$",
+            "of draining$"
         ],
         "bases": [
             "diamond",
@@ -9373,11 +9373,11 @@
             "jade"
         ]
     },
-    "f .i": {
+    "of .i": {
         "affix": [
-            "f diverting$",
-            "f siphoning$",
-            "f piercing$"
+            "of diverting$",
+            "of siphoning$",
+            "of piercing$"
         ],
         "bases": [
             "diamond",
@@ -9402,9 +9402,9 @@
     },
     "i....in": {
         "affix": [
-            "f diverting$",
-            "f siphoning$",
-            "f imposing$"
+            "of diverting$",
+            "of siphoning$",
+            "of imposing$"
         ],
         "bases": [
             "diamond",
@@ -9429,9 +9429,9 @@
     },
     "er.in": {
         "affix": [
-            "f diverting$",
-            "f piercing$",
-            "e sanderling$"
+            "of diverting$",
+            "of piercing$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -9456,9 +9456,9 @@
     },
     " ..p...i": {
         "affix": [
-            "f depletion$",
-            "f siphoning$",
-            "f rupturing$"
+            "of depletion$",
+            "of siphoning$",
+            "of rupturing$"
         ],
         "bases": [
             "diamond",
@@ -9483,9 +9483,9 @@
     },
     "..pl..": {
         "affix": [
-            "f depletion$",
-            "e plover$",
-            "f plume moss$"
+            "of depletion$",
+            "of the plover$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -9510,9 +9510,9 @@
     },
     "t...in": {
         "affix": [
-            "f tapping$",
-            "f stinging$",
-            "f penetrating$"
+            "of tapping$",
+            "of stinging$",
+            "of penetrating$"
         ],
         "bases": [
             "diamond",
@@ -9537,9 +9537,9 @@
     },
     "pi": {
         "affix": [
-            "f tapping$",
-            "f piercing$",
-            "e sandpiper$"
+            "of tapping$",
+            "of piercing$",
+            "of the sandpiper$"
         ],
         "bases": [
             "diamond",
@@ -9564,9 +9564,9 @@
     },
     "..r....n": {
         "affix": [
-            "f draining$",
-            "f wreaking$",
-            "e cormorant$"
+            "of draining$",
+            "of wreaking$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -9591,9 +9591,9 @@
     },
     "...t...i": {
         "affix": [
-            "f stinging$",
-            "f penetrating$",
-            "e starfish$"
+            "of stinging$",
+            "of penetrating$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -9618,9 +9618,9 @@
     },
     "st.n..": {
         "affix": [
-            "f stinging$",
-            "f foisting$",
-            "f persistence$"
+            "of stinging$",
+            "of foisting$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -9645,9 +9645,9 @@
     },
     "s.in": {
         "affix": [
-            "f stinging$",
-            "f foisting$",
-            "e skink$"
+            "of stinging$",
+            "of foisting$",
+            "of the skink$"
         ],
         "bases": [
             "diamond",
@@ -9670,11 +9670,11 @@
             "jade"
         ]
     },
-    "f ..e": {
+    "of ..e": {
         "affix": [
-            "f piercing$",
-            "f wreaking$",
-            "f tree moss$"
+            "of piercing$",
+            "of wreaking$",
+            "of tree moss$"
         ],
         "bases": [
             "diamond",
@@ -9699,9 +9699,9 @@
     },
     "rc": {
         "affix": [
-            "f piercing$",
-            "e orca$",
-            "e urchin$"
+            "of piercing$",
+            "of the orca$",
+            "of the urchin$"
         ],
         "bases": [
             "diamond",
@@ -9726,9 +9726,9 @@
     },
     "en.{7}": {
         "affix": [
-            "f penetrating$",
-            "f relentlessness$",
-            "f tenaciousness$"
+            "of penetrating$",
+            "of relentlessness$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -9753,9 +9753,9 @@
     },
     " .en": {
         "affix": [
-            "f penetrating$",
-            "f tenaciousness$",
-            "e penguin$"
+            "of penetrating$",
+            "of tenaciousness$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -9780,9 +9780,9 @@
     },
     "e..at": {
         "affix": [
-            "f penetrating$",
-            "e cat$",
-            "e catfish$"
+            "of penetrating$",
+            "of the cat$",
+            "of the catfish$"
         ],
         "bases": [
             "diamond",
@@ -9807,9 +9807,9 @@
     },
     "....ra": {
         "affix": [
-            "f penetrating$",
-            "e cormorant$",
-            "e moray$"
+            "of penetrating$",
+            "of the cormorant$",
+            "of the moray$"
         ],
         "bases": [
             "diamond",
@@ -9834,9 +9834,9 @@
     },
     " ..n..r": {
         "affix": [
-            "f penetrating$",
-            "e sanderling$",
-            "e conger$"
+            "of penetrating$",
+            "of the sanderling$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -9861,9 +9861,9 @@
     },
     "..tr": {
         "affix": [
-            "f penetrating$",
-            "e petrel$",
-            "f tree moss$"
+            "of penetrating$",
+            "of the petrel$",
+            "of tree moss$"
         ],
         "bases": [
             "diamond",
@@ -9888,9 +9888,9 @@
     },
     "f.i..i": {
         "affix": [
-            "f incision$",
-            "f foisting$",
-            "f infliction$"
+            "of incision$",
+            "of foisting$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -9913,11 +9913,11 @@
             "jade"
         ]
     },
-    "f i": {
+    "of i": {
         "affix": [
-            "f incision$",
-            "f imposing$",
-            "f infliction$"
+            "of incision$",
+            "of imposing$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -9942,9 +9942,9 @@
     },
     " .{5}io": {
         "affix": [
-            "f incision$",
-            "f tenaciousness$",
-            "e sea lion$"
+            "of incision$",
+            "of tenaciousness$",
+            "of the sea lion$"
         ],
         "bases": [
             "diamond",
@@ -9969,9 +9969,9 @@
     },
     " ..c...": {
         "affix": [
-            "f incision$",
-            "e mockingbird$",
-            "e urchin$"
+            "of incision$",
+            "of the mockingbird$",
+            "of the urchin$"
         ],
         "bases": [
             "diamond",
@@ -9996,9 +9996,9 @@
     },
     "i.t...": {
         "affix": [
-            "f foisting$",
-            "f infliction$",
-            "f persistence$"
+            "of foisting$",
+            "of infliction$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -10021,11 +10021,11 @@
             "jade"
         ]
     },
-    "f ...s": {
+    "of ...s": {
         "affix": [
-            "f foisting$",
-            "f persistence$",
-            "f turf moss$"
+            "of foisting$",
+            "of persistence$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -10050,9 +10050,9 @@
     },
     "pos": {
         "affix": [
-            "f imposing$",
-            "f composure$",
-            "e opossum$"
+            "of imposing$",
+            "of composure$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -10077,9 +10077,9 @@
     },
     "ki": {
         "affix": [
-            "f wreaking$",
-            "e mockingbird$",
-            "e skink$"
+            "of wreaking$",
+            "of the mockingbird$",
+            "of the skink$"
         ],
         "bases": [
             "diamond",
@@ -10104,17 +10104,17 @@
     },
     " ....k": {
         "affix": [
-            "f wreaking$",
-            "e skunk$",
-            "e skink$"
+            "of wreaking$",
+            "of the skunk$",
+            "of the skink$"
         ],
         "bases": []
     },
     ".e...ss": {
         "affix": [
-            "f surefootedness$",
-            "f tree moss$",
-            "f plume moss$"
+            "of surefootedness$",
+            "of tree moss$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -10139,9 +10139,9 @@
     },
     "u....o": {
         "affix": [
-            "f surefootedness$",
-            "f turf moss$",
-            "f plume moss$"
+            "of surefootedness$",
+            "of turf moss$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -10166,9 +10166,9 @@
     },
     "..s.e...": {
         "affix": [
-            "f persistence$",
-            "f relentlessness$",
-            "f tenaciousness$"
+            "of persistence$",
+            "of relentlessness$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -10193,9 +10193,9 @@
     },
     " ....is": {
         "affix": [
-            "f persistence$",
-            "e catfish$",
-            "e sunfish$"
+            "of persistence$",
+            "of the catfish$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -10220,9 +10220,9 @@
     },
     "t.e": {
         "affix": [
-            "f relentlessness$",
-            "e petrel$",
-            "f tree moss$"
+            "of relentlessness$",
+            "of the petrel$",
+            "of tree moss$"
         ],
         "bases": [
             "diamond",
@@ -10247,9 +10247,9 @@
     },
     "t.{6}ss": {
         "affix": [
-            "f relentlessness$",
-            "f tree moss$",
-            "f turf moss$"
+            "of relentlessness$",
+            "of tree moss$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -10274,9 +10274,9 @@
     },
     " ..n..i": {
         "affix": [
-            "f tenaciousness$",
-            "e sandpiper$",
-            "e penguin$"
+            "of tenaciousness$",
+            "of the sandpiper$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -10301,9 +10301,9 @@
     },
     " .e...i": {
         "affix": [
-            "f tenaciousness$",
-            "e sea lion$",
-            "e penguin$"
+            "of tenaciousness$",
+            "of the sea lion$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -10328,9 +10328,9 @@
     },
     "t.{5}o": {
         "affix": [
-            "f tenaciousness$",
-            "f tree moss$",
-            "f turf moss$"
+            "of tenaciousness$",
+            "of tree moss$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -10355,9 +10355,9 @@
     },
     "u.n": {
         "affix": [
-            "f tenaciousness$",
-            "e penguin$",
-            "e iguana$"
+            "of tenaciousness$",
+            "of the penguin$",
+            "of the iguana$"
         ],
         "bases": [
             "diamond",
@@ -10380,11 +10380,11 @@
             "jade"
         ]
     },
-    "e ca": {
+    "of the ca": {
         "affix": [
-            "e cat$",
-            "e carp$",
-            "e catfish$"
+            "of the cat$",
+            "of the carp$",
+            "of the catfish$"
         ],
         "bases": [
             "diamond",
@@ -10409,9 +10409,9 @@
     },
     " sa": {
         "affix": [
-            "e sable$",
-            "e sandpiper$",
-            "e sanderling$"
+            "of the sable$",
+            "of the sandpiper$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -10436,9 +10436,9 @@
     },
     " p...e": {
         "affix": [
-            "e plover$",
-            "e petrel$",
-            "f plume moss$"
+            "of the plover$",
+            "of the petrel$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -10463,9 +10463,9 @@
     },
     " ...d": {
         "affix": [
-            "e sandpiper$",
-            "e sanderling$",
-            "e goldfish$"
+            "of the sandpiper$",
+            "of the sanderling$",
+            "of the goldfish$"
         ],
         "bases": [
             "diamond",
@@ -10490,9 +10490,9 @@
     },
     " s.n": {
         "affix": [
-            "e sandpiper$",
-            "e sanderling$",
-            "e sunfish$"
+            "of the sandpiper$",
+            "of the sanderling$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -10517,9 +10517,9 @@
     },
     "a.d": {
         "affix": [
-            "e sandpiper$",
-            "e sanderling$",
-            "e lizard$"
+            "of the sandpiper$",
+            "of the sanderling$",
+            "of the lizard$"
         ],
         "bases": [
             "diamond",
@@ -10542,11 +10542,11 @@
             "jade"
         ]
     },
-    "e s....i": {
+    "of the s....i": {
         "affix": [
-            "e sandpiper$",
-            "e sea lion$",
-            "e starfish$"
+            "of the sandpiper$",
+            "of the sea lion$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -10569,11 +10569,11 @@
             "jade"
         ]
     },
-    "e c.r": {
+    "of the c.r": {
         "affix": [
-            "e cormorant$",
-            "e curlew$",
-            "e carp$"
+            "of the cormorant$",
+            "of the curlew$",
+            "of the carp$"
         ],
         "bases": [
             "diamond",
@@ -10596,11 +10596,11 @@
             "jade"
         ]
     },
-    "e ..c": {
+    "of the ..c": {
         "affix": [
-            "e mockingbird$",
-            "e orca$",
-            "e urchin$"
+            "of the mockingbird$",
+            "of the orca$",
+            "of the urchin$"
         ],
         "bases": [
             "diamond",
@@ -10625,9 +10625,9 @@
     },
     "se..": {
         "affix": [
-            "e sea lion$",
-            "e seal$",
-            "e mussel$"
+            "of the sea lion$",
+            "of the seal$",
+            "of the mussel$"
         ],
         "bases": [
             "diamond",
@@ -10650,11 +10650,11 @@
             "jade"
         ]
     },
-    "e s.a": {
+    "of the s.a": {
         "affix": [
-            "e sea lion$",
-            "e seal$",
-            "e starfish$"
+            "of the sea lion$",
+            "of the seal$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -10679,9 +10679,9 @@
     },
     "gu": {
         "affix": [
-            "e guppy$",
-            "e penguin$",
-            "e iguana$"
+            "of the guppy$",
+            "of the penguin$",
+            "of the iguana$"
         ],
         "bases": [
             "diamond",
@@ -10704,11 +10704,11 @@
             "jade"
         ]
     },
-    "e m.s": {
+    "of the m.s": {
         "affix": [
-            "f tree moss$",
-            "f plume moss$",
-            "e mussel$"
+            "of tree moss$",
+            "of plume moss$",
+            "of the mussel$"
         ],
         "bases": [
             "diamond",
@@ -10733,9 +10733,9 @@
     },
     " .{6}m": {
         "affix": [
-            "f tooth moss$",
-            "f plume moss$",
-            "e opossum$"
+            "of tooth moss$",
+            "of plume moss$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -11121,10 +11121,10 @@
     },
     "...l..e": {
         "affix": [
-            "e abalone$",
-            "e antelope$",
-            "e plover$",
-            "f plume moss$"
+            "of the abalone$",
+            "of the antelope$",
+            "of the plover$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -11149,10 +11149,10 @@
     },
     "a...o": {
         "affix": [
-            "e abalone$",
-            "e rainbow$",
-            "e kakapo$",
-            "e sea lion$"
+            "of the abalone$",
+            "of the rainbow$",
+            "of the kakapo$",
+            "of the sea lion$"
         ],
         "bases": [
             "diamond",
@@ -11177,10 +11177,10 @@
     },
     "t....i": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$",
-            "f stabilisation$",
-            "f tenaciousness$"
+            "of the tortoise$",
+            "of counterpoise$",
+            "of stabilisation$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -11205,10 +11205,10 @@
     },
     "t.r.{5}": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$",
-            "f turf moss$",
-            "e starfish$"
+            "of the tortoise$",
+            "of counterpoise$",
+            "of turf moss$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -11233,10 +11233,10 @@
     },
     " .or": {
         "affix": [
-            "e tortoise$",
-            "f gore$",
-            "e cormorant$",
-            "e moray$"
+            "of the tortoise$",
+            "of gore$",
+            "of the cormorant$",
+            "of the moray$"
         ],
         "bases": [
             "diamond",
@@ -11261,10 +11261,10 @@
     },
     " .{6}in": {
         "affix": [
-            "e pangolin$",
-            "f diverting$",
-            "f siphoning$",
-            "f rupturing$"
+            "of the pangolin$",
+            "of diverting$",
+            "of siphoning$",
+            "of rupturing$"
         ],
         "bases": [
             "diamond",
@@ -11289,10 +11289,10 @@
     },
     "p.n": {
         "affix": [
-            "e pangolin$",
-            "f tapping$",
-            "f penetrating$",
-            "e penguin$"
+            "of the pangolin$",
+            "of tapping$",
+            "of penetrating$",
+            "of the penguin$"
         ],
         "bases": [
             "diamond",
@@ -11315,12 +11315,12 @@
             "jade"
         ]
     },
-    "e .{6}l": {
+    "of the .{6}l": {
         "affix": [
-            "e armadillo$",
-            "e crystal$",
-            "e sanderling$",
-            "e narwhal$"
+            "of the armadillo$",
+            "of the crystal$",
+            "of the sanderling$",
+            "of the narwhal$"
         ],
         "bases": [
             "diamond",
@@ -11345,10 +11345,10 @@
     },
     "...l.o": {
         "affix": [
-            "e armadillo$",
-            "f bloodshed$",
-            "f bloodletting$",
-            "e sea lion$"
+            "of the armadillo$",
+            "of bloodshed$",
+            "of bloodletting$",
+            "of the sea lion$"
         ],
         "bases": [
             "diamond",
@@ -11373,10 +11373,10 @@
     },
     " ....l": {
         "affix": [
-            "e gazelle$",
-            "e antelope$",
-            "e impala$",
-            "e sea lion$"
+            "of the gazelle$",
+            "of the antelope$",
+            "of the impala$",
+            "of the sea lion$"
         ],
         "bases": [
             "diamond",
@@ -11401,10 +11401,10 @@
     },
     "...te....": {
         "affix": [
-            "e antelope$",
-            "f counterpoise$",
-            "f surefootedness$",
-            "f persistence$"
+            "of the antelope$",
+            "of counterpoise$",
+            "of surefootedness$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -11427,10 +11427,10 @@
     },
     " .ar": {
         "affix": [
-            "e hare$",
-            "f carnage$",
-            "e narwhal$",
-            "e carp$"
+            "of the hare$",
+            "of carnage$",
+            "of the narwhal$",
+            "of the carp$"
         ],
         "bases": [
             "diamond",
@@ -11453,12 +11453,12 @@
             "jade"
         ]
     },
-    "f .{5}n": {
+    "of .{5}n": {
         "affix": [
-            "f stiffness$",
-            "f bracing$",
-            "f tapping$",
-            "f siphoning$"
+            "of stiffness$",
+            "of bracing$",
+            "of tapping$",
+            "of siphoning$"
         ],
         "bases": [
             "diamond",
@@ -11483,10 +11483,10 @@
     },
     "f..t": {
         "affix": [
-            "f stiffness$",
-            "f stabilisation$",
-            "f stinging$",
-            "f surefootedness$"
+            "of stiffness$",
+            "of stabilisation$",
+            "of stinging$",
+            "of surefootedness$"
         ],
         "bases": [
             "diamond",
@@ -11511,10 +11511,10 @@
     },
     " st": {
         "affix": [
-            "f stiffness$",
-            "f stabilisation$",
-            "f stinging$",
-            "e starfish$"
+            "of stiffness$",
+            "of stabilisation$",
+            "of stinging$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -11539,10 +11539,10 @@
     },
     "f....s": {
         "affix": [
-            "f stiffness$",
-            "f foisting$",
-            "f persistence$",
-            "f turf moss$"
+            "of stiffness$",
+            "of foisting$",
+            "of persistence$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -11567,10 +11567,10 @@
     },
     "nes": {
         "affix": [
-            "f stiffness$",
-            "f surefootedness$",
-            "f relentlessness$",
-            "f tenaciousness$"
+            "of stiffness$",
+            "of surefootedness$",
+            "of relentlessness$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -11595,10 +11595,10 @@
     },
     " ....f": {
         "affix": [
-            "f stiffness$",
-            "f surefootedness$",
-            "e goldfish$",
-            "e starfish$"
+            "of stiffness$",
+            "of surefootedness$",
+            "of the goldfish$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -11623,10 +11623,10 @@
     },
     "a...g": {
         "affix": [
-            "f bracing$",
-            "f carnage$",
-            "f penetrating$",
-            "f wreaking$"
+            "of bracing$",
+            "of carnage$",
+            "of penetrating$",
+            "of wreaking$"
         ],
         "bases": [
             "diamond",
@@ -11651,10 +11651,10 @@
     },
     "...ra...": {
         "affix": [
-            "f bracing$",
-            "f draining$",
-            "f penetrating$",
-            "e cormorant$"
+            "of bracing$",
+            "of draining$",
+            "of penetrating$",
+            "of the cormorant$"
         ],
         "bases": [
             "diamond",
@@ -11679,10 +11679,10 @@
     },
     "po..": {
         "affix": [
-            "f counterpoise$",
-            "f imposing$",
-            "f composure$",
-            "e opossum$"
+            "of counterpoise$",
+            "of imposing$",
+            "of composure$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -11707,10 +11707,10 @@
     },
     " co": {
         "affix": [
-            "f counterpoise$",
-            "f composure$",
-            "e cormorant$",
-            "e conger$"
+            "of counterpoise$",
+            "of composure$",
+            "of the cormorant$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -11735,10 +11735,10 @@
     },
     ".{6}e....s": {
         "affix": [
-            "f counterpoise$",
-            "f surefootedness$",
-            "f relentlessness$",
-            "f plume moss$"
+            "of counterpoise$",
+            "of surefootedness$",
+            "of relentlessness$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -11759,10 +11759,10 @@
     },
     ".{8}ti": {
         "affix": [
-            "f stabilisation$",
-            "f bloodletting$",
-            "f penetrating$",
-            "f infliction$"
+            "of stabilisation$",
+            "of bloodletting$",
+            "of penetrating$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -11787,10 +11787,10 @@
     },
     ".{8}t..n": {
         "affix": [
-            "f stabilisation$",
-            "f bloodletting$",
-            "f infliction$",
-            "f surefootedness$"
+            "of stabilisation$",
+            "of bloodletting$",
+            "of infliction$",
+            "of surefootedness$"
         ],
         "bases": [
             "diamond",
@@ -11815,10 +11815,10 @@
     },
     ".{9}...n": {
         "affix": [
-            "f stabilisation$",
-            "f bloodletting$",
-            "f surefootedness$",
-            "f relentlessness$"
+            "of stabilisation$",
+            "of bloodletting$",
+            "of surefootedness$",
+            "of relentlessness$"
         ],
         "bases": [
             "diamond",
@@ -11843,10 +11843,10 @@
     },
     "s..l": {
         "affix": [
-            "e crystal$",
-            "e sable$",
-            "e seal$",
-            "e mussel$"
+            "of the crystal$",
+            "of the sable$",
+            "of the seal$",
+            "of the mussel$"
         ],
         "bases": [
             "diamond",
@@ -11871,10 +11871,10 @@
     },
     "os...": {
         "affix": [
-            "e kaleidoscope$",
-            "f imposing$",
-            "f composure$",
-            "e opossum$"
+            "of the kaleidoscope$",
+            "of imposing$",
+            "of composure$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -11899,10 +11899,10 @@
     },
     "....e...s.": {
         "affix": [
-            "e kaleidoscope$",
-            "f surefootedness$",
-            "f tree moss$",
-            "f plume moss$"
+            "of the kaleidoscope$",
+            "of surefootedness$",
+            "of tree moss$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -11927,19 +11927,19 @@
     },
     " .l": {
         "affix": [
-            "f bloodshed$",
-            "f bloodletting$",
-            "e plover$",
-            "f plume moss$"
+            "of bloodshed$",
+            "of bloodletting$",
+            "of the plover$",
+            "of plume moss$"
         ],
         "bases": []
     },
     ".{5}s.e": {
         "affix": [
-            "f bloodshed$",
-            "f persistence$",
-            "f relentlessness$",
-            "f tenaciousness$"
+            "of bloodshed$",
+            "of persistence$",
+            "of relentlessness$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -11964,10 +11964,10 @@
     },
     " ca": {
         "affix": [
-            "f carnage$",
-            "e cat$",
-            "e carp$",
-            "e catfish$"
+            "of carnage$",
+            "of the cat$",
+            "of the carp$",
+            "of the catfish$"
         ],
         "bases": [
             "diamond",
@@ -11992,10 +11992,10 @@
     },
     "c.r": {
         "affix": [
-            "f carnage$",
-            "e cormorant$",
-            "e curlew$",
-            "e carp$"
+            "of carnage$",
+            "of the cormorant$",
+            "of the curlew$",
+            "of the carp$"
         ],
         "bases": [
             "diamond",
@@ -12017,12 +12017,12 @@
             "jade"
         ]
     },
-    "f .u": {
+    "of .u": {
         "affix": [
-            "f butchery$",
-            "f rupturing$",
-            "f surefootedness$",
-            "f turf moss$"
+            "of butchery$",
+            "of rupturing$",
+            "of surefootedness$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -12047,10 +12047,10 @@
     },
     ".{5}tin": {
         "affix": [
-            "f bloodletting$",
-            "f diverting$",
-            "f penetrating$",
-            "f foisting$"
+            "of bloodletting$",
+            "of diverting$",
+            "of penetrating$",
+            "of foisting$"
         ],
         "bases": [
             "diamond",
@@ -12075,10 +12075,10 @@
     },
     ".{7}t.n": {
         "affix": [
-            "f bloodletting$",
-            "f diverting$",
-            "f penetrating$",
-            "f persistence$"
+            "of bloodletting$",
+            "of diverting$",
+            "of penetrating$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -12101,12 +12101,12 @@
             "jade"
         ]
     },
-    "f .{7}n": {
+    "of .{7}n": {
         "affix": [
-            "f diverting$",
-            "f siphoning$",
-            "f rupturing$",
-            "f incision$"
+            "of diverting$",
+            "of siphoning$",
+            "of rupturing$",
+            "of incision$"
         ],
         "bases": [
             "diamond",
@@ -12131,10 +12131,10 @@
     },
     "i....i": {
         "affix": [
-            "f diverting$",
-            "f siphoning$",
-            "f incision$",
-            "f imposing$"
+            "of diverting$",
+            "of siphoning$",
+            "of incision$",
+            "of imposing$"
         ],
         "bases": [
             "diamond",
@@ -12159,10 +12159,10 @@
     },
     "...r.in": {
         "affix": [
-            "f diverting$",
-            "f draining$",
-            "f piercing$",
-            "e sanderling$"
+            "of diverting$",
+            "of draining$",
+            "of piercing$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -12187,10 +12187,10 @@
     },
     "er.i": {
         "affix": [
-            "f diverting$",
-            "f piercing$",
-            "f persistence$",
-            "e sanderling$"
+            "of diverting$",
+            "of piercing$",
+            "of persistence$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -12215,10 +12215,10 @@
     },
     ".{5}r.i": {
         "affix": [
-            "f diverting$",
-            "f piercing$",
-            "e sanderling$",
-            "e starfish$"
+            "of diverting$",
+            "of piercing$",
+            "of the sanderling$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -12243,10 +12243,10 @@
     },
     "..p...i": {
         "affix": [
-            "f depletion$",
-            "f siphoning$",
-            "f rupturing$",
-            "f persistence$"
+            "of depletion$",
+            "of siphoning$",
+            "of rupturing$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -12271,10 +12271,10 @@
     },
     "...e...t...": {
         "affix": [
-            "f depletion$",
-            "f penetrating$",
-            "f surefootedness$",
-            "f relentlessness$"
+            "of depletion$",
+            "of penetrating$",
+            "of surefootedness$",
+            "of relentlessness$"
         ],
         "bases": [
             "diamond",
@@ -12299,10 +12299,10 @@
     },
     ".e.{6}n": {
         "affix": [
-            "f depletion$",
-            "f surefootedness$",
-            "f persistence$",
-            "f relentlessness$"
+            "of depletion$",
+            "of surefootedness$",
+            "of persistence$",
+            "of relentlessness$"
         ],
         "bases": [
             "diamond",
@@ -12327,10 +12327,10 @@
     },
     "t...i": {
         "affix": [
-            "f tapping$",
-            "f stinging$",
-            "f penetrating$",
-            "e starfish$"
+            "of tapping$",
+            "of stinging$",
+            "of penetrating$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -12354,10 +12354,10 @@
     },
     "f....i": {
         "affix": [
-            "f draining$",
-            "f incision$",
-            "f foisting$",
-            "f infliction$"
+            "of draining$",
+            "of incision$",
+            "of foisting$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -12380,12 +12380,12 @@
             "jade"
         ]
     },
-    "f p": {
+    "of p": {
         "affix": [
-            "f piercing$",
-            "f penetrating$",
-            "f persistence$",
-            "f plume moss$"
+            "of piercing$",
+            "of penetrating$",
+            "of persistence$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -12410,10 +12410,10 @@
     },
     " .e.{9}": {
         "affix": [
-            "f penetrating$",
-            "f persistence$",
-            "f relentlessness$",
-            "f tenaciousness$"
+            "of penetrating$",
+            "of persistence$",
+            "of relentlessness$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -12438,10 +12438,10 @@
     },
     "f.i": {
         "affix": [
-            "f incision$",
-            "f foisting$",
-            "f imposing$",
-            "f infliction$"
+            "of incision$",
+            "of foisting$",
+            "of imposing$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -12466,10 +12466,10 @@
     },
     "k.n": {
         "affix": [
-            "f wreaking$",
-            "e mockingbird$",
-            "e skunk$",
-            "e skink$"
+            "of wreaking$",
+            "of the mockingbird$",
+            "of the skunk$",
+            "of the skink$"
         ],
         "bases": [
             "diamond",
@@ -12494,10 +12494,10 @@
     },
     "...o.{5}s": {
         "affix": [
-            "f surefootedness$",
-            "f tenaciousness$",
-            "f tooth moss$",
-            "f bog moss$"
+            "of surefootedness$",
+            "of tenaciousness$",
+            "of tooth moss$",
+            "of bog moss$"
         ],
         "bases": [
             "diamond",
@@ -12522,10 +12522,10 @@
     },
     "s.n...": {
         "affix": [
-            "f relentlessness$",
-            "e sandpiper$",
-            "e sanderling$",
-            "e sunfish$"
+            "of relentlessness$",
+            "of the sandpiper$",
+            "of the sanderling$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -12550,10 +12550,10 @@
     },
     " t.{7}s": {
         "affix": [
-            "f tenaciousness$",
-            "f tree moss$",
-            "f turf moss$",
-            "f tooth moss$"
+            "of tenaciousness$",
+            "of tree moss$",
+            "of turf moss$",
+            "of tooth moss$"
         ],
         "bases": [
             "diamond",
@@ -12576,12 +12576,12 @@
             "jade"
         ]
     },
-    "e mo": {
+    "of the mo": {
         "affix": [
-            "e mockingbird$",
-            "f tree moss$",
-            "f plume moss$",
-            "e moray$"
+            "of the mockingbird$",
+            "of tree moss$",
+            "of plume moss$",
+            "of the moray$"
         ],
         "bases": [
             "diamond",
@@ -12606,10 +12606,10 @@
     },
     "fi": {
         "affix": [
-            "e goldfish$",
-            "e catfish$",
-            "e sunfish$",
-            "e starfish$"
+            "of the goldfish$",
+            "of the catfish$",
+            "of the sunfish$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -12634,10 +12634,10 @@
     },
     ".{6} ": {
         "affix": [
-            "f tree moss$",
-            "f turf moss$",
-            "f tooth moss$",
-            "f plume moss$"
+            "of tree moss$",
+            "of turf moss$",
+            "of tooth moss$",
+            "of plume moss$"
         ],
         "bases": [
             "gold",
@@ -12792,11 +12792,11 @@
     },
     "....o.s..": {
         "affix": [
-            "e tortoise$",
-            "f counterpoise$",
-            "f bloodshed$",
-            "f tenaciousness$",
-            "e opossum$"
+            "of the tortoise$",
+            "of counterpoise$",
+            "of bloodshed$",
+            "of tenaciousness$",
+            "of the opossum$"
         ],
         "bases": [
             "diamond",
@@ -12821,11 +12821,11 @@
     },
     " .{6}l": {
         "affix": [
-            "e armadillo$",
-            "e crystal$",
-            "f relentlessness$",
-            "e sanderling$",
-            "e narwhal$"
+            "of the armadillo$",
+            "of the crystal$",
+            "of relentlessness$",
+            "of the sanderling$",
+            "of the narwhal$"
         ],
         "bases": [
             "diamond",
@@ -12850,11 +12850,11 @@
     },
     "te....": {
         "affix": [
-            "e antelope$",
-            "f counterpoise$",
-            "f surefootedness$",
-            "f persistence$",
-            "f tenaciousness$"
+            "of the antelope$",
+            "of counterpoise$",
+            "of surefootedness$",
+            "of persistence$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -12877,11 +12877,11 @@
     },
     "f.{6}n": {
         "affix": [
-            "f stiffness$",
-            "f bracing$",
-            "f tapping$",
-            "f siphoning$",
-            "f infliction$"
+            "of stiffness$",
+            "of bracing$",
+            "of tapping$",
+            "of siphoning$",
+            "of infliction$"
         ],
         "bases": [
             "diamond",
@@ -12904,13 +12904,13 @@
             "jade"
         ]
     },
-    "f s": {
+    "of s": {
         "affix": [
-            "f stiffness$",
-            "f stabilisation$",
-            "f siphoning$",
-            "f stinging$",
-            "f surefootedness$"
+            "of stiffness$",
+            "of stabilisation$",
+            "of siphoning$",
+            "of stinging$",
+            "of surefootedness$"
         ],
         "bases": [
             "diamond",
@@ -12935,11 +12935,11 @@
     },
     "....n..s.": {
         "affix": [
-            "f stiffness$",
-            "f surefootedness$",
-            "f relentlessness$",
-            "f tenaciousness$",
-            "e sunfish$"
+            "of stiffness$",
+            "of surefootedness$",
+            "of relentlessness$",
+            "of tenaciousness$",
+            "of the sunfish$"
         ],
         "bases": [
             "diamond",
@@ -12962,13 +12962,13 @@
             "jade"
         ]
     },
-    "f ....i": {
+    "of ....i": {
         "affix": [
-            "f bracing$",
-            "f stabilisation$",
-            "f tapping$",
-            "f infliction$",
-            "f persistence$"
+            "of bracing$",
+            "of stabilisation$",
+            "of tapping$",
+            "of infliction$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -12993,11 +12993,11 @@
     },
     "..co": {
         "affix": [
-            "f counterpoise$",
-            "e kaleidoscope$",
-            "f composure$",
-            "e cormorant$",
-            "e conger$"
+            "of counterpoise$",
+            "of the kaleidoscope$",
+            "of composure$",
+            "of the cormorant$",
+            "of the conger$"
         ],
         "bases": [
             "diamond",
@@ -13020,13 +13020,13 @@
             "jade"
         ]
     },
-    "f .o....": {
+    "of .o....": {
         "affix": [
-            "f counterpoise$",
-            "f foisting$",
-            "f composure$",
-            "f tooth moss$",
-            "f bog moss$"
+            "of counterpoise$",
+            "of foisting$",
+            "of composure$",
+            "of tooth moss$",
+            "of bog moss$"
         ],
         "bases": [
             "diamond",
@@ -13051,11 +13051,11 @@
     },
     "..e....s.": {
         "affix": [
-            "f counterpoise$",
-            "f surefootedness$",
-            "f relentlessness$",
-            "f tree moss$",
-            "f plume moss$"
+            "of counterpoise$",
+            "of surefootedness$",
+            "of relentlessness$",
+            "of tree moss$",
+            "of plume moss$"
         ],
         "bases": [
             "diamond",
@@ -13073,13 +13073,13 @@
             "quartz"
         ]
     },
-    "f .{6}i": {
+    "of .{6}i": {
         "affix": [
-            "f stabilisation$",
-            "f diverting$",
-            "f depletion$",
-            "f siphoning$",
-            "f rupturing$"
+            "of stabilisation$",
+            "of diverting$",
+            "of depletion$",
+            "of siphoning$",
+            "of rupturing$"
         ],
         "bases": [
             "diamond",
@@ -13104,11 +13104,11 @@
     },
     "r.in": {
         "affix": [
-            "e rainbow$",
-            "f diverting$",
-            "f draining$",
-            "f piercing$",
-            "e sanderling$"
+            "of the rainbow$",
+            "of diverting$",
+            "of draining$",
+            "of piercing$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -13133,11 +13133,11 @@
     },
     "sh": {
         "affix": [
-            "f bloodshed$",
-            "e goldfish$",
-            "e catfish$",
-            "e sunfish$",
-            "e starfish$"
+            "of bloodshed$",
+            "of the goldfish$",
+            "of the catfish$",
+            "of the sunfish$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -13162,11 +13162,11 @@
     },
     "ting": {
         "affix": [
-            "f bloodletting$",
-            "f diverting$",
-            "f stinging$",
-            "f penetrating$",
-            "f foisting$"
+            "of bloodletting$",
+            "of diverting$",
+            "of stinging$",
+            "of penetrating$",
+            "of foisting$"
         ],
         "bases": [
             "diamond",
@@ -13191,11 +13191,11 @@
     },
     "e..in": {
         "affix": [
-            "f bloodletting$",
-            "f diverting$",
-            "f piercing$",
-            "f wreaking$",
-            "e sanderling$"
+            "of bloodletting$",
+            "of diverting$",
+            "of piercing$",
+            "of wreaking$",
+            "of the sanderling$"
         ],
         "bases": [
             "diamond",
@@ -13220,11 +13220,11 @@
     },
     ".{6}t.n": {
         "affix": [
-            "f bloodletting$",
-            "f diverting$",
-            "f penetrating$",
-            "f foisting$",
-            "f persistence$"
+            "of bloodletting$",
+            "of diverting$",
+            "of penetrating$",
+            "of foisting$",
+            "of persistence$"
         ],
         "bases": [
             "diamond",
@@ -13249,11 +13249,11 @@
     },
     "....r.i": {
         "affix": [
-            "f diverting$",
-            "f piercing$",
-            "f persistence$",
-            "e sanderling$",
-            "e starfish$"
+            "of diverting$",
+            "of piercing$",
+            "of persistence$",
+            "of the sanderling$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -13276,13 +13276,13 @@
             "jade"
         ]
     },
-    "f ...e..": {
+    "of ...e..": {
         "affix": [
-            "f diverting$",
-            "f penetrating$",
-            "f surefootedness$",
-            "f relentlessness$",
-            "f tree moss$"
+            "of diverting$",
+            "of penetrating$",
+            "of surefootedness$",
+            "of relentlessness$",
+            "of tree moss$"
         ],
         "bases": [
             "diamond",
@@ -13305,13 +13305,13 @@
             "jade"
         ]
     },
-    "f ..p": {
+    "of ..p": {
         "affix": [
-            "f depletion$",
-            "f tapping$",
-            "f siphoning$",
-            "f rupturing$",
-            "f imposing$"
+            "of depletion$",
+            "of tapping$",
+            "of siphoning$",
+            "of rupturing$",
+            "of imposing$"
         ],
         "bases": [
             "diamond",
@@ -13334,13 +13334,13 @@
             "jade"
         ]
     },
-    "f .e": {
+    "of .e": {
         "affix": [
-            "f depletion$",
-            "f penetrating$",
-            "f persistence$",
-            "f relentlessness$",
-            "f tenaciousness$"
+            "of depletion$",
+            "of penetrating$",
+            "of persistence$",
+            "of relentlessness$",
+            "of tenaciousness$"
         ],
         "bases": [
             "diamond",
@@ -13365,11 +13365,11 @@
     },
     "i.h": {
         "affix": [
-            "f siphoning$",
-            "e goldfish$",
-            "e catfish$",
-            "e sunfish$",
-            "e starfish$"
+            "of siphoning$",
+            "of the goldfish$",
+            "of the catfish$",
+            "of the sunfish$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -13392,13 +13392,13 @@
             "jade"
         ]
     },
-    "f .{6}o": {
+    "of .{6}o": {
         "affix": [
-            "f incision$",
-            "f surefootedness$",
-            "f tenaciousness$",
-            "f tree moss$",
-            "f turf moss$"
+            "of incision$",
+            "of surefootedness$",
+            "of tenaciousness$",
+            "of tree moss$",
+            "of turf moss$"
         ],
         "bases": [
             "diamond",
@@ -13421,13 +13421,13 @@
             "jade"
         ]
     },
-    "e s.{6}": {
+    "of the s.{6}": {
         "affix": [
-            "e sandpiper$",
-            "e sanderling$",
-            "e sea lion$",
-            "e sunfish$",
-            "e starfish$"
+            "of the sandpiper$",
+            "of the sanderling$",
+            "of the sea lion$",
+            "of the sunfish$",
+            "of the starfish$"
         ],
         "bases": [
             "diamond",
@@ -13452,11 +13452,11 @@
     },
     "mos": {
         "affix": [
-            "f tree moss$",
-            "f turf moss$",
-            "f tooth moss$",
-            "f plume moss$",
-            "f bog moss$"
+            "of tree moss$",
+            "of turf moss$",
+            "of tooth moss$",
+            "of plume moss$",
+            "of bog moss$"
         ],
         "bases": [
             "diamond",
