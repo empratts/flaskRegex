@@ -26,6 +26,8 @@ for i, s in enumerate(suffix):
 with open(f'{FILE_PATH}/../data/flask_bases.json', "r", encoding='utf-8') as f:
             bases = json.load(f)
 
+bases = [b.lower() for b in bases]
+
 affix = prefix + suffix
 
 affix_and_bases = affix + bases
@@ -59,14 +61,12 @@ def generateSubstrings(word:str, key_letters: Iterable[str]) -> Iterator[str]:
     kl = key_letters[:]
 
     for length in range(1, len(word)+1):
-        if length == 4:
-            pass
         for start in range(len(word)-length + 1):
             substring = word[start: start + length]
             wild_string = ""
 
             for c in substring:
-                if c in kl:
+                if c in kl or c in ["^", "$"]:
                     wild_string += c
                 else:
                     wild_string += '.'
@@ -81,7 +81,7 @@ def generateWildcardVariants(word:str) -> Iterator[str]:
     letter_locations = []
 
     for i, c in enumerate(word):
-        if c != '.':
+        if c not in  ['.', '^', '$']:
             letter_locations.append(i)
     
     for i in range(2**len(letter_locations)-1):
@@ -91,12 +91,17 @@ def generateWildcardVariants(word:str) -> Iterator[str]:
             if i & 2 ** a:
                 result = result[:letter_locations[a]] + "." + result[letter_locations[a]+1:]
             a += 1
+        result = result.replace('.' * 9, '.{9}')
+        result = result.replace('.' * 8, '.{8}')
+        result = result.replace('.' * 7, '.{7}')
+        result = result.replace('.' * 6, '.{6}')
+        result = result.replace('.' * 5, '.{5}')
         yield result
 
 
 def findComboMatch(wanted: set[str], affix: Iterable[str]) -> str:
 
-    lc = list(string.ascii_lowercase) + ["'", " ", "^", "$"]
+    lc = list(string.ascii_lowercase) + ["'", " "]
     key_letters = [l for l in lc if all(l in word for word in wanted)]
 
     if " " in key_letters and len(key_letters) < 4:
@@ -121,7 +126,7 @@ def findComboMatch(wanted: set[str], affix: Iterable[str]) -> str:
 
 combos:dict[str,dict[str,tuple[str]]] = {}
 
-for combo_size in range(2, 12):
+for combo_size in range(2, 6):
     print(f"generating size {combo_size}.")
     prefix_combos = combinations(prefix, combo_size)
 
@@ -131,7 +136,9 @@ for combo_size in range(2, 12):
         result = findComboMatch(pc, affix)
         if result:
             # print(f"Found '{result}' for {pc}")
-            combos[result] = {"affix": pc, "bases": tuple(b for b in bases if re.search(result, b) is None)}
+            combos[result] = {"affix": pc, "bases": tuple(b.replace(" flask", "") for b in bases if re.search(result, b) is None)}
+            if combos[result]["bases"] == []:
+                combos.pop(result)
 
     suffix_combos = combinations(suffix, combo_size)
     tot = math.comb(len(suffix), combo_size)
@@ -142,7 +149,9 @@ for combo_size in range(2, 12):
         result = findComboMatch(sc, affix)
         if result:
             # print(f"Found '{result}' for {sc}")
-            combos[result] = {"affix": sc, "bases": tuple(b for b in bases if re.search(result, b) is None)}
+            combos[result] = {"affix": sc, "bases": tuple(b.replace(" flask", "") for b in bases if re.search(result, b) is None)}
+            if combos[result]["bases"] == []:
+                combos.pop(result)
 
     with open(f'{FILE_PATH}/../data/combos.json', "w", encoding='utf-8') as f:
         json.dump(combos, f)
