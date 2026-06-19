@@ -312,25 +312,6 @@ class TrackerCommands(Cmd):
             self.computeCliques()
 
             regex_strings = []
-            
-            # # Compute short names for the wanted items
-
-            # affixes = [f"^{p}" for p in self.prefix] + [f"{s}$" for s in self.suffix]
-
-            # base_short_name = getBaseShortName(args.base + " flask", affixes,)
-
-            # prefix_short_names = {}
-            # suffix_short_names = {}
-
-            # for i in wanted_flasks_for_base:
-            #     p = i[0]
-            #     s = i[1]
-
-            #     if p not in prefix_short_names:
-            #         prefix_short_names[p] = getShortName( "^" + p, affixes, args.base)
-
-            #     if s not in suffix_short_names:
-            #         suffix_short_names[s] = getShortName( s + "$", affixes, args.base)
 
             for clique in self.found_cliques:
 
@@ -352,7 +333,6 @@ class TrackerCommands(Cmd):
                 else:
                     if re.search(final_regex,f):
                         self.poutput(f"ERROR: Regex gives false positive on unwanted flask: {f}")
-
 
             self.poutput(f"{len(final_regex)} characters")
             final_regex = '"' + final_regex + '"'
