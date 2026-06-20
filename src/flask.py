@@ -7,6 +7,8 @@ import command
 
 FILE_PATH, _ = os.path.split(os.path.realpath(__file__))
 
+sys.setrecursionlimit(5000)
+
 def setupDatabase():
 
     db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')

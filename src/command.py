@@ -121,6 +121,7 @@ class TrackerCommands(Cmd):
     add_parser.add_argument('-p', '--prefix', required=True, help="Prefix of the item to add", choices_provider=providePrefixes)
     add_parser.add_argument('-s', '--suffix', required=True, help="Suffix of the item to add", choices_provider=provideSuffixes)
     add_parser.add_argument('-t', '--tier', action='store_true', help="Prevents auto-adding of higher tier mods")
+    add_parser.add_argument('-a', '--aggressive', action='store_true', help="Forces auto-adding of all tiers of the prefix and suffix mods")
     @with_argparser(add_parser)
     def do_add(self, args):
         db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
@@ -141,6 +142,9 @@ class TrackerCommands(Cmd):
         else:
             if base_id and prefix_id and suffix_id:
                 # Get the ids of all mods equal to or better than the mods specified in the arguments
+                if args.aggressive:
+                    prefix_lvl = 0
+                    suffix_lvl = 0
                 result = db_cur.execute("""SELECT id, value FROM prefix WHERE modgroup = ? AND level >= ?""", (prefix_grp, prefix_lvl))
                 prefixes = [p for p in result.fetchall()]
 
@@ -407,24 +411,30 @@ class TrackerCommands(Cmd):
 
         base_short_name = getBaseShortName(base, affixes)
 
-        p_group = self.optimizeGroup(pfx, base, base_short_name, affixes)
-        s_group = self.optimizeGroup(sfx, base, "sk$", affixes)
+        valid_prefix_combos = []
+        valid_suffix_combos = []
+        for combo, criteria in self.combos.items():
+            if base in criteria["bases"] and all(affix in pfx for affix in criteria["affix"]):
+                valid_prefix_combos.append({"combo": combo, "bases": criteria["bases"], "affix": criteria["affix"]})
+            if base in criteria["bases"] and all(affix in sfx for affix in criteria["affix"]):
+                valid_suffix_combos.append({"combo": combo, "bases": criteria["bases"], "affix": criteria["affix"]})
+
+        p_group = self.optimizeGroup(pfx, base, base_short_name, affixes, valid_prefix_combos)
+        s_group = self.optimizeGroup(sfx, base, "sk$", affixes, valid_suffix_combos)
 
         return f"({p_group}).*({s_group})"
 
 
-    def optimizeGroup(self, group:set[str], base: str, base_regex:str, affix_list:list[str]) -> str:
+    def optimizeGroup(self, group:set[str], base: str, base_regex:str, affix_list:list[str], valid_combos:list[dict[str,str]]) -> str:
         options = set()
 
-        for combo, criteria in self.combos.items():
-            if base in criteria["bases"] and all(affix in self.wanted_affixes for affix in criteria["affix"]):
-                # combo is valid, check if it eliminates any of the affixes left in the groups
-                if any(affix in group for affix in criteria["affix"]):
-                    subgroup = {affix for affix in group if affix not in criteria["affix"]}
-                    if subgroup:
-                        options.add(f"{combo}|{self.optimizeGroup(subgroup, base, base_regex, affix_list)}")
-                    else:
-                        options.add(combo)
+        for i, combo in enumerate(valid_combos):
+            if any(affix in group for affix in combo["affix"]):
+                subgroup = {affix for affix in group if affix not in combo["affix"]}
+                if subgroup:
+                    options.add(f"{combo["combo"]}|{self.optimizeGroup(subgroup, base, base_regex, affix_list, valid_combos[i+1:])}")
+                else:
+                    options.add(combo["combo"])
         
         short_names = [getShortName(f, affix_list, base) for f in group] + [base_regex]
 
