@@ -499,7 +499,15 @@ class TrackerCommands(Cmd):
 
         best_fold = min([foldPrefix(short_names), foldSuffix(short_names)], key=len)
         
-        return f"{"|".join(results)}|{best_fold}"
+        if results:
+            if best_fold != "":
+                optimized_group = f"{"|".join(results)}|{best_fold}"
+            else:
+                optimized_group = f"{"|".join(results)}"
+        else:
+            optimized_group = best_fold
+
+        return optimized_group
 
 
 def getBaseIDFromDB(value:str, db_cur:sqlite3.Cursor) -> int:
