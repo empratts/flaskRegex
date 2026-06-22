@@ -7,8 +7,13 @@ import sqlite3
 import networkx
 import os
 import pyperclip
+import asyncio
+import signal
 
 FILE_PATH, _ = os.path.split(os.path.realpath(__file__))
+
+def sig_handler(signum, frame):
+    raise TimeoutError("Timeout")
 
 class TrackerCommands(Cmd):
 
@@ -16,8 +21,10 @@ class TrackerCommands(Cmd):
         history_file = f'{FILE_PATH}/../data/command_history.dat'
         super().__init__(persistent_history_file=history_file, persistent_history_length=1000)
 
+        signal.signal(signal.SIGALRM, sig_handler)
+
         self.wanted_flasks_for_base: set[tuple[str,str]] = set()
-        self.found_cliques: list[set[str]] = []
+        self.found_cliques: list[set[tuple[str,str]]] = []
         self.wanted_affixes: set[str] = set()
 
         db_conn = sqlite3.connect(f'{FILE_PATH}/../data/item.db')
@@ -394,10 +401,40 @@ class TrackerCommands(Cmd):
                 if i1 != i2 and not G.has_edge(i1, i2) and (i1[0], i2[1]) in self.wanted_flasks_for_base and (i2[0], i1[1]) in self.wanted_flasks_for_base:
                     G.add_edge(i1, i2)
         
-        _, self.found_cliques = networkx.approximation.clique_removal(G)
+        self.found_cliques = []
+
+        try:
+            signal.alarm(2)
+            _, self.found_cliques = networkx.approximation.clique_removal(G)
+            pass
+        except TimeoutError, RecursionError:
+            # cancel the alarm, in case we get here because of the RecursionError before the alarm fired
+            signal.alarm(0)
+            self.poutput("Clique removal failed. Falling back to greedy clique finding.")
+            # greedy approach when clique_removal fails
+            while G.number_of_nodes() > 0:
+                # start with the node with the most edges
+                degree_sorted_nodes = list(G.degree)
+                degree_sorted_nodes.sort(key = lambda x:x[1], reverse=True)
+
+                fc:set[tuple[str,str]] = {degree_sorted_nodes[0][0]}
+                
+                # Greedy add of nodes in decreasing degree order
+                for node, degree in degree_sorted_nodes:
+                    if node not in fc and all(G.has_edge(node, n) for n in fc):
+                        fc.add(node)
+                
+                self.found_cliques.append(fc)
+
+                G.remove_nodes_from(fc)
+        finally:
+            # Cancel the alarm
+            signal.alarm(0)
 
 
     def genRegexForClique(self, clique:set[str], base: str) -> str:
+
+        self.poutput("Making regex")
         pfx = set()
         sfx = set()
 
@@ -419,22 +456,25 @@ class TrackerCommands(Cmd):
             if base in criteria["bases"] and all(affix in sfx for affix in criteria["affix"]):
                 valid_suffix_combos.append({"combo": combo, "bases": criteria["bases"], "affix": criteria["affix"]})
 
-        p_group = self.optimizeGroup(pfx, base, base_short_name, affixes, valid_prefix_combos)
-        s_group = self.optimizeGroup(sfx, base, "sk$", affixes, valid_suffix_combos)
+        self.poutput(f"Found {len(valid_prefix_combos)} valid prefix combos and {len(valid_suffix_combos)} valid suffix combos.")
+
+        p_group = self.optimizeGroup(pfx, base, base_short_name, affixes, valid_prefix_combos, 5)
+        s_group = self.optimizeGroup(sfx, base, "sk$", affixes, valid_suffix_combos, 5)
 
         return f"({p_group}).*({s_group})"
 
 
-    def optimizeGroup(self, group:set[str], base: str, base_regex:str, affix_list:list[str], valid_combos:list[dict[str,str]]) -> str:
+    def optimizeGroup(self, group:set[str], base: str, base_regex:str, affix_list:list[str], valid_combos:list[dict[str,str]], depth: int) -> str:
         options = set()
 
-        for i, combo in enumerate(valid_combos):
-            if any(affix in group for affix in combo["affix"]):
-                subgroup = {affix for affix in group if affix not in combo["affix"]}
-                if subgroup:
-                    options.add(f"{combo["combo"]}|{self.optimizeGroup(subgroup, base, base_regex, affix_list, valid_combos[i+1:])}")
-                else:
-                    options.add(combo["combo"])
+        if depth > 0:
+            for i, combo in enumerate(valid_combos):
+                if any(affix in group for affix in combo["affix"]):
+                    subgroup = {affix for affix in group if affix not in combo["affix"]}
+                    if subgroup:
+                        options.add(f"{combo["combo"]}|{self.optimizeGroup(subgroup, base, base_regex, affix_list, valid_combos[i+1:], depth - 1)}")
+                    else:
+                        options.add(combo["combo"])
         
         short_names = [getShortName(f, affix_list, base) for f in group] + [base_regex]
 
