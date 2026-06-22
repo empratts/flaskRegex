@@ -404,7 +404,7 @@ class TrackerCommands(Cmd):
         self.found_cliques = []
 
         try:
-            signal.alarm(2)
+            signal.setitimer(signal.ITIMER_REAL, 0.5)
             _, self.found_cliques = networkx.approximation.clique_removal(G)
             pass
         except TimeoutError, RecursionError:
@@ -434,7 +434,7 @@ class TrackerCommands(Cmd):
 
     def genRegexForClique(self, clique:set[str], base: str) -> str:
 
-        self.poutput("Making regex")
+        self.poutput("Making regex for clique.")
         pfx = set()
         sfx = set()
 
@@ -448,45 +448,59 @@ class TrackerCommands(Cmd):
 
         base_short_name = getBaseShortName(base, affixes)
 
-        valid_prefix_combos = []
-        valid_suffix_combos = []
+        valid_prefix_combos:dict[str,list[str]] = {}
+        valid_suffix_combos:dict[str,list[str]] = {}
         for combo, criteria in self.combos.items():
             if base in criteria["bases"] and all(affix in pfx for affix in criteria["affix"]):
-                valid_prefix_combos.append({"combo": combo, "bases": criteria["bases"], "affix": criteria["affix"]})
+                valid_prefix_combos[combo] = criteria["affix"]
             if base in criteria["bases"] and all(affix in sfx for affix in criteria["affix"]):
-                valid_suffix_combos.append({"combo": combo, "bases": criteria["bases"], "affix": criteria["affix"]})
+                valid_suffix_combos[combo] = criteria["affix"]
 
         self.poutput(f"Found {len(valid_prefix_combos)} valid prefix combos and {len(valid_suffix_combos)} valid suffix combos.")
 
-        p_group = self.optimizeGroup(pfx, base, base_short_name, affixes, valid_prefix_combos, 5)
-        s_group = self.optimizeGroup(sfx, base, "sk$", affixes, valid_suffix_combos, 5)
+        p_group = self.optimizeGroup(pfx, base, base_short_name, affixes, valid_prefix_combos)
+        s_group = self.optimizeGroup(sfx, base, "sk$", affixes, valid_suffix_combos)
 
         return f"({p_group}).*({s_group})"
 
 
-    def optimizeGroup(self, group:set[str], base: str, base_regex:str, affix_list:list[str], valid_combos:list[dict[str,str]], depth: int) -> str:
-        options = set()
-
-        if depth > 0:
-            for i, combo in enumerate(valid_combos):
-                if any(affix in group for affix in combo["affix"]):
-                    subgroup = {affix for affix in group if affix not in combo["affix"]}
-                    if subgroup:
-                        options.add(f"{combo["combo"]}|{self.optimizeGroup(subgroup, base, base_regex, affix_list, valid_combos[i+1:], depth - 1)}")
-                    else:
-                        options.add(combo["combo"])
+    def getBestCombo(self, group:set[str], base: str, base_regex:str, affix_list:list[str], valid_combos:dict[str,list[str]]) -> (str, list[str]):
         
+        best_combo = None
+        best_remaining_names = []
         short_names = [getShortName(f, affix_list, base) for f in group] + [base_regex]
+        best_option = min([foldPrefix(short_names), foldSuffix(short_names)], key=len)
 
-        options.add("|".join(short_names))
-        options.add(foldPrefix(short_names))
-        options.add(foldSuffix(short_names))
+        for combo, affixes in valid_combos.items():
+            remaining_names = [affix for affix in group if affix not in affixes]
+            short_names = [getShortName(f, affix_list, base) for f in remaining_names] + [base_regex]
+            new_option = min([f"{combo}|{foldPrefix(short_names)}", f"{combo}|{foldSuffix(short_names)}"], key=len)
+            best_option = min([new_option, best_option], key=len)
+            if best_option == new_option:
+                best_combo = combo
+                best_remaining_names = remaining_names
+        
+        return (best_combo, best_remaining_names)
+            
 
-        return min(options, key=len)
+    def optimizeGroup(self, group:set[str], base: str, base_regex:str, affix_list:list[str], valid_combos:dict[str,list[str]]) -> str:
+        results:list[str] = []
+        remaining_names = group
 
+        while True:
+            new_combo, new_remaining_names = self.getBestCombo(remaining_names, base, base_regex, affix_list, valid_combos)
+            if new_combo:
+                results.append(new_combo)
+                remaining_names = new_remaining_names
+            else:
+                break
 
-    def genShortNames(self):
-        pass
+        short_names = [getShortName(f, affix_list, base) for f in remaining_names]
+
+        best_fold = min([foldPrefix(short_names), foldSuffix(short_names)], key=len)
+        
+        return f"{"|".join(results)}|{best_fold}"
+
 
 def getBaseIDFromDB(value:str, db_cur:sqlite3.Cursor) -> int:
     result = db_cur.execute("SELECT id FROM base WHERE value = ?", (value,))
