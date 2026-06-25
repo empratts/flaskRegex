@@ -17,12 +17,6 @@ prefix = ["^" + p["Name"].lower() for p in data if p["Prefix"] == True]
 
 suffix = [s["Name"].lower() + "$" for s in data if s["Prefix"] == False]
 
-# for i, s in enumerate(suffix):
-#     if s.startswith("of the "):
-#         suffix[i] = s[5:]
-#     elif s.startswith("of "):
-#         suffix[i] = s[1:]
-
 with open(f'{FILE_PATH}/../data/flask_bases.json', "r", encoding='utf-8') as f:
             bases = json.load(f)
 
@@ -34,7 +28,7 @@ affix_and_bases = affix + bases
 
 short_names = {}
 
-all_flasks = [{"prefix": p,"suffix": s, "name": f"{p[1:]} {b} {s[:-1]}"} for p in prefix for s in suffix for b in bases]
+all_flasks = [{"prefix": p,"suffix": s, "name": f"{p[1:]} {b} {s[:-1]}"} for b in bases for p in prefix for s in suffix]
 
 def getShortName(long_name:str, affixes:list[str]) -> str:
     
@@ -101,7 +95,7 @@ def generateWildcardVariants(word:str) -> Iterator[str]:
         yield result
 
 
-def shorten_mod_name(name):
+def removeBeginningIfSuffix(name):
     if name.startswith("of the "):
         return name.replace("of the ", "e ")
     elif name.startswith("of "):
@@ -112,12 +106,12 @@ def shorten_mod_name(name):
 def findComboMatch(wanted: set[str], affix: Iterable[str]) -> str:
 
     lc = list(string.ascii_lowercase) + ["'", " "]
-    key_letters = [l for l in lc if all(l in word for word in map(shorten_mod_name, wanted))]
+    key_letters = [l for l in lc if all(l in word for word in map(removeBeginningIfSuffix, wanted))]
 
     if " " in key_letters and len(key_letters) < 4:
         return None
 
-    keyword = min(map(shorten_mod_name, wanted), key=len)
+    keyword = min(map(removeBeginningIfSuffix, wanted), key=len)
 
     max_len = getBasicRegexLength(wanted)
 
@@ -135,7 +129,10 @@ def findComboMatch(wanted: set[str], affix: Iterable[str]) -> str:
         guess = re.compile(p)
 
         if all(re.search(guess, w) is not None for w in wanted_test_strings) and all(re.search(guess, u) is None for u in unwanted_test_strings):
-            return p
+            wanted_test_strings_full = {f["name"] for f in all_flasks if f["prefix"] in wanted or f["suffix"] in wanted}
+            unwanted_test_strings_full = {f["name"] for f in all_flasks if not (f["prefix"] in wanted or f["suffix"] in wanted)}
+            if all(re.search(guess, w) is not None for w in wanted_test_strings_full) and all(re.search(guess, u) is None for u in unwanted_test_strings_full):
+                return p
 
 combos:dict[str,dict[str,tuple[str]]] = {}
 
