@@ -145,19 +145,15 @@ for combo_size in range(2, 5):
     for pc in tqdm(prefix_combos, total=tot):
         result = findComboMatch(pc, affix)
         if result:
-            combos[result] = {"affix": pc, "bases": tuple(b.replace(" flask", "") for b in bases if re.search(result, b) is None)}
-            if combos[result]["bases"] == []:
-                combos.pop(result)
-
+            combos[result] = pc
+            
     suffix_combos = combinations(suffix, combo_size)
     tot = math.comb(len(suffix), combo_size)
 
     for sc in tqdm(suffix_combos, total=tot):
         result = findComboMatch(sc, affix)
         if result:
-            combos[result] = {"affix": sc, "bases": tuple(b.replace(" flask", "") for b in bases if re.search(result, b) is None)}
-            if combos[result]["bases"] == []:
-                combos.pop(result)
-
+            combos[result] = sc
+            
     with open(f'{FILE_PATH}/../data/combos.json', "w", encoding='utf-8') as f:
         json.dump(combos, f)

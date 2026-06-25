@@ -438,11 +438,11 @@ class TrackerCommands(Cmd):
 
         valid_prefix_combos:dict[str,list[str]] = {}
         valid_suffix_combos:dict[str,list[str]] = {}
-        for combo, criteria in cls.combos.items():
-            if base in criteria["bases"] and all(affix in pfx for affix in criteria["affix"]):
-                valid_prefix_combos[combo] = criteria["affix"]
-            if base in criteria["bases"] and all(affix in sfx for affix in criteria["affix"]):
-                valid_suffix_combos[combo] = criteria["affix"]
+        for combo, combo_affixes in cls.combos.items():
+            if all(affix in pfx for affix in combo_affixes):
+                valid_prefix_combos[combo] = combo_affixes
+            if all(affix in sfx for affix in combo_affixes):
+                valid_suffix_combos[combo] = combo_affixes
 
         p_group = cls.optimizeGroup(pfx, base, base_short_name, affixes, valid_prefix_combos)
         s_group = cls.optimizeGroup(sfx, base, "sk$", affixes, valid_suffix_combos)

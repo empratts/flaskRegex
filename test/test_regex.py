@@ -33,27 +33,24 @@ def test_basic():
 def test_combos():
     base = "jade"
 
-    for combo, criteria in TrackerCommands.combos.items():
-
-        if base not in criteria["bases"]:
-            continue
+    for combo, combo_affixes in TrackerCommands.combos.items():
         
         wanted_flasks_for_base = set()
 
-        if "^" in criteria["affix"][0]:
+        if "^" in combo_affixes[0]:
             # Prefix
 
             # Add these prefixes with some random suffixes
             suf = random.sample(list(TrackerCommands.suffix), k=4)
 
-            wanted_flasks_for_base = {(p[1:], s) for p in criteria["affix"] for s in suf}
+            wanted_flasks_for_base = {(p[1:], s) for p in combo_affixes for s in suf}
         else:
             # Suffix
 
             # Add these suffixes with some random prefixes
             pre = random.sample(list(TrackerCommands.prefix), k=4)
 
-            wanted_flasks_for_base = {(p, s[:-1]) for s in criteria["affix"] for p in pre}
+            wanted_flasks_for_base = {(p, s[:-1]) for s in combo_affixes for p in pre}
     
         # Add 100 other random flasks from a pool of 400
 
