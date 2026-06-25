@@ -34,6 +34,8 @@ affix_and_bases = affix + bases
 
 short_names = {}
 
+all_flasks = [{"prefix": p,"suffix": s, "name": f"{p[1:]} {b} {s[:-1]}"} for p in prefix for s in suffix for b in bases]
+
 def getShortName(long_name:str, affixes:list[str]) -> str:
     
     for size in range(1, len(long_name) + 1):
@@ -70,7 +72,7 @@ def generateSubstrings(word:str, key_letters: Iterable[str]) -> Iterator[str]:
                 else:
                     wild_string += '.'
 
-            if wild_string[0:1] != '.' and wild_string[-1:] != '.':
+            if any(c not in [".", "^", "$"] for c in wild_string):
                 for wcv in generateWildcardVariants(wild_string):
                     yield wcv
 
@@ -80,7 +82,8 @@ def generateWildcardVariants(word:str) -> Iterator[str]:
     letter_locations = []
 
     for i, c in enumerate(word):
-        if i > 0 and i != len(word) -1 and c not in  ['.', '^', '$']:
+        # if i > 0 and i != len(word) -1 and c not in  ['.', '^', '$']:
+        if c not in  ['.', '^', '$']:
             letter_locations.append(i)
     
     for i in range(2**len(letter_locations)-1):
@@ -106,7 +109,6 @@ def shorten_mod_name(name):
     return name
 
 
-
 def findComboMatch(wanted: set[str], affix: Iterable[str]) -> str:
 
     lc = list(string.ascii_lowercase) + ["'", " "]
@@ -119,24 +121,25 @@ def findComboMatch(wanted: set[str], affix: Iterable[str]) -> str:
 
     max_len = getBasicRegexLength(wanted)
 
-    unwanted = {u + " " for u in affix if u not in wanted and u.startswith("^")}
-    unwanted.intersection_update({u for u in affix if u not in wanted and u.endswith("$")})
+    wanted_test_strings = {w[1:] for w in wanted if w.startswith("^")}.union({w[:-1] for w in wanted if w.endswith("$")})
+
+    unwanted_test_strings = {u[1:] + " " for u in affix if u not in wanted and u.startswith("^")}.union({u[:-1] for u in affix if u not in wanted and u.endswith("$")})
 
     possible_matches = generateSubstrings(keyword, key_letters)
 
     for p in possible_matches:
         if len(p) >= max_len:
             return None
-        guess_string = "".join(p)
-        guess = re.compile(guess_string)
-        if len(p) == 4:
-            pass
-        if all(re.search(guess, w) is not None for w in wanted) and all(re.search(guess, u) is None for u in unwanted):
-            return guess_string
+
+
+        guess = re.compile(p)
+
+        if all(re.search(guess, w) is not None for w in wanted_test_strings) and all(re.search(guess, u) is None for u in unwanted_test_strings):
+            return p
 
 combos:dict[str,dict[str,tuple[str]]] = {}
 
-for combo_size in range(2, 6):
+for combo_size in range(2, 5):
     print(f"generating size {combo_size}.")
     prefix_combos = combinations(prefix, combo_size)
 
@@ -145,7 +148,6 @@ for combo_size in range(2, 6):
     for pc in tqdm(prefix_combos, total=tot):
         result = findComboMatch(pc, affix)
         if result:
-            # print(f"Found '{result}' for {pc}")
             combos[result] = {"affix": pc, "bases": tuple(b.replace(" flask", "") for b in bases if re.search(result, b) is None)}
             if combos[result]["bases"] == []:
                 combos.pop(result)
@@ -156,7 +158,6 @@ for combo_size in range(2, 6):
     for sc in tqdm(suffix_combos, total=tot):
         result = findComboMatch(sc, affix)
         if result:
-            # print(f"Found '{result}' for {sc}")
             combos[result] = {"affix": sc, "bases": tuple(b.replace(" flask", "") for b in bases if re.search(result, b) is None)}
             if combos[result]["bases"] == []:
                 combos.pop(result)
